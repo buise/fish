@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{JS_PATH}jquery.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}common.css">
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+</head>
+<style>
+    body{
+        padding-top: 20px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+</style>
+<body>
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="username" name="uname" value="{$umess[0]['uname']}" readonly>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">旧密码</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Password" name="upass2">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">新密码</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Password" name="upass">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">角色</label>
+            <div class="col-sm-8">
+                <select class="form-control" name="rid" value="{$umess[0]['rid']}">
+                    <option value="0">--选择角色--</option>
+                    {foreach $roles as $v}
+                    {if $v['rid']==$umess[0]['rid']}
+                    <option value="{$v['rid']}" selected>{$v['rname']}</option>
+                    {else}
+                    <option value="{$v['rid']}">{$v['rname']}</option>
+                    {/if}
+                    {/foreach}
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">昵称</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="nickname" name="unick" value="{$umess[0]['unick']}">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-2 control-label">头像</label>
+            <div class="col-sm-8">
+                <input type="password" class="form-control" placeholder="photo" value="{$umess[0]['uimgurl']}">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="btn btn-default submit">修改</div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+<script>
+    $(".submit").click(function () {
+        var str=$("form").serialize();
+//        console.log(str)
+        $.ajax({
+            url:"index.php?m=admin&f=user&a=editUserConCon",
+            type:"POST",
+            data:str,
+            success:function (text) {
+                alert(text);
+                if(text=="修改成功"){
+                    location.href="index.php?m=admin&f=user&a=lookUser";
+                }
+            }
+        })
+    })
+</script>

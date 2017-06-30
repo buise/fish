@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>登录</title>
+    <script src="{JS_PATH}jquery.js"></script>
+    <script src="{JS_PATH}adminlogin.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}common.css">
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+    <link rel="stylesheet" href="{CSS_PATH}admin/adminlogin.css">
+</head>
+<body>
+    <div class="box">
+        <form action="index.php?m=admin&f=login&a=check" method="post">
+            <label class="text">
+                <span>用户名</span>
+                <input type="text" name="user">
+            </label>
+            <label class="text">
+                <span>密码</span>
+                <input type="password" name="pass">
+            </label>
+            <label class="text" id="code">
+                <span>验证码</span>
+                <input type="text" name="code">
+                <img src="index.php?m=admin&f=login&a=code" alt="" onclick="this.src='index.php?m=admin&f=login&a=code&aa='+Math.random()">
+            </label>
+            <label>
+                <button type="submit" >登录</button>
+            </label>
+        </form>
+
+        <div class="right">
+            <p>博客后台登录界面</p>
+        </div>
+    </div>
+</body>
+</html>

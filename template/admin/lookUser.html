@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{JS_PATH}jquery.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}common.css">
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
+</head>
+<style>
+    body{
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+    }
+    .table th{
+        text-align: center;
+    }
+    .del,.edit{
+        width: 30%;
+        height: 80%;
+        background: red;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        float: left;
+    }
+    .del{
+        margin-left: 16%;
+        margin-right: 4%;
+    }
+    .del:hover{
+        background: #ff5722;
+    }
+    .edit:hover{
+        color: #fff;
+        text-decoration: none;
+        background: #ff5722;
+    }
+</style>
+<body>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>id</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>昵称</th>
+                <th>头像</th>
+                <th>角色</th>
+                <th>操作</th>
+            </tr>
+            {foreach $usermess as $v}
+            <tr>
+                <td class="uid">{$v['uid']}</td>
+                <td class="uname">{$v['uname']}</td>
+                <td class="upass">{$v['upass']}</td>
+                <td class="unick">{$v['unick']}</td>
+                <td class="uimgurl">{$v['uimgurl']}</td>
+                <td class="rid">{$v['rid']}</td>
+                <td>
+                    <div class="del">删除</div>
+                    <a class="edit" href="index.php?m=admin&f=user&a=editUserCon&uid={$v['uid']}"+>编辑</a>
+                </td>
+            </tr>
+            {/foreach}
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    $("tbody").delegate('.del','click',function () {
+        var id=$(this).parents('tr').find('.uid').html();
+        $.ajax({
+            url:"index.php?m=admin&f=user&a=delUserCon",
+            type:"POST",
+            data:"uid="+id,
+            success:function (text) {
+                if(text=="ok"){
+                    alert("删除成功");
+                    location.href="index.php?m=admin&f=user&a=lookUser";
+                }
+            }
+        })
+    })
+</script>
