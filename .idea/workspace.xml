@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="270c1897-b6ef-479a-beed-a06b936ed680" name="默认" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/index/fh-login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/swiper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/swiper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/index/fh-login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="270c1897-b6ef-479a-beed-a06b936ed680" name="默认" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -280,15 +274,15 @@
       <updated>1498980785053</updated>
       <workItem from="1498980788423" duration="5280000" />
       <workItem from="1498996048861" duration="3998000" />
-      <workItem from="1499002118289" duration="6332000" />
+      <workItem from="1499002118289" duration="6413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15610000" />
+    <option name="totallyTimeSpent" value="15691000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1727672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
