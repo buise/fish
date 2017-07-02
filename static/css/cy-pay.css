@@ -25,9 +25,3 @@ section{
 section>img{
     width: 6.6rem;
 }
-input{
-    width: 10px;
-    height: 10px;
-    border: 1px solid #000;
-    /*display: block;*/
-}
