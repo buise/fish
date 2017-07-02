@@ -1,27 +1,22 @@
-*{
-    padding: 0;
+body,ul,li,ol,h1,h2,h3,h4,h5,h6,p,pre,input,form,dl,dt,dd{
     margin: 0;
+    padding: 0;
     list-style: none;
-    border: none;
-    box-sizing: border-box;
 }
-a{
-    color: #000;
+a {
     text-decoration: none;
 }
-a:hover{
-    text-decoration: none;
+img{
+    border: 0;
 }
-a,button,input{
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-appearance: none;
-}
+
 body{
     -webkit-user-select:none;
     -webkit-text-size-adjust:100%;
     -webkit-overflow-scrolling:touch;
 }
 *{
+    box-sizing: border-box;
     font-family: "helvetica";
     max-height:9999999px;
 }
