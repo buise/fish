@@ -162,10 +162,47 @@ body {
     font-family: "San Francisco Display";
     font-size: 0.22rem;
 }
+/*茶几*/
+.cll-section .cll-tea{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cll-section .cll-tea a{
+    width: 100%;
+    height: 3.67rem;
+    display: block;
+    background-image: url("../../img/cll_43.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    margin-bottom: 0.12rem;
+}
+.cll-section .cll-tea a img{
+    width: 6.82rem;
+    margin-left: 0.16rem;
+    margin-top: 0.1rem;
+}
+.cll-section .cll-tea a p{
+    margin-left: 0.1rem;
+    text-align: center;
+}
+.cll-section .cll-tea a p.btitle{
+    font-family: "苹方 粗体";
+    font-size: 0.24rem;
+    margin-top: -0.06rem;
+}
+.cll-section .cll-tea a p.benglish{
+    font-family: "San Francisco Display";
+    font-size: 0.22rem;
+}
 
 
 
 
+
+/*底部*/
 #footer {
     position: absolute;
     z-index: 2;
@@ -175,6 +212,40 @@ body {
     height: 1rem;
     background: #444;
     padding: 0;
+    background-image: url("../../img/buttom_03.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+#footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+#footer a img{
+    width: 0.58rem;
+    height: 0.58rem;
+}
+#footer a.cll-active{
+    display: block;
+    font-size: 0.22rem;
+    text-align: center;
+    position: relative;
+}
+#footer a.cll-active img{
+    position: absolute;
+    top: -0.1rem;
+    left:0.54rem;
+}
+#footer a.cll-active span{
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.44rem;
 }
 
 #wrapper {
