@@ -24,16 +24,9 @@ body {
     height: 1rem;
     padding: 0;
     overflow: hidden;
-    /*background-image: url("../../img/cll_03.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left bottom;*/
-    /*background-size: cover;*/
 }
 #header img{
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: -7px;
 }
 /*ar体验 定制*/
 .cll-nav{
@@ -72,8 +65,7 @@ body {
 }
 .cll-section .cll-title img{
     float: left;
-    width: 6rem;
-    height: 100%;
+    width: 5.4rem;
 }
 .cll-section .cll-title a img{
     float: right;
@@ -90,12 +82,86 @@ body {
     display: block;
     width: 2.3rem;
     height: 100%;
-    background: red;
+    background-image: url("../../img/cll_19.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
 }
-
-
-
-
+.cll-section .cll-content a img{
+    width: 1.8rem;
+    margin-left: 0.26rem;
+    margin-top: 0.16rem;
+}
+.cll-section .cll-content a p{
+    text-align: center;
+}
+.cll-section .cll-content a p.ptitle{
+    font-family: "苹方 粗体";
+    font-size: 0.24rem;
+}
+.cll-section .cll-content a p.penglish{
+    font-family: "San Francisco Display";
+    font-size: 0.22rem;
+}
+/*家饰*/
+.cll-section .home a{
+    background-image: url("../../img/cll_25.png");
+}
+.cll-section .home a p{
+    text-align: center;
+}
+.cll-section .home a p.htitle{
+    font-family: "苹方 粗体";
+    font-size: 0.24rem;
+    margin-top: -0.1rem;
+}
+.cll-section .home a p.henglish{
+    font-family: "San Francisco Display";
+    font-size: 0.22rem;
+}
+/*沙发*/
+.cll-section .sofa a{
+    background-image: url("../../img/cll_31.png");
+}
+.cll-section .sofa a img{
+    margin-top: 0.3rem;
+}
+.cll-section .sofa a p.stitle{
+    margin-top: 0.2rem;
+}
+/*床*/
+.cll-section .cll-bed{
+    width: 100%;
+    height: 3.04rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cll-section .cll-bed a{
+    width: 3.45rem;
+    height: 100%;
+    display: block;
+    background-image: url("../../img/cll_37.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.cll-section .cll-bed a img{
+    width: 3.12rem;
+    margin-left: 0.16rem;
+    margin-top: 0.1rem;
+}
+.cll-section .cll-bed a p{
+    margin-left: 0.1rem;
+}
+.cll-section .cll-bed a p.btitle{
+    font-family: "苹方 粗体";
+    font-size: 0.24rem;
+    margin-top: -0.06rem;
+}
+.cll-section .cll-bed a p.benglish{
+    font-family: "San Francisco Display";
+    font-size: 0.22rem;
+}
 
 
 
@@ -118,7 +184,7 @@ body {
     bottom: 1rem;
     left: 0;
     width: 100%;
-    background: #ccc;
+    background: #ececec;
     overflow: hidden;
 }
 
