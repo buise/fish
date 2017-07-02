@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>闪屏</title>
+    <link rel="stylesheet" href="../../static/css/swiper.css">
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <script src="../../static/js/jquery.js"></script>
+    <script src="../../static/js/swiper.js"></script>
+</head>
+<style>
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+</style>
+<body>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <img src="../../static/img/fh-1.png" alt="" class="swiper-slide">
+        <img src="../../static/img/fh-2.png" alt="" class="swiper-slide">
+        <img src="../../static/img/fh-3.png" alt="" class="swiper-slide">
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var swiper = new Swiper('.swiper-container');
+    })
+</script>
+</body>
+</html>
