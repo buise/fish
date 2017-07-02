@@ -1,0 +1,145 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+}
+html {
+    -ms-touch-action: none;
+}
+
+body {
+    font-family: ubuntu, helvetica, arial;
+    overflow: hidden; /* this is important to prevent the whole page to bounce */
+}
+
+#header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    padding: 0;
+    overflow: hidden;
+    /*background-image: url("../../img/cll_03.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left bottom;*/
+    /*background-size: cover;*/
+}
+#header img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -7px;
+}
+/*ar体验 定制*/
+.cll-nav{
+    margin-top: 0.12rem;
+    width: 100%;
+    height: 1rem;
+}
+.cll-nav li{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.cll-nav li a{
+    width: 100%;
+    height: 100%;
+}
+.cll-nav li a img{
+    width: 3.5rem;
+    height: 0.98rem;
+}
+.cll-nav li a.ar img{
+    float: right;
+}
+.cll-nav li a.dingzhi img{
+    float: left;
+}
+/*灯具*/
+.cll-section{
+    width: 100%;
+    padding: 0 0.24rem;
+    margin-top:0.4rem;
+}
+.cll-section .cll-title{
+    width: 100%;
+    height: 0.64rem;
+}
+.cll-section .cll-title img{
+    float: left;
+    width: 6rem;
+    height: 100%;
+}
+.cll-section .cll-title a img{
+    float: right;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.cll-section .cll-content{
+    width: 100%;
+    height: 3.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.cll-section .cll-content a{
+    display: block;
+    width: 2.3rem;
+    height: 100%;
+    background: red;
+}
+
+
+
+
+
+
+
+
+#footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: #444;
+    padding: 0;
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
