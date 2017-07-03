@@ -8,35 +8,46 @@
     <meta name="x5-fullscreen" content="true" />
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
-    <title>登录</title>
+    <title>注册</title>
     <link rel="stylesheet" href="../../static/css/common.css">
-    <link rel="stylesheet" href="../../static/css/index/fh-login.css">
+    <link rel="stylesheet" href="../../static/css/index/fh-res.css">
     <script src="../../static/js/jquery.js"></script>
     <script src="../../static/js/rem.js"></script>
-    <script src="../../static/js/fh-login.js"></script>
+    <script src="../../static/js/fh-res.js"></script>
 </head>
 <body>
 <div class="fh-nav">
     <img src="../../static/img/fh-5.png" alt="">
-    <div class="fh-res">
-        <a href="">注册</a>
-    </div>
 </div>
 <div class="fh-con">
     <img src="../../static/img/fh-6.png" alt="" class="fh-tx">
     <form action="" class="fh-bd">
-        <input type="text" name="name" placeholder="请输入您的账号">
+        <input type="text" name="name" placeholder="用户名，2~8个字符" autocomplete="off">
         <img src="../../static/img/fh-7.png" alt="" class="fh-xf">
         <div class="fh-ts"></div>
-        <div class="fh-ts2">账号输入错误</div>
-        <input type="password" name="pass" placeholder="请输入您的密码">
+        <div class="fh-ts2">用户名格式错误</div>
+
+        <input type="text" name="tel" placeholder="请输入您的手机号" autocomplete="off">
+        <img src="../../static/img/fh-16.png" alt="" class="fh-sj">
+        <div class="fh-ts3"></div>
+
+        <input type="text" name="yzm" placeholder="请输入验证码" autocomplete="off">
+        <img src="../../static/img/fh-17.png" alt="" class="fh-yz">
+        <div class="fh-yzm">发送验证码</div>
+
+        <input type="password" name="pass" placeholder="请输入您的密码" autocomplete="off">
         <img src="../../static/img/fh-8.png" alt="" class="fh-s">
         <img src="../../static/img/fh-9.png" alt="" class="fh-yj">
+
         <label>
-            <input type="radio">&nbsp;记住密码
+            <input type="radio">我已阅读并接受<span>版权声明</span>条款
         </label>
-        <a href="javascript:;" class="fh-wj">忘记密码？</a>
         <div class="fh-submit"></div>
+        <div class="fh-cir">
+            <div></div>
+            <p>&nbsp;已有账号，去<a href="">登录</a></p>
+        </div>
+
     </form>
 </div>
 
