@@ -1,0 +1,142 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    display: block;
+}
+html {
+    -ms-touch-action: none;
+}
+
+body {
+    font-family: ubuntu, helvetica, arial;
+    overflow: hidden; /* this is important to prevent the whole page to bounce */
+}
+
+#header {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    overflow: hidden;
+    background-image: url("../../img/ar_02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 0.24rem;
+}
+#header img{
+    width: 0.6rem;
+    float: left;
+    margin-top: 0.2rem;
+}
+/*底部*/
+#footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: #444;
+    padding: 0;
+    background-image: url("../../img/ar_15.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+
+.content{
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    background: #c0c1c4;
+    overflow: hidden;
+    background-image: url("../../img/argb_02.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.content img.goods{
+    width: 3rem;
+    position: absolute;
+    top: 6.2rem;
+    left: 2rem;
+}
+.content img.jia{
+    width: 0.5rem;
+    position: absolute;
+    bottom: 3.1rem;
+    right: 0.44rem;
+}
+.content img.jie{
+    width: 0.5rem;
+    position: absolute;
+    bottom: 2.18rem;
+    right: 0.44rem;
+}
+.content .tu{
+    width: 100%;
+    height: 0.88rem;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.content .tu .imgbox{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #303030;
+    padding: 0.1rem;
+    position: relative;
+}
+.content .tu .imgbox .active {
+    display: none;
+    position: absolute;
+    top:-0.97rem;
+    left: 0.67rem;
+}
+.content .tu .imgbox img{
+    width: 100%;
+}
+.content .tu .imgactive{
+    background: rgba(0,0,0,0.5);
+}
+.content .tu .imgactive .active{
+    display: block;
+}
+.content .tu .imgactive .active img{
+    width: 0.6rem;
+}
+/*底部*/
+#footer .left{
+    float: left;
+    background-image: url("../../img/argb_02.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 0.62rem;
+    height: 0.62rem;
+    border-radius: 4px;
+    margin-left: 0.24rem;
+    margin-top: 0.2rem;
+}
+
+#footer a{
+    float: right;
+    width: 1.81rem;
+    height: 0.7rem;
+    margin-right: 0.24rem;
+    margin-top: 0.14rem;
+}
+#footer a img{
+    width: 100%;
+    float: left;
+}
