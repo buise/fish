@@ -7,11 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../../static/css/common.css">
-    <link rel="stylesheet" href="../../static/css/index/cy-pay.css">
+    <link rel="stylesheet" href="../../static/css/index/cy-pass.css">
     <script src="../../static/js/rem.js"></script>
     <script src="../../static/js/jquery.js"></script>
+    <script src="../../static/js/cy-pass.js"></script>
 </head>
 <body>
+    <div class="mask">
+        <div class="have">
+            <div class="word-box">
+                <p class="have-ch">请输入您的密码</p>
+                <p class="have-en">Please enter your password </p>
+            </div>
+            <div class="pay_con">
+                <input type="password" id="pay_input_1" class="pay_input" maxlength="1"><!- -><input type="password" id="pay_input_2" class="pay_input" maxlength="1"><!- -><input type="password" id="pay_input_3" class="pay_input" maxlength="1"><!- -><input type="password" id="pay_input_4" class="pay_input" maxlength="1"><!- -><input type="password" id="pay_input_5" class="pay_input" maxlength="1"><!- -><input type="password" id="pay_input_6" class="pay_input" maxlength="1">
+            </div>
+        </div>
+    </div>
     <header>
         <img src="../../static/img/cy-return.png" alt="" class="return">
         <img src="../../static/img/cy-chose.png" alt="" class="word">
@@ -58,16 +70,14 @@
                    <div class="line"></div>
                </li>
                <li class="other-list next">
-                   <a href="cy-have.html">
-                       <div class="other-word">
-                           <p class="other-ch">下一步</p>
-                           <p class="other-en">next step</p>
-                       </div>
-                   </a>
-
+                   <div class="other-word">
+                       <p class="other-ch">下一步</p>
+                       <p class="other-en">next step</p>
+                   </div>
                </li>
             </ul>
         </div>
+
     </section>
 </body>
 </html>
