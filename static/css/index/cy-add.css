@@ -1,0 +1,39 @@
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.9);
+}
+.have{
+    width: 2.64rem;
+    height: 2.67rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background-image: url("../../img/cy-add.png");
+    background-size: cover;
+    border-radius: .08rem;
+}
+.num{
+    font-family: "苹方 特粗";
+    font-size: .5rem;
+    opacity: 0;
+    color: #fff;
+    animation: opacity .3s linear forwards;
+}
+@keyframes opacity {
+    20%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(-1rem);
+    }
+}
