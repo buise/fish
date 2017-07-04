@@ -1,0 +1,239 @@
+body{
+    background: #ececec;
+}
+/*头部*/
+header{
+    width: 100%;
+    height: 1rem;
+    background-image: url("../../img/cy-personal.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+#header{
+    width: 100%;
+    height: 3rem;
+    background-image: url("../../img/cy-pheader.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.photo{
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    left: 50%;
+    bottom: -25%;
+    margin-left: -.75rem;
+    box-sizing: content-box;
+    padding: .04rem;
+    border: 1px solid #fff;
+    background-clip: content-box;
+    z-index: 2;
+}
+.person{
+    margin-top: .8rem;
+    text-align: center;
+    color: #6b6b6b;
+    line-height: .4rem;
+}
+.person>.en-name{
+    font-family: "San Francisco Display";
+    font-size: .3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.person>.ch-name{
+    font-family: "苹方 粗体";
+    font-size: .26rem;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+.person>.sign{
+    font-family: "苹方 常规";
+    font-size: .22rem;
+}
+.person>.vel{
+    font-family: "San Francisco Display";
+    font-size: .22rem;
+}
+/*myorder*/
+#myorder{
+    margin-top: .7rem;
+    overflow: hidden;
+    padding: 0 .24rem;
+}
+.order>img{
+    width: 100%;
+}
+.li-list{
+    height: 1rem;
+    background: #fff;
+    margin-bottom: .12rem;
+    box-shadow: 0 .05rem .05rem #ccc;
+    border-radius: .08rem;
+}
+.o-list{
+    float: left;
+    width: 3.45rem;
+}
+.o-list>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+}
+.o-list-left{
+    margin-right: .12rem;
+}
+.li-list > a >img{
+    float: left;
+    width: .6rem;
+}
+.order-word{
+    float: left;
+    padding-left: .1rem;
+    color: #6b6b6b;
+}
+.order-ch{
+    font-family: "苹方 特粗";
+    font-weight: bold;
+    font-size: .26rem;
+}
+.order-en{
+    font-family: "San Francisco Display";
+    font-size: .22rem;
+    text-transform: uppercase;
+}
+/*个人资料*/
+#info{
+    overflow: hidden;
+    padding: 0 .24rem;
+}
+.info-list >a{
+    display: block;
+    width: 100%;
+    padding: .2rem .1rem;
+}
+.info-word{
+    width: 2.8rem;
+    padding: .18rem .3rem;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.info-word::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 40%;
+    width: .1rem;
+    height: .1rem;
+    background-image: url("../../img/cy-min.png");
+    background-size: cover;
+    background-position: center;
+}
+.info-ch{
+    font-family: "苹方 粗体";
+    font-size: .26rem;
+    color: #2c2c2c;
+    float: left;
+}
+.info-en{
+    font-family: "San Francisco Display";
+    font-size: .22rem;
+    color: #6b6b6b;
+    float: left;
+    margin-left: .1rem;
+    margin-top: .05rem;
+}
+.li-list >a >img.right-arrow{
+    width: .14rem;
+    float: right;
+    margin-top: .15rem;
+    margin-right: .1rem;
+}
+/*底部*/
+#footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    background: #444;
+    padding: 0;
+    background-image: url("../../img/buttom_03.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+}
+#footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+#footer a img{
+    width: 0.58rem;
+    height: 0.58rem;
+}
+#footer a.cll-active{
+    display: block;
+    font-size: 0.22rem;
+    text-align: center;
+    position: relative;
+}
+#footer a.cll-active img{
+    position: absolute;
+    top: -0.1rem;
+    left:0.54rem;
+}
+#footer a.cll-active span{
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.44rem;
+}
+
+/*滚动条*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    background: #ececec;
+    overflow: hidden;
+}
+
+#scroller {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
