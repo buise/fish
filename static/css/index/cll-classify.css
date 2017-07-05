@@ -247,12 +247,41 @@ body {
     padding: 0 0.24rem;
     overflow: hidden;
     margin-bottom: 0.2rem;
+    position: relative;
 }
 .fashion .con a{
-    width: 2.43rem;
+    width: 2.44rem;
     height: 100%;
     background: #fff;
+    position: absolute;
+    top: 0;
 }
+.fashion .con a.pos1{
+    left: 0.24rem;
+    z-index: 5;
+}
+.fashion .con a.pos2{
+    left: 1.46rem;
+    z-index: 4;
+}
+.fashion .con a.pos3{
+    left: 2.68rem;
+    z-index: 3;
+}
+.fashion .con a.pos4{
+    left: 3.9rem;
+    z-index: 2;
+}
+.fashion .con a.pos5{
+    left: 5.12rem;
+    z-index: 1;
+}
+
+
+
+
+
+
 .fashion .con a img{
     width: 100%;
 }

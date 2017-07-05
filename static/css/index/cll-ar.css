@@ -64,7 +64,7 @@ body {
     background-repeat: no-repeat;
     background-position: top left;
 }
-.content img.goods{
+.content #move-box{
     width: 3rem;
     position: absolute;
     top: 6.2rem;
