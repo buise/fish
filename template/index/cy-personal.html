@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/index/cy-personal.css">
+    <script src="../../static/js/rem.js"></script>
+    <script src="../../static/js/iscroll.js"></script>
+</head>
+<script>
+    window.onload=function () {
+        var myScroll;
+        myScroll = new IScroll('#wrapper', {
+            mouseWheel: true,
+            freeScroll: true
+        });
+    }
+</script>
+<body>
+    <!--头部-->
+    <header></header>
+    <div id="wrapper">
+        <div id="scroller">
+            <div id="header">
+                <div class="photo">
+                </div>
+            </div>
+            <!--昵称-->
+            <div class="person">
+                <p class="en-name">Mr Li d Hepburn</p>
+                <p class="ch-name">奥莉黛·赫本</p>
+                <p class="sign">生活其实本就该这样平平淡淡…</p>
+                <p class="vel">
+                    57.vel
+                    <img src="../../static/img/cy-star7.png" alt="">
+                </p>
+            </div>
+            <!--myorder-->
+            <ul id="myorder">
+                <li class="order">
+                    <img src="../../static/img/cy-myorder.png" alt="">
+                </li>
+                <li class="o-list o-list-left li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-fukuan.png" alt="">
+                        <div class="order-word">
+                            <p class="order-ch">待付款</p>
+                            <p class="order-en">the payment</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="o-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-fahuo.png" alt="">
+                        <div class="order-word">
+                            <p class="order-ch">待发货</p>
+                            <p class="order-en">send the goods</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="o-list o-list-left li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-shouhuo.png" alt="">
+                        <div class="order-word">
+                            <p class="order-ch">待收货</p>
+                            <p class="order-en">For the goods</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="o-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-pinglun.png" alt="">
+                        <div class="order-word">
+                            <p class="order-ch">待评价</p>
+                            <p class="order-en">To comment on</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!--个人资料-->
+            <ul id="info">
+                <li class="info-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-shoucang.png" alt="">
+                        <div class="info-word">
+                            <span class="info-ch">收藏商品</span>
+                            <span class="info-en">collection</span>
+                        </div>
+                        <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+                    </a>
+                </li>
+                <li class="info-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-shoucang.png" alt="">
+                        <div class="info-word">
+                            <span class="info-ch">收藏商品</span>
+                            <span class="info-en">collection</span>
+                        </div>
+                        <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+                    </a>
+                </li>
+                <li class="info-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-shoucang.png" alt="">
+                        <div class="info-word">
+                            <span class="info-ch">收藏商品</span>
+                            <span class="info-en">collection</span>
+                        </div>
+                        <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+                    </a>
+                </li>
+                <li class="info-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-shoucang.png" alt="">
+                        <div class="info-word">
+                            <span class="info-ch">收藏商品</span>
+                            <span class="info-en">collection</span>
+                        </div>
+                        <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+                    </a>
+                </li>
+                <li class="info-list li-list">
+                    <a href="">
+                        <img src="../../static/img/cy-shoucang.png" alt="">
+                        <div class="info-word">
+                            <span class="info-ch">收藏商品</span>
+                            <span class="info-en">collection</span>
+                        </div>
+                        <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--底部-->
+    <div id="footer">
+        <a href="">
+            <img src="../../static/img/but_09.png" alt="">
+        </a>
+        <a href="">
+            <img src="../../static/img/but_12.png" alt="">
+        </a>
+        <a href="">
+            <img src="../../static/img/but_03.png" alt="">
+        </a>
+        <a href="" class="cll-active">
+            <img src="../../static/img/but_06.png" alt="">
+            <span>个人中心</span>
+        </a>
+    </div>
+</body>
+</html>
