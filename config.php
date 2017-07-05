@@ -10,7 +10,7 @@ return array(
         "host"=>"localhost",
         "user"=>"root",
         "pass"=>"",
-        "database"=>"blog",
+        "database"=>"fish",
         "port"=>"3306"
     )
 );
