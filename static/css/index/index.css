@@ -1,3 +1,173 @@
+body{
+    background: #f0f0f0;
+}
+
+/*isroll*/
+#wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 1.84rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+#scroller {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+/*header*/
+#header{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+#header .H-header-top{
+    width:7.5rem;
+    height: 1.6rem;
+    background: #ffca13;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.23rem;
+}
+#header .H-header-top img{
+    height: 0.65rem;
+    margin-top: 0.2rem;
+}
+#header .H-header-top img:nth-child(2){
+    height: 1.1rem;
+}
+#header .H-search{
+    width: 7rem;
+    margin: -0.5rem auto 0;
+    position: relative;
+}
+#header .H-search input{
+    width: 5.72rem;
+    height: 0.93rem;
+    border-radius: 0.05rem;
+    padding-left: 0.15rem;
+    color: #c2c2c2;
+    display: block;
+}
+#header .H-search img{
+    width: 1.7rem;
+    position: absolute;
+    right: 0;
+    top:0.12rem;
+}
+
+/*banner*/
+.swiper-container{
+  margin-top: 0.35rem;
+}
+.swiper-pagination .swiper-pagination-bullet{
+    width: 0.1rem;
+    height: 0.1rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    border: 1px solid #ffca13;
+}
+/*限时抢购开始*/
+.H-sale .H-sale-top{
+	width: 100%;
+    text-align: center;
+}
+.H-sale .H-sale-top img{
+    width: 1.75rem;
+}
+.H-sale .H-sale-bottom .con{
+    width: 3.2rem;
+    height: 4rem;
+    position: relative;
+}
+.H-sale .H-sale-bottom .con img{
+    width: 3.1rem;
+    display: block;
+}
+.H-sale .H-sale-bottom li{
+    background: #fff;
+    width: 3.1rem !important;
+    float: left;
+    margin-right: 0.2rem;
+}
+.H-sale .H-sale-bottom .con p{
+    width: auto;
+    font-size: 0.24rem;
+    color: #6b6b6b;
+    margin-left: 0.1rem;
+    padding-left: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-bottom: 1px dashed #ccc;
+}
+.H-sale .H-sale-bottom .con p.title{
+    color: #2c2c2c;
+    font-weight: 800;
+    margin-top: 0.1rem;
+    border: none;
+    padding-bottom: 0;
+}
+.H-sale .H-sale-bottom .con .H-pos{
+    width: 0.01rem;
+    height: 0.5rem;
+    background: #ff9313;
+    position: absolute;
+    left: 0.1rem;
+    bottom:0.09rem;
+}
+.H-sale .H-sale-bottom .list{
+    width: 3.1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    padding: 0 0.1rem;
+}
+.H-sale .H-sale-bottom .list li{
+    font-size: 0;
+    line-height: 0.28rem;
+}
+.H-sale .H-sale-bottom .list li img{
+    height: 0.25rem;
+    display: block;
+    float: left;
+}
+.H-sale .H-sale-bottom .list li span{
+    font-size: 0.2rem;
+    color: #9a9a9a;
+    margin-left: 0.05rem;
+    line-height: 0.28rem;
+}
+.H-sale .H-sale-bottom .list li:last-child span{
+    display: block;
+    width: 0.27rem;
+    height: 0.27rem;
+    border-radius:50%;
+    background: #000;
+    color: #fff;
+    float: left;
+}
+/*限时抢购结束*/
+
+/*免费设计开始*/
+.H-design .H-design-top{
+    width: 100%;
+    text-align: center;
+}
+.H-design .H-design-top img{
+    width: 1.75rem;
+}
+
+
+/*免费设计结束*/
+
 /*底部*/
 #footer {
     position: absolute;
