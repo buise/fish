@@ -42,6 +42,7 @@ body{
     height: 1.1rem;
 }
 #header .H-search{
+    display: block;
     width: 7rem;
     margin: -0.5rem auto 0;
     position: relative;
