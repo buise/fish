@@ -121,7 +121,7 @@ header{
     padding: .2rem .1rem;
 }
 .info-word{
-    width: 2.8rem;
+    minwidth: 2.8rem;
     padding: .18rem .3rem;
     overflow: hidden;
     float: left;
@@ -143,6 +143,7 @@ header{
     font-size: .26rem;
     color: #2c2c2c;
     float: left;
+    font-weight: bold;
 }
 .info-en{
     font-family: "San Francisco Display";
@@ -151,6 +152,12 @@ header{
     float: left;
     margin-left: .1rem;
     margin-top: .05rem;
+    text-transform: capitalize;
+}
+.li-list >a{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 .li-list >a >img.right-arrow{
     width: .14rem;
@@ -236,4 +243,36 @@ header{
     -ms-text-size-adjust: none;
     -o-text-size-adjust: none;
     text-size-adjust: none;
+}
+
+
+/*个人资料*/
+.header{
+    width: 100%;
+    background: none;
+    position: static;
+}
+.header>img{
+    width: 100%;
+}
+.header a>img.return{
+    width: .6rem;
+    display: block;
+    margin: 0 .24rem;
+    margin-top: .2rem;
+    position: absolute;
+}
+.cy-info{
+    margin-top: .24rem;
+}
+p.right-arrow{
+    float: right;
+    color: #6b6b6b;
+    font-size: .22rem;
+    font-family: "苹方 常规";
+    margin-top: .15rem;
+    margin-right: .1rem;
+}
+p.right-arrow.right-num{
+    font-family: "San Francisco Display";
 }

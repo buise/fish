@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="x5-orientation" content="portrait | landscape" />
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="full-screen" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>个人资料</title>
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/index/cy-personal.css">
+    <script src="../../static/js/rem.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="#">
+        <img src="../../static/img/cy-return.png" alt="" class="return">
+    </a>
+    <img src="../../static/img/cy-info.png" alt="" class="">
+</header>
+<!--个人资料-->
+<ul id="info" class="cy-info">
+    <li class="info-list li-list">
+        <a href="">
+            <img src="../../static/img/cy-user.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">账户名</span>
+                <span class="info-en">Account name</span>
+            </div>
+            <p class="right-arrow right-num">13546782311</p>
+        </a>
+    </li>
+    <li class="info-list li-list">
+        <a href="">
+            <img src="../../static/img/cy-touxiang.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">选择头像</span>
+                <span class="info-en">Head portait</span>
+            </div>
+            <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+        </a>
+    </li>
+    <li class="info-list li-list">
+        <a href="">
+            <img src="../../static/img/cy-nickname.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">更换昵称</span>
+                <span class="info-en">nickname</span>
+            </div>
+            <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+        </a>
+    </li>
+    <li class="info-list li-list">
+        <a href="cy-sex.html">
+            <img src="../../static/img/cy-sex.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">性别</span>
+                <span class="info-en">gender</span>
+            </div>
+            <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+        </a>
+    </li>
+    <li class="info-list li-list">
+        <a href="">
+            <img src="../../static/img/cy-address.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">收货地址</span>
+                <span class="info-en">Shipping address</span>
+            </div>
+            <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+        </a>
+    </li>
+    <li class="info-list li-list">
+        <a href="">
+            <img src="../../static/img/cy-phone.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">绑定手机</span>
+                <span class="info-en">binding mobile phone</span>
+            </div>
+            <p class="right-arrow">已设置</p>
+        </a>
+    </li>
+    <li class="info-list li-list">
+        <a href="">
+            <img src="../../static/img/cy-bankcard.png" alt="">
+            <div class="info-word">
+                <span class="info-ch">绑定银行卡</span>
+                <span class="info-en">binding of bank CARDS</span>
+            </div>
+            <img src="../../static/img/cy-arrow.png" alt="" class="right-arrow">
+        </a>
+    </li>
+</ul>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".return").ckick(function () {
+            history.go(-1);
+        })
+    })
+</script>
