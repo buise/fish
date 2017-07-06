@@ -28,13 +28,294 @@ body {
 #header img{
     width: 100%;
 }
+/*导航*/
+.nav{
+    width: 100%;
+    height: 1rem;
+    margin-top:0.12rem;
+}
+.nav a{
+    height: 100%;
+    float: left;
+}
+.nav a.one{
+    width:2.58rem;
+}
+.nav a.two{
+    width: 2.33rem;
+}
+.nav a.three{
+    width: 2.58rem;
+}
+.nav a img{
+    width: 100%;
+    height: 100%;
+}
+/*灯具*/
+.section {
+    width: 100%;
+    /*margin-top: 0.4rem;*/
+}
+.section .title{
+    width: 100%;
+}
+.section .title img{
+    width: 100%;
+}
+.light .con{
+    width: 100%;
+    height: 3.6rem;
+    padding: 0 0.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+.light .con a{
+    width: 2.26rem;
+    height: 100%;
+    background-image:url("../../img/class_15.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    position: relative;
+    padding: 0 0.14rem;
+}
+.light .con a img{
+    float: left;
+    /*margin-left: 0.14rem;*/
+    /*margin-right: 0.1rem;*/
+    width:1.88rem;
+}
+.light .con a .pc{
+    font-size: 0.24rem;
+    font-family: "苹方 粗体";
+    color: #6b6b6b;
+    float: left;
+    margin-top: 0.1rem;
+    /*height:2.2rem;*/
+}
+.light .con a .pe{
+    float: left;
+    font-size: 0.22rem;
+    font-family: "San Francisco Display";
+    color: #ababab;
+}
+.light .con a span{
+    float: left;
+    font-size: 0.2rem;
+    color: #9a9a9a;
+}
+.light .con a .nub1{
+    margin-left: 0.3rem;
+    margin-top: 0.17rem;
+}
+.light .con a .nub2{
+    margin-left:0.33rem ;
+    margin-top: 0.17rem;
+}
+
+/*家饰*/
+.home .con{
+    width: 100%;
+    height: 3.6rem;
+    padding: 0 0.24rem;
+    display: flex;
+    justify-content: space-between;
+}
+.home .con a{
+    width: 3.46rem;
+    height: 100%;
+    background-image:url("../../img/class_26.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    position: relative;
+    /*padding: 0 0.14rem;*/
+}
+.home .con a img{
+    width: 100%;
+}
+.home .con a .pc{
+    font-size: 0.24rem;
+    font-family: "苹方 粗体";
+    color: #6b6b6b;
+    float: left;
+    margin-top: -0.18rem;
+    width: 100%;
+    margin-left: 0.12rem;
+}
+.home .con a .pe{
+    float: left;
+    width: 100%;
+    font-size: 0.22rem;
+    font-family: "San Francisco Display";
+    color: #ababab;
+    margin-left: 0.12rem;
+    margin-bottom: 0.1rem;
+}
+.home .con a span{
+    float: left;
+    font-size: 0.22rem;
+    color: #9a9a9a;
+    margin-left: 0.12rem;
+}
+.home .con a span img{
+    float: left;
+    width: 0.24rem;
+    margin-right: 0.1rem;
+}
+/*收纳*/
+
+.accept .con{
+    width: 100%;
+    padding: 0 0.24rem;
+}
+.accept .con a{
+    width: 100%;
+    height: 4.2rem;
+    background-image:url("../../img/clas_03.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom left;
+    position: relative;
+    margin-bottom: 0.1rem;
+    /*padding: 0 0.14rem;*/
+}
+.accept .con a img{
+    width: 100%;
+}
+.accept .con a .pc{
+    font-size: 0.24rem;
+    font-family: "苹方 粗体";
+    color: #6b6b6b;
+    float: left;
+    margin-top: -0.18rem;
+    width: 100%;
+    margin-left: 0.12rem;
+}
+.accept .con a .pe{
+    float: left;
+    width: 100%;
+    font-size: 0.22rem;
+    font-family: "San Francisco Display";
+    color: #ababab;
+    margin-left: 0.12rem;
+    margin-bottom: 0.1rem;
+}
+.accept .con a span{
+    float: left;
+    font-size: 0.22rem;
+    color: #9a9a9a;
+    margin-left: 0.12rem;
+    margin-right: 0.6rem;
+}
+.accept .con a span img{
+    float: left;
+    width: 0.24rem;
+    margin-right: 0.1rem;
+}
+.accept .con a .xin{
+    position: absolute;
+    right: 0.42rem;
+    bottom:1.03rem;
+    width: 0.7rem;
+}
+.accept .con a .ren{
+    position: absolute;
+    right: 0.8rem;
+    bottom: 0.37rem;
+    width: 0.94rem;
+}
+.accept .con a .num{
+    margin: 0;
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.37rem;
+    width: 0.34rem;
+    height: 0.34rem;
+    border-radius:50% ;
+    background:#2c2c2c ;
+    color:#fff;
+    font-size:0.22rem;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "San Francisco Display";
+}
+/*时尚生活*/
+.fashion .con{
+    width: 100%;
+    height: 3.48rem;
+    padding: 0 0.24rem;
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+    position: relative;
+}
+.fashion .con a{
+    width: 2.44rem;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+}
+.fashion .con a.pos1{
+    left: 0.24rem;
+    z-index: 5;
+}
+.fashion .con a.pos2{
+    left: 1.46rem;
+    z-index: 4;
+}
+.fashion .con a.pos3{
+    left: 2.68rem;
+    z-index: 3;
+}
+.fashion .con a.pos4{
+    left: 3.9rem;
+    z-index: 2;
+}
+.fashion .con a.pos5{
+    left: 5.12rem;
+    z-index: 1;
+}
 
 
 
 
 
 
-/*底部*/
+.fashion .con a img{
+    width: 100%;
+}
+.fashion .con a .pc{
+    font-size: 0.24rem;
+    font-family: "苹方 粗体";
+    color: #6b6b6b;
+    float: left;
+    margin-top: -0.18rem;
+    width: 100%;
+    margin-left: 0.12rem;
+}
+.fashion .con a .pe{
+    float: left;
+    width: 100%;
+    font-size: 0.22rem;
+    font-family: "San Francisco Display";
+    color: #ababab;
+    margin-left: 0.12rem;
+}
+.fashion .con a span{
+    float: left;
+    font-size: 0.22rem;
+    color: #9a9a9a;
+    margin-left: 0.12rem;
+}
+.fashion .con a span img{
+    float: left;
+    width: 0.24rem;
+    margin-right: 0.1rem;
+}
+
+
+    /*底部*/
 #footer {
     position: absolute;
     z-index: 2;

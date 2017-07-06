@@ -13,20 +13,176 @@
     <link rel="stylesheet" href="../../static/css/index/cll-classify.css">
     <script src="../../static/js/rem.js"></script>
     <script src="../../static/js/iscroll.js"></script>
+    <script src="../../static/js/jquery.js"></script>
+    <script src="../../static/js/touch.min.js"></script>
+    <script src="../../static/js/cll-classify.js"></script>
     <script>
         var myScroll;
         function loaded () {
             myScroll = new IScroll('#wrapper');
         }
     </script>
+    <script src="../../../w1701_todo/cll-memo/memo.js"></script>
 </head>
 <body onload="loaded()">
     <div id="header">
-        <img src="../../static/img/cll_03.png" alt="">
+        <img src="../../static/img/class_03.png" alt="">
     </div>
 
     <div id="wrapper">
         <div id="scroller">
+            <!--导航-->
+            <div class="nav">
+                <a href="" class="one">
+                    <img src="../../static/img/class_07.png" alt="">
+                </a>
+                <a href="" class="two">
+                    <img src="../../static/img/class_08.png" alt="">
+                </a>
+                <a href="" class="three">
+                    <img src="../../static/img/class_09.png" alt="">
+                </a>
+            </div>
+            <!--灯具-->
+            <div class="section light">
+                <!--标题-->
+                <div class="title">
+                    <img src="../../static/img/class_12.png" alt="">
+                </div>
+                <!--内容-->
+                <div class="con">
+                    <a href="">
+                        <img src="../../static/img/class_17.png" alt="">
+                        <p class="pc">雷士照明灯</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span class="nub1">1990</span>
+                        <span class="nub2">2999</span>
+                    </a>
+                    <a href="">
+                        <img src="../../static/img/class_17.png" alt="">
+                        <p class="pc">火山小夜灯</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span class="nub1">1990</span>
+                        <span class="nub2">2999</span>
+                    </a>
+                    <a href="">
+                        <img src="../../static/img/class_17.png" alt="">
+                        <p class="pc">现代简约灯</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span class="nub1">1990</span>
+                        <span class="nub2">2999</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--家饰-->
+            <div class="section home">
+                <!--标题-->
+                <div class="title">
+                    <img src="../../static/img/class_22.png" alt="">
+                </div>
+                <!--内容-->
+                <div class="con">
+                    <a href="">
+                        <img src="../../static/img/class_28.png" alt="">
+                        <p class="pc">莱尔诗丹</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">1990</span>
+                        <span><img src="../../static/img/H-s13.png" alt="">2999</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">3999</span>
+                    </a>
+                    <a href="">
+                        <img src="../../static/img/class_28.png" alt="">
+                        <p class="pc">多维尚书架</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">1990</span>
+                        <span><img src="../../static/img/H-s13.png" alt="">2999</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">3999</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--收纳-->
+            <div class="section accept">
+                <!--标题-->
+                <div class="title">
+                    <img src="../../static/img/class_32.png" alt="">
+                </div>
+                <!--内容-->
+                <div class="con">
+                    <a href="">
+                        <img src="../../static/img/class_36.png" alt="">
+                        <p class="pc">梳妆收纳台</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">1990</span>
+                        <span><img src="../../static/img/H-s13.png" alt="">2999</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">3999</span>
+
+                        <img src="../../static/img/clas_06.png" alt="" class="xin">
+                        <img src="../../static/img/class_40.png" alt="" class="ren">
+                        <span class="num">39</span>
+                    </a>
+                    <a href="">
+                        <img src="../../static/img/class_44.png" alt="">
+                        <p class="pc">洗漱台收纳架</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">1990</span>
+                        <span><img src="../../static/img/H-s13.png" alt="">2999</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">3999</span>
+
+                        <img src="../../static/img/class_47.png" alt="" class="xin">
+                        <img src="../../static/img/class_40.png" alt="" class="ren">
+                        <span class="num">69</span>
+                    </a>
+                </div>
+            </div>
+            <!--时尚生活-->
+            <div class="section fashion">
+                <!--标题-->
+                <div class="title">
+                    <img src="../../static/img/class_51.png" alt="">
+                </div>
+                <!--内容-->
+                <div class="con">
+                    <a href="" class="pos1 pos">
+                        <img src="../../static/img/class_54.png" alt="">
+                        <p class="pc">时尚休闲椅</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">2435</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">2435</span>
+                    </a>
+                    <a href="" class="pos2 pos">
+                        <img src="../../static/img/class_54.png" alt="">
+                        <p class="pc">雷士照明灯</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">2435</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">2435</span>
+                    </a>
+                    <a href="" class="pos3 pos">
+                        <img src="../../static/img/class_54.png" alt="">
+                        <p class="pc">时尚休闲椅</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">2435</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">2435</span>
+                    </a>
+                    <a href="" class="pos4 pos">
+                        <img src="../../static/img/class_54.png" alt="">
+                        <p class="pc">雷士照明灯</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">2435</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">2435</span>
+                    </a>
+                    <a href="" class="pos5 pos">
+                        <img src="../../static/img/class_54.png" alt="">
+                        <p class="pc">时尚休闲椅</p>
+                        <p class="pe">LEISHI LIGHTING</p>
+                        <span><img src="../../static/img/H-s12.png" alt="">2435</span>
+                        <span><img src="../../static/img/H-s14.png" alt="">2435</span>
+                    </a>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
