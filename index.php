@@ -20,12 +20,15 @@ define("MODULES_PATH",ROOT_PATH."modules/");
 //服务器目录 为了运行项目
 //服务器根目录
 define("URL_PATH",$_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST']."/".substr($_SERVER['SCRIPT_NAME'],1,strrpos($_SERVER['SCRIPT_NAME'],'/')));
-//css js img 目录
+//css js img 百度编辑器 目录
 define("STATIC_PATH",URL_PATH."static");
 define("CSS_PATH",STATIC_PATH."/css/");
 define("IMG_PATH",STATIC_PATH."/img/");
 define("JS_PATH",STATIC_PATH."/js/");
 define("FONT_PATH",STATIC_PATH."/font/");
+define("EDIT_PATH",STATIC_PATH."/editor/");
+
+
 
 include_once LIBS_PATH."route.class.php";
 require_once LIBS_PATH."db.class.php";

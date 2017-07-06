@@ -20,6 +20,12 @@
         function loaded () {
             myScroll = new IScroll('#wrapper');
         }
+        $(document).ready(function () {
+            // 返回
+            $("#header a").click(function () {
+                window.history.go(-1)
+            })
+        })
     </script>
 </head>
 <body onload="loaded()">
