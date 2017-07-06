@@ -20,6 +20,12 @@
         function loaded () {
             myScroll = new IScroll('#wrapper');
         }
+        $(document).ready(function () {
+            // 返回
+            $("#header a").click(function () {
+                window.history.go(-1)
+            })
+        })
     </script>
 </head>
 <body onload="loaded()">
@@ -185,10 +191,10 @@
         </div>
     </div>
     <div id="footer">
-        <a href="">
+        <a href="fh-payment.html">
             <img src="../../static/img/go_03.png" alt="">
         </a>
-        <a href="">
+        <a href="cy-pay.html">
             <img src="../../static/img/go_05.png" alt="">
         </a>
     </div>

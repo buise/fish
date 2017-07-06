@@ -27,4 +27,12 @@ $(function () {
     }
     var myElement = document.getElementById("move-box");
     drag(myElement);
+
+    // 返回
+    $("#header a").click(function () {
+        window.history.go(-1)
+    })
+
+
+
 })

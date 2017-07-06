@@ -11,7 +11,7 @@ header{
     padding: 0 .24rem;
     padding-top: .2rem;
 }
-header>.return{
+header> a >.return{
     width: .6rem;
     display: block;
 }
@@ -20,6 +20,8 @@ header>.word{
     width: 3.2rem;
     display: block;
 }
+
+/*头部结束*/
 section{
     width: 100%;
     margin-top: -.97rem;
@@ -58,7 +60,10 @@ section>div.pay-bg{
     text-align: center;
     font-size: 0;
 }
-.pay-way>img{
+.pay-way >a{
+    overflow: hidden;
+}
+.pay-way >a>img{
     margin-right: .12rem;
     width: 2.43rem;
 }
@@ -76,7 +81,12 @@ section>div.pay-bg{
     padding: .08rem .1rem;
     box-shadow: 3px 0 10px #eee;
 }
-.other-list>img{
+.other-list >a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.other-list> a>img{
     display: block;
     float: left;
     width: .64rem;
@@ -135,4 +145,148 @@ section>div.pay-bg{
 }
 .next .other-word>.other-en{
     font-weight: normal;
+}
+
+/*支付过渡页面*/
+/*遮罩*/
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,0.9);
+}
+.have{
+    width: 5.1rem;
+    height: 4.82rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.have>img{
+    width: 2.24rem;
+}
+.word-box{
+    width: 5.1rem;
+    height: 2.5rem;
+    margin-top: -1.2rem;
+    border-radius: .05rem;
+    background: #fff;
+    color: #6b6b6b;
+    padding-top: 1rem;
+}
+.word-box>.have-ch{
+    font-family: "苹方 特粗";
+    font-weight: bold;
+    font-size: .28rem;
+}
+.word-box>.have-en{
+    font-family: "San Francisco Display";
+    font-weight: normal;
+    font-size: .24rem;
+    text-transform: uppercase;
+}
+.circle-rect{
+    margin: 0 auto;
+    margin-top: -.5rem;
+    width: 4.7rem;
+    height: 1.04rem;
+    background: #2c2c2c;
+    border-radius: .51rem;
+    border: .01rem solid #fff;
+    padding: .08rem;
+}
+.circle-rect .c-r-left{
+    width: 2.25rem;
+    float: left;
+}
+.circle-rect>.c-r-right{
+    float: right;
+    width: 50%;
+    padding-top: .1rem;
+}
+.circle-rect>.c-r-right>p.ch{
+    color: #ababab;
+    font-size: .24rem;
+    font-family: "苹方 粗体";
+    font-weight: bold;
+}
+.circle-rect>.c-r-right>p.en{
+    color: #dbdbdb;
+    font-size: .22rem;
+    font-family: "San Francisco Display";
+    font-weight: normal;
+}
+
+/*请输入密码页面*/
+.pass{
+    width: 5.5rem;
+    height: 3.3rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: .08rem;
+}
+.passbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.pass-word-box{
+    border-radius: .05rem;
+    background: #fff;
+    color: #6b6b6b;
+    padding-top: .4rem;
+    margin-bottom: .3rem;
+}
+.pass-word-box>.pass-ch{
+    font-family: "苹方 特粗";
+    font-weight: bold;
+    font-size: .28rem;
+}
+.pass-word-box>.pass-en{
+    font-family: "San Francisco Display";
+    font-weight: normal;
+    font-size: .24rem;
+    text-transform: uppercase;
+}
+.mi{
+    width: 4.25rem;
+    height: .75rem;
+    border-radius: .05rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: .01rem solid #bfbfbf;
+}
+.mi input{
+    display: block;
+    float: left;
+    width: .7rem;
+    height: .7rem;
+    border-right: .01rem solid #bfbfbf;
+    font-size:.26rem;
+    text-align:center;
+}
+.mi input:last-child{
+    border: none;
+}
+
+.button >img{
+    position: absolute;
+    bottom: -.4rem;
+    left: 50%;
+    margin-left: -1.02rem;
+    width: 2.05rem;
+    border-radius: .45rem;
 }
