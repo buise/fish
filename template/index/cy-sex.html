@@ -71,14 +71,10 @@
                 $(this).parent('.slideThree').toggleClass("xuanze");
             })
         })
-
-    })
-</script>
-
-<script>
-    $(function () {
-        $(".return").ckick(function () {
+        console.log($(".return"))
+        $(".return").click(function () {
             history.go(-1);
         })
+
     })
 </script>

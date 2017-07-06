@@ -238,6 +238,11 @@ section>div.pay-bg{
     background: #fff;
     border-radius: .08rem;
 }
+.passbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
 .pass-word-box{
     border-radius: .05rem;
     background: #fff;
@@ -275,4 +280,13 @@ section>div.pay-bg{
 }
 .mi input:last-child{
     border: none;
+}
+
+.button >img{
+    position: absolute;
+    bottom: -.4rem;
+    left: 50%;
+    margin-left: -1.02rem;
+    width: 2.05rem;
+    border-radius: .45rem;
 }
