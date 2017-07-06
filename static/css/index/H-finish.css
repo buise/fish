@@ -163,7 +163,7 @@ body{
 }
 .H-com-con .con .con-top .right p{
 	width: 3.2rem;
-	margin-top: 0rem;
+	margin-top: 0;
 	color: #6b6b6b;
 	font-size: 0.22rem;
 }
