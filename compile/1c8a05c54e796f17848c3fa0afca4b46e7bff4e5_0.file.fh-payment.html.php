@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-05 10:42:51
+/* Smarty version 3.1.30, created on 2017-07-06 02:48:47
   from "F:\ST\wamp\www\fish\template\index\fh-payment.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595ca68b9ecf68_88190974',
+  'unifunc' => 'content_595d88ef408a58_95622446',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1c8a05c54e796f17848c3fa0afca4b46e7bff4e5' => 
     array (
       0 => 'F:\\ST\\wamp\\www\\fish\\template\\index\\fh-payment.html',
-      1 => 1499244170,
+      1 => 1499302125,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595ca68b9ecf68_88190974 (Smarty_Internal_Template $_smarty_tpl) {
+function content_595d88ef408a58_95622446 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -45,12 +45,16 @@ function content_595ca68b9ecf68_88190974 (Smarty_Internal_Template $_smarty_tpl)
  src="<?php echo JS_PATH;?>
 /rem.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+/iscroll.js"><?php echo '</script'; ?>
+>
     <!--<?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
 /fh-res.js"><?php echo '</script'; ?>
 >-->
 </head>
-<body>
+<body onload="loaded()">
 <div CLASS="fh-nav">
     <img src="<?php echo IMG_PATH;?>
 /fh-34.png" alt="">
@@ -70,103 +74,118 @@ function content_595ca68b9ecf68_88190974 (Smarty_Internal_Template $_smarty_tpl)
         <a href="">待评价</a>
     </li>
 </ul>
-<div class="fh-con">
-    <div class="fh-nub">
-        <p>订单编号:<span>NO.19239987236</span></p>
-    </div>
-    <div class="fh-sh">
-        <div class="fh-img">
-            <img src="<?php echo IMG_PATH;?>
+<div id="wrapper">
+    <div id="scroller">
+        <div class="fh-con">
+            <div class="fh-nub">
+                <p>订单编号:<span>NO.19239987236</span></p>
+            </div>
+            <div class="fh-sh">
+                <div class="fh-img">
+                    <img src="<?php echo IMG_PATH;?>
 /fh-22.png" alt="">
-        </div>
-        <div class="fh-js">
-            <h1>北欧创意现代吊灯</h1>
-            <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
-            <div class="fh-color">
-                <div></div>
-                <h3>颜色:<span>单一色</span></h3>
-            </div>
-            <div class="fh-color fh-size">
-                <div></div>
-                <h3>规格: <span>88*88</span></h3>
-            </div>
-            <div class="fh-price">
-                <img src="<?php echo IMG_PATH;?>
+                </div>
+                <div class="fh-js">
+                    <h1>北欧创意现代吊灯</h1>
+                    <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
+                    <div class="fh-color">
+                        <div></div>
+                        <h3>颜色:<span>单一色</span></h3>
+                    </div>
+                    <div class="fh-color fh-size">
+                        <div></div>
+                        <h3>规格: <span>88*88</span></h3>
+                    </div>
+                    <div class="fh-price">
+                        <img src="<?php echo IMG_PATH;?>
 /fh-24.png" alt="">
-                <h5>680.00</h5>
+                        <h5>680.00</h5>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="fh-sh">
-        <div class="fh-img">
-            <img src="<?php echo IMG_PATH;?>
+            <div class="fh-sh">
+                <div class="fh-img">
+                    <img src="<?php echo IMG_PATH;?>
 /fh-23.png" alt="">
-        </div>
-        <div class="fh-js">
-            <h1>北欧创意现代吊灯</h1>
-            <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
-            <div class="fh-color">
-                <div></div>
-                <h3>颜色:<span>单一色</span></h3>
-            </div>
-            <div class="fh-color fh-size">
-                <div></div>
-                <h3>规格: <span>88*88</span></h3>
-            </div>
-            <div class="fh-price">
-                <img src="<?php echo IMG_PATH;?>
+                </div>
+                <div class="fh-js">
+                    <h1>北欧创意现代吊灯</h1>
+                    <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
+                    <div class="fh-color">
+                        <div></div>
+                        <h3>颜色:<span>单一色</span></h3>
+                    </div>
+                    <div class="fh-color fh-size">
+                        <div></div>
+                        <h3>规格: <span>88*88</span></h3>
+                    </div>
+                    <div class="fh-price">
+                        <img src="<?php echo IMG_PATH;?>
 /fh-24.png" alt="">
-                <h5>680.00</h5>
+                        <h5>680.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="fh-all">
+                <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
+                <div class="fh-tormb">
+                    <img src="<?php echo IMG_PATH;?>
+/fh-25.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fh-all">
-        <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
-        <div class="fh-tormb">
-            <img src="<?php echo IMG_PATH;?>
-/fh-25.png" alt="">
-        </div>
-    </div>
-</div>
-<div class="fh-con">
-    <div class="fh-nub">
-        <p>订单编号:<span>NO.19239987236</span></p>
-    </div>
-    <div class="fh-sh">
-        <div class="fh-img">
-            <img src="<?php echo IMG_PATH;?>
+        <div class="fh-con">
+            <div class="fh-nub">
+                <p>订单编号:<span>NO.19239987236</span></p>
+            </div>
+            <div class="fh-sh">
+                <div class="fh-img">
+                    <img src="<?php echo IMG_PATH;?>
 /fh-26.png" alt="">
-        </div>
-        <div class="fh-js">
-            <h1>北欧创意现代吊灯</h1>
-            <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
-            <div class="fh-color">
-                <div></div>
-                <h3>颜色:<span>单一色</span></h3>
-            </div>
-            <div class="fh-color fh-size">
-                <div></div>
-                <h3>规格: <span>88*88</span></h3>
-            </div>
-            <div class="fh-price">
-                <img src="<?php echo IMG_PATH;?>
+                </div>
+                <div class="fh-js">
+                    <h1>北欧创意现代吊灯</h1>
+                    <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
+                    <div class="fh-color">
+                        <div></div>
+                        <h3>颜色:<span>单一色</span></h3>
+                    </div>
+                    <div class="fh-color fh-size">
+                        <div></div>
+                        <h3>规格: <span>88*88</span></h3>
+                    </div>
+                    <div class="fh-price">
+                        <img src="<?php echo IMG_PATH;?>
 /fh-24.png" alt="">
-                <h5>680.00</h5>
+                        <h5>680.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="fh-all">
+                <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
+                <div class="fh-tormb">
+                    <img src="<?php echo IMG_PATH;?>
+/fh-25.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="fh-all">
-        <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
-        <div class="fh-tormb">
+        <div class="fh-no">
             <img src="<?php echo IMG_PATH;?>
-/fh-25.png" alt="">
+/fh-27.png" alt="">
         </div>
     </div>
-</div>
-<div class="fh-no">
-    <img src="<?php echo IMG_PATH;?>
-/fh-27.png" alt="">
 </div>
 </body>
-</html><?php }
+</html>
+<?php echo '<script'; ?>
+>
+
+    var myScroll;
+
+    function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+    }
+
+<?php echo '</script'; ?>
+><?php }
 }
