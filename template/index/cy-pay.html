@@ -16,7 +16,9 @@
 </head>
 <body>
     <header>
-        <img src="../../static/img/cy-return.png" alt="" class="return">
+        <a href="#">
+            <img src="../../static/img/cy-return.png" alt="" class="return">
+        </a>
         <img src="../../static/img/cy-chose.png" alt="" class="word">
     </header>
     <section>
@@ -26,8 +28,12 @@
                 <p class="three-pay-en">Third-party payment</p>
             </div>
             <div class="pay-way">
-                <img src="../../static/img/cy-zhi.png" alt="" class="zhi">
-                <img src="../../static/img/cy-weixin.png" alt="" class="wechat">
+                <a href="">
+                    <img src="../../static/img/cy-zhi.png" alt="" class="zhi">
+                </a>
+                <a href="">
+                    <img src="../../static/img/cy-weixin.png" alt="" class="wechat">
+                </a>
             </div>
             <div class="three-pay">
                 <p class="three-pay-ch">其他支付方式</p>
@@ -35,30 +41,37 @@
             </div>
             <ul class="other-pay">
                <li class="other-list">
-                   <img src="../../static/img/cy-huodao.png" alt="">
-                    <div class="other-word">
-                        <p class="other-ch">货到付款</p>
-                        <p class="other-en">cash on delivery</p>
-                    </div>
-                   <div class="line"></div>
+                   <a href="">
+                       <img src="../../static/img/cy-huodao.png" alt="">
+                       <div class="other-word">
+                           <p class="other-ch">货到付款</p>
+                           <p class="other-en">cash on delivery</p>
+                       </div>
+                       <div class="line"></div>
+                   </a>
                </li>
                <li class="other-list">
-                   <img src="../../static/img/cy-card.png" alt="">
-                   <div class="other-word">
-                       <p class="other-ch">银行卡</p>
-                       <p class="other-en">bank card</p>
-                   </div>
-                   <div class="circle">
-                       3
-                   </div>
+                   <a href="">
+                       <img src="../../static/img/cy-card.png" alt="">
+                       <div class="other-word">
+                           <p class="other-ch">银行卡</p>
+                           <p class="other-en">bank card</p>
+                       </div>
+                       <div class="circle">
+                           3
+                       </div>
+                   </a>
                </li>
                <li class="other-list">
-                   <img src="../../static/img/cy-wallet.png" alt="">
-                   <div class="other-word">
-                       <p class="other-ch">本地钱包</p>
-                       <p class="other-en">local wallet</p>
-                   </div>
-                   <div class="line"></div>
+                   <a href="">
+                       <img src="../../static/img/cy-wallet.png" alt="">
+                       <div class="other-word">
+                           <p class="other-ch">本地钱包</p>
+                           <p class="other-en">local wallet</p>
+                       </div>
+                       <div class="line"></div>
+                   </a>
+
                </li>
                <li class="other-list next">
                    <a href="cy-have.html">
@@ -74,3 +87,10 @@
     </section>
 </body>
 </html>
+<script>
+    $(function () {
+        $(".return").ckick(function () {
+            history.go(-1);
+        })
+    })
+</script>
