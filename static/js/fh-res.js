@@ -4,11 +4,9 @@
 $(document).ready(function () {
     $('input[name=name]').blur(function () {
         if ($('input[name=name]').val()){
-            $('<img src="../../static/img/fh-11.png" class="fh-yse">').appendTo('.fh-ts');
-            $('.fh-ts2').css('display','none');
+            $('<img src="../../../static/img/fh-11.png" class="fh-yse">').appendTo('.fh-ts');
         }else{
             $('.fh-yse').css('display','none');
-            $('.fh-ts2').css('display','block');
         }
     })
 

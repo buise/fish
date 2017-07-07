@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-05 12:20:21
+/* Smarty version 3.1.30, created on 2017-07-06 03:16:40
   from "F:\ST\wamp\www\fish\template\index\fh-send.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595cbd65c8ec76_43221890',
+  'unifunc' => 'content_595d8f7895ca25_77961415',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1165b0aa2ab20daeffadd2bf403d0ab1f3c3f8f5' => 
     array (
       0 => 'F:\\ST\\wamp\\www\\fish\\template\\index\\fh-send.html',
-      1 => 1499250020,
+      1 => 1499250827,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595cbd65c8ec76_43221890 (Smarty_Internal_Template $_smarty_tpl) {
+function content_595d8f7895ca25_77961415 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -189,7 +189,6 @@ function content_595cbd65c8ec76_43221890 (Smarty_Internal_Template $_smarty_tpl)
     var myScroll;
     myScroll = new IScroll('#wrapper', {
         mouseWheel: true,
-        // scrollbars: true
     });
 <?php echo '</script'; ?>
 ><?php }
