@@ -46,6 +46,7 @@ header{
     height: 100%;
     border-radius: 50%;
     position: relative;
+    overflow: hidden;
 }
 .photo >a >img{
     width: 100%;

@@ -1,7 +1,6 @@
 $().ready(function(){
     var aa=$("input[type='password']");
-    var number=0;
-    var arr=[];
+
     for(var i = 0; i<aa.length;i++){
         var t = aa[i];
         t.index = i;

@@ -127,9 +127,9 @@ body{
     transition: left 0.4s ease;
     z-index: 1;
 }
-.slideThree input[type=checkbox] {
+.slideThree input[type=radio] {
     visibility: hidden;
 }
-.slideThree input[type=checkbox]:checked + label {
+.slideThree input[type=radio]:checked + label {
     left: -0.1rem;
 }
