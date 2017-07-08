@@ -104,13 +104,14 @@ body{
     background: #1EBCE4;
 }
 
+
 .slideThree label {
     display: block;
     width: .42rem;
     height: .42rem;
     position: absolute;
     top: -.02rem;
-    left: .53rem;
+    left: -0.1rem;
     cursor: pointer;
     background-image: url("../../img/cy-button.png");
     background-position: center;
@@ -131,5 +132,9 @@ body{
     visibility: hidden;
 }
 .slideThree input[type=radio]:checked + label {
+    left: .53rem;
+}
+label.left{
     left: -0.1rem;
+
 }
