@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-06 04:32:24
+/* Smarty version 3.1.30, created on 2017-07-06 09:48:33
   from "E:\wamp\www\fish\template\admin\main.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595da1388a1293_34975194',
+  'unifunc' => 'content_595deb51f09e14_71479759',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a34a6008e92b82fc8a3613a0fd6751321d794aa1' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\admin\\main.html',
-      1 => 1499308297,
+      1 => 1499325394,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595da1388a1293_34975194 (Smarty_Internal_Template $_smarty_tpl) {
+function content_595deb51f09e14_71479759 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -86,7 +86,7 @@ iconfont.css">
                     </li>
 
                     <li>
-                        <a href="#" target="iframe">查看栏目</a>
+                        <a href="javascript:;" target="iframe">查看栏目</a>
                     </li>
                 </ul>
             </li>
@@ -109,10 +109,10 @@ iconfont.css">
                 <a href="javascript:;">内容管理<span class="iconfont icon-jikediancanicon13"></span></a>
                 <ul>
                     <li>
-                        <a href="index.php?m=admin&f=role&a=addRole" target="iframe">添加内容</a>
+                        <a href="index.php?m=admin&f=content&a=addContent" target="iframe">添加内容</a>
                     </li>
                     <li>
-                        <a href="#" target="iframe">查看内容</a>
+                        <a href="index.php?m=admin&f=content&a=showContent" target="iframe">添加内容</a>
                     </li>
                 </ul>
             </li>

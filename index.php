@@ -37,5 +37,6 @@ require_once LIBS_PATH."tree.class.php";
 require_once LIBS_PATH."img.class.php";
 require_once LIBS_PATH."session.class.php";
 require_once LIBS_PATH."smarty/Smarty.class.php";
+require_once LIBS_PATH."smarty/uploadfile.class.php";
 $objRoute=new route();
 $objRoute->getInfo();

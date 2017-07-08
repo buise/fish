@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>添加内容</title>
-
+    <link rel="stylesheet" href="{CSS_PATH}bootstrap.min.css">
 </head>
 <body>
 <!--百度编辑器-->
+
 <script type="text/javascript" charset="utf-8" src="{EDIT_PATH}ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="{EDIT_PATH}ueditor.all.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="{EDIT_PATH}lang/zh-cn/zh-cn.js"></script>
@@ -15,30 +16,60 @@
 <form style="width:auto;height:auto;position: static" method="post" action="index.php?m=admin&f=content&a=addContentCon">
 
     <div class="form-group">
-        <label for="exampleInputEmail1">所属话题</label>
+        <label>所属栏目</label>
         <select class="form-control" name="cid">
-            <option>选择话题</option>
-            {$str}
+            <option>选择栏目</option>
+            {$option}
         </select>
     </div>
 
     <div class="form-group">
-        <label for="exampleInputEmail1">标题</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email" name="stitle">
+        <label>中文标题</label>
+        <input type="text" class="form-control" name="cname">
     </div>
-    <div class="form-group">
-        <label for="exampleInputEmail1">关键词</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email" name="keywords">
 
-    </div>
     <div class="form-group">
-        <script id="editor" type="text/plain" name="scon"></script>
+        <label>英文标题</label>
+        <input type="text" class="form-control" name="ename">
     </div>
+
+
+    <div class="form-group">
+        <label>关键词</label>
+        <input type="text" class="form-control" name="keywords">
+    </div>
+
+    <div class="form-group">
+        <label>简介</label>
+        <input type="text" class="form-control" name="intro">
+    </div>
+
+    <div class="form-group">
+        <label>价格</label>
+        <input type="text" class="form-control" name="price">
+    </div>
+
+    <div class="form-group">
+        <label>数量</label>
+        <input type="text" class="form-control" name="amount">
+    </div>
+
+    <div class="form-group">
+        <label>颜色</label>
+        <input type="text" class="form-control" name="color">
+    </div>
+
+    <!--内容-->
+    <div class="form-group">
+        <script id="editor" type="text/plain" name="content"></script>
+    </div>
+
+
     <div class="form-group uploadbox">
 
-        <label for="exampleInputFile">上传图片</label>
+        <label>上传图片</label>
 
-        <input type="hidden" name="simage">
+        <input type="hidden" name="imgurl">
 
     </div>
     {foreach $position as $v}
@@ -58,8 +89,8 @@
     obj.createView({
         parent: document.querySelector(".uploadbox")
     });
-    obj.up("index.php?m=index&f=info&a=upload",function(data){
-        document.querySelector("input[name=simage]").value=data;
+    obj.up("index.php?m=admin&f=content&a=upload",function(data){
+        document.querySelector("input[name=imgurl]").value=data;
     });
 </script>
 </body>

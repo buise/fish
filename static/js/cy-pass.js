@@ -65,7 +65,7 @@ $().ready(function(){
             // if($('.color').length==6){
             //     $('.cover').removeClass('active');
             //     $('.return')[0].addEventListener('touchstart',function(){
-            //         location.href='index.html';
+            //         location.href='main.html';
             //     })
             // }
             this.value=this.value.replace(/^(.).*$/,'$1');
