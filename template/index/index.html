@@ -49,7 +49,7 @@
           			<img src="../../static/img/H-title1.png"/>
           		</div>
                 <div class="swiper-container1">
-                    <ul class="H-sale-bottom swiper-wrapper">
+                    <ul class="swiper-wrapper H-sale-bottom">
                         <li class="swiper-slide">
                             <div class="con">
                                 <img src="../../static/img/H-sale1.png">
@@ -298,7 +298,9 @@
                 autoplay : 2000,
             });
 
-            var swiper1 = new Swiper('.swiper-container1');
+            var swiper1 = new Swiper('.swiper-container1', {
+					slidesPerView: 2.3,
+			   });
 
         }
     </script>

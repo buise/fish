@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../static/css/index/cy-sex.css">
     <script src="../../static/js/rem.js"></script>
     <script src="../../static/js/jquery.js"></script>
+    <script src="../../static/js/cy-sex.js"></script>
 </head>
 <body>
 <header class="header">
@@ -31,12 +32,10 @@
                 <span class="info-ch">男</span>
                 <span class="info-en">male</span>
             </div>
-            <!-- .slideOne -->
             <div class="slideThree">
-                <input type="radio" value="None" id="slideOne" name="check" checked />
+                <input type="radio" value="None" id="slideOne" name="sex" checked />
                 <label for="slideOne"></label>
             </div>
-            <!-- end .slideOne -->
     </li>
     <li class="info-list li-list">
             <img src="../../static/img/cy-girl.png" alt="">
@@ -45,7 +44,7 @@
                 <span class="info-en">female</span>
             </div>
             <div class="slideThree">
-                <input type="radio" value="None" id="slideTwo" name="check" checked />
+                <input type="radio" value="None" id="slideTwo" name="sex"  />
                 <label for="slideTwo"></label>
             </div>
     </li>
@@ -56,25 +55,11 @@
                 <span class="info-en">secret</span>
             </div>
             <div class="slideThree">
-                <input type="radio" value="None" id="slideThree" name="check" checked />
+
+                <input type="radio" value="None" id="slideThree" name="sex"  />
                 <label for="slideThree"></label>
             </div>
     </li>
 </ul>
 </body>
 </html>
-<script>
-
-    $(function () {
-        $(".slideThree >label").each(function (index,val) {
-            $(val).click(function () {
-                $(this).parent('.slideThree').toggleClass("xuanze");
-            })
-        })
-        console.log($(".return"))
-        $(".return").click(function () {
-            history.go(-1);
-        })
-
-    })
-</script>
