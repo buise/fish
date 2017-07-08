@@ -261,27 +261,29 @@ section>div.pay-bg{
     font-size: .24rem;
     text-transform: uppercase;
 }
-.mi{
+/*支付框*/
+.pay_con{
     width: 4.25rem;
     height: .75rem;
     border-radius: .05rem;
-    margin: 0 auto;
+    margin: .8rem auto;
     box-sizing: border-box;
     border: .01rem solid #bfbfbf;
+    overflow: hidden;
 }
-.mi input{
+.pay_con input{
     display: block;
     float: left;
     width: .7rem;
-    height: .7rem;
+    height: 100%;
+    border-radius: 0;
     border-right: .01rem solid #bfbfbf;
     font-size:.26rem;
     text-align:center;
 }
-.mi input:last-child{
+.pay_con input:last-child{
     border: none;
 }
-
 .button >img{
     position: absolute;
     bottom: -.4rem;
