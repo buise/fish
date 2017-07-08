@@ -33,7 +33,7 @@
             </div>
             <!-- .slideOne -->
             <div class="slideThree">
-                <input type="checkbox" value="None" id="slideOne" name="check" checked />
+                <input type="radio" value="None" id="slideOne" name="check" checked />
                 <label for="slideOne"></label>
             </div>
             <!-- end .slideOne -->
@@ -45,7 +45,7 @@
                 <span class="info-en">female</span>
             </div>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="slideTwo" name="check" checked />
+                <input type="radio" value="None" id="slideTwo" name="check" checked />
                 <label for="slideTwo"></label>
             </div>
     </li>
@@ -56,7 +56,7 @@
                 <span class="info-en">secret</span>
             </div>
             <div class="slideThree">
-                <input type="checkbox" value="None" id="slideThree" name="check" checked />
+                <input type="radio" value="None" id="slideThree" name="check" checked />
                 <label for="slideThree"></label>
             </div>
     </li>
@@ -71,14 +71,10 @@
                 $(this).parent('.slideThree').toggleClass("xuanze");
             })
         })
-
-    })
-</script>
-
-<script>
-    $(function () {
-        $(".return").ckick(function () {
+        console.log($(".return"))
+        $(".return").click(function () {
             history.go(-1);
         })
+
     })
 </script>
