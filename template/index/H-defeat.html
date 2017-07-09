@@ -10,7 +10,7 @@
 	    <meta name="format-detection" content="telephone=no, email=no" />
 		<title>搜索完成</title>
 		<link rel="stylesheet" href="{CSS_PATH}common.css" />
-		<link rel="stylesheet" href="{CSS_PATH}index/H-finish.css" />
+		<link rel="stylesheet" href="{CSS_PATH}index/H-defeat.css" />
 		<script src="{JS_PATH}rem.js"></script>
 		<script src="{JS_PATH}iscroll.js"></script>
 	</head>
@@ -33,28 +33,14 @@
 		<div id="wrapper">
 			<div id="scroller">
 				<div class="H-history">
-					<div class="H-his-top">
-						<p>SEARCH HISTORY</p>
-						<p>
-							<img src="{IMG_PATH}H-s22.png"/>
-							<span>搜索历史</span>
-						</p>
-					</div>
-					<ul class="H-his-bottom">
-						<li>
-							<p>榻榻米床</p>
-							<p>布艺沙发</p>
-						</li>
-						<li>
-							<p>北欧布艺</p>
-							<p>新古典风格</p>
-							<p>新中式风格</p>
-						</li>
-						<li>
-							<p>罗布林卡</p>
-							<p>办公家具</p>
-						</li>
-					</ul>
+					{if $result neq '0'}
+					<p class="result">当前优先搜索结果</p>
+					<div></div>
+					<div></div>
+					<p class="num">{$result}</p>
+					{else}
+					<img src="{IMG_PATH}H-defeat.png" alt="">
+					{/if}
 				</div>
 				
 				<!--新品推荐开始-->
