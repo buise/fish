@@ -262,27 +262,58 @@ section>div.pay-bg{
     text-transform: uppercase;
 }
 /*支付框*/
-.pay_con{
+
+.ipt-box-nick {
     width: 4.25rem;
     height: .75rem;
     border-radius: .05rem;
     margin: .8rem auto;
     box-sizing: border-box;
-    border: .01rem solid #bfbfbf;
+    overflow: hidden;
+    line-height: .75rem ;
+    position: relative ;
+}
+.ipt-box-nick .ipt-real-nick {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    width: 100%;
+    height: .75rem ;
+    line-height: .75rem ;
+    opacity: 0 ;
+    z-index: 3 ;
     overflow: hidden;
 }
-.pay_con input{
-    display: block;
-    float: left;
-    width: .7rem;
-    height: 100%;
-    border-radius: 0;
-    border-right: .01rem solid #bfbfbf;
-    font-size:.26rem;
-    text-align:center;
+.ipt-box-nick .ipts-box-nick {
+    position: absolute ;
+    top: 0 ;
+    left: 0 ;
+    z-index: 1 ;
+    width: 100%;
+    height: .75rem;
+    line-height: .75rem ;
+    overflow: hidden;
 }
-.pay_con input:last-child{
-    border: none;
+.ipt-box-nick .ipts-box-nick .ipt-fake-box {
+    height: .75rem ;
+    line-height: .75rem ;
+    display: flex ;
+    justify-content: space-between ;
+}
+.ipt-box-nick .ipts-box-nick .ipt-fake-box input {
+    width: .7rem ;
+    height: .7rem ;
+    border-radius: 0;
+    border: .01rem solid #bfbfbf;
+    border-right: 0;
+    color: #222 ;
+    font-weight: bold ;
+    font-size: .26rem;
+    text-align: center ;
+    padding: 0 ;
+}
+.ipt-box-nick .ipts-box-nick .ipt-fake-box input:last-child{
+    border-right: .01rem solid #bfbfbf;
 }
 .button >img{
     position: absolute;
