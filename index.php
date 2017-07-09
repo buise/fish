@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Administrator
- * Date: 2017/6/22
- * Time: 15:55
- */
 header("content-type:text/html;charset=utf8");
 //定义目录
 define("MVC","ok");

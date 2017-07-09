@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-08 18:45:20
+  from "D:\wamp\www\fish\template\index\H-search.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59610c20c7ef86_64548549',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7294e44dee2685cb8643d8dfa130b0abfa5e938b' => 
+    array (
+      0 => 'D:\\wamp\\www\\fish\\template\\index\\H-search.html',
+      1 => 1499532319,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59610c20c7ef86_64548549 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,8 +35,12 @@
 		<title>搜索完成</title>
 		<link rel="stylesheet" href="../../static/css/common.css" />
 		<link rel="stylesheet" href="../../static/css/index/H-search.css" />
-		<script src="../../static/js/rem.js"></script>
-		<script src="../../static/js/iscroll.js"></script>
+		<?php echo '<script'; ?>
+ src="../../static/js/rem.js"><?php echo '</script'; ?>
+>
+		<?php echo '<script'; ?>
+ src="../../static/js/iscroll.js"><?php echo '</script'; ?>
+>
 	</head>
 	<body>	
 		<div class="H-process">	
@@ -71,4 +99,5 @@
 			</ul>
 		</div>
 	</body>
-</html>
+</html><?php }
+}

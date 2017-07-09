@@ -68,27 +68,49 @@ body{
 
 /*搜索历史*/
 .H-history{
-	padding: 0 0.25rem;
-	
+	padding: 0 0.25rem;	
 }
-.H-history p{
+.H-history .H-his-top p{
 	font-size: 0.26rem;
 	color: #2c2c2c;
 	margin-top: 0.1rem;
 }
+.H-history .H-his-top p:first-child{
+	font-weight: 800;
+}
 .H-his-top img{
 	width: 0.3rem;
+}
+.H-his-bottom li{
+	display: flex;
+	justify-content: space-around;
+	margin: 0.15rem 0;
+}
+.H-his-bottom li:nth-child(2n+1){
+	padding: 0 1.2rem;
+}
+.H-his-bottom li p{
+	width: 2rem;
+	height: 0.7rem;
+	font-size: 0.28rem;
+	line-height: 0.7rem;
+	text-align: center;
+	background-image: url('../../img/H-his-bg.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 /*新品推荐开始*/
 .H-commend{
-	padding: 0 0.25rem;
-	
+	padding: 0 0.25rem;	
 }
 .H-commend p{
 	font-size: 0.26rem;
 	color: #2c2c2c;
 	margin-top: 0.1rem;
+}
+.H-commend p:first-child{
+	font-weight: 800;
 }
 .H-com-top img{
 	width: 0.3rem;
