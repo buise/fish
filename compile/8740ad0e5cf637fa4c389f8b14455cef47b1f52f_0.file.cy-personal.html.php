@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 04:45:52
+/* Smarty version 3.1.30, created on 2017-07-09 16:31:14
   from "E:\wamp\www\git_item\fish\template\index\cy-personal.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596198e0d133e0_19805208',
+  'unifunc' => 'content_59623e32b6d6c0_77889526',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8740ad0e5cf637fa4c389f8b14455cef47b1f52f' => 
     array (
       0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-personal.html',
-      1 => 1499568351,
+      1 => 1499610635,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596198e0d133e0_19805208 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59623e32b6d6c0_77889526 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -89,7 +89,7 @@ cy-star7.png" alt="">
 cy-myorder.png" alt="">
                 </li>
                 <li class="o-list o-list-left li-list">
-                    <a href="#">
+                    <a href="index.php?m=index&f=payment&a=show">
                         <img src="<?php echo IMG_PATH;?>
 cy-fukuan.png" alt="">
                         <div class="order-word">
@@ -99,7 +99,7 @@ cy-fukuan.png" alt="">
                     </a>
                 </li>
                 <li class="o-list li-list">
-                    <a href="#">
+                    <a href="index.php?m=index&f=payment&a=show">
                         <img src="<?php echo IMG_PATH;?>
 cy-fahuo.png" alt="">
                         <div class="order-word">
