@@ -8,16 +8,9 @@
         }
         public function result(){
             $res=$_POST['res'];
-            $db=new db('goods');
-            $result=$db->where("goods like '%".$res."%'")->select();
-//            $arr=array();
-//            while ($row=$result->fetch_assoc()){
-//                $arr[]=$row;
-//            }
+            $db=new db('lists');
+            $result=$db->where("cname like '%".$res."%'")->select();
             echo json_encode($result);
-//            if (count($result)!=0){
-//                $this->smarty->assign('res',$result);
-//            }
         }
         public function finish(){
             $val=$_POST['search'];
@@ -25,8 +18,8 @@
             if($val==''){
                 $this->smarty->display('index/H-finish.html');
             }else{
-                $db=new db('goods');
-                $result=$db->where("goods like '%".$val."%'")->select();
+                $db=new db('lists');
+                $result=$db->where("cname like '%".$val."%'")->select();
                 $this->smarty->assign('result',count($result));
                 $this->smarty->display('index/H-defeat.html');
             }

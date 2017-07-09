@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 17:10:03
+/* Smarty version 3.1.30, created on 2017-07-09 18:00:29
   from "D:\wamp\www\fish\template\index\H-search.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962474b156c11_62700867',
+  'unifunc' => 'content_5962531d03dca5_16977119',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7294e44dee2685cb8643d8dfa130b0abfa5e938b' => 
     array (
       0 => 'D:\\wamp\\www\\fish\\template\\index\\H-search.html',
-      1 => 1499613000,
+      1 => 1499616026,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962474b156c11_62700867 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962531d03dca5_16977119 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,14 +49,10 @@ rem.js"><?php echo '</script'; ?>
  src="<?php echo JS_PATH;?>
 iscroll.js"><?php echo '</script'; ?>
 >
-		<?php echo '<script'; ?>
- src="<?php echo JS_PATH;?>
-angular.js"><?php echo '</script'; ?>
->
 	</head>
 	<body>
 		<div class="H-process">
-			<form class="H-search" action="index.php?m=index&f=search&a=result" method="post">
+			<form class="H-search" action="index.php?m=index&f=search&a=finish" method="post">
 				<input type="text" name="search" class="search"/>
 				<img src="<?php echo IMG_PATH;?>
 H-s18.png" class="none"/>
@@ -67,23 +63,8 @@ H-s3.png"/>
 H-s4.png" class="H-icon"/>
 			</form>
 			<ul class="H-list" >
-				<li>
-					<div class="H-list-left">
-						<img src="<?php echo IMG_PATH;?>
-H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>欧洲实木</span><span class="furniture">家具</span>
-						<img class="phone" src="<?php echo IMG_PATH;?>
-H-s20.png"/>
-						<img class="line" src="<?php echo IMG_PATH;?>
-H-s21.png"/>
-						<p>SOLID WOOD FURNITURE IN EUROPE</p>
-					</div>
-				</li>
 			</ul>
 		</div>
-
 		<?php echo '<script'; ?>
 >
 			$('.search').focus(function () {
@@ -103,28 +84,30 @@ H-s21.png"/>
 					},
 					success: function(e){
 						e.forEach(function (val,index) {
-							console.log(val)
-							$('<li>').html(`<div class="H-list-left">
+							li=$('<li>');							
+							li.html(`<a href='index.php?m=index&f=goods&lid=${
+							val.lid
+						}'>
+								<div class="H-list-left">
 						<img src="<?php echo IMG_PATH;?>
 H-s19.png"/>
 					</div>
 					<div class="H-list-right">
 						<span>${
-							    val
-							}.cname</span><span class="furniture">家具</span>
+							val.cname
+						}</span><span class="furniture">家具</span>
 						<img class="phone" src="<?php echo IMG_PATH;?>
 H-s20.png"/>
 						<img class="line" src="<?php echo IMG_PATH;?>
 H-s21.png"/>
 						<p>${
-                                val
-                                }.ename</p>
-					</div>`)
-                        }).appendTo($('.H-list'));
-
-					}});
-            })
-
+                                val.ename
+						}</p>
+					</div></a>`).appendTo($('.H-list'));
+                     })			
+						}
+				});
+           })
 		<?php echo '</script'; ?>
 >
 	</body>

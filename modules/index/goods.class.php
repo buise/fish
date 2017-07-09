@@ -15,9 +15,4 @@ class goods extends main {
         $this->smarty->display("index/cll-goods.html");
     }
 
-
-
-
-
-
 }

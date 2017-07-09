@@ -14,11 +14,10 @@
 		<script src="{JS_PATH}jquery.js"></script>
 		<script src="{JS_PATH}rem.js"></script>
 		<script src="{JS_PATH}iscroll.js"></script>
-		<script src="{JS_PATH}angular.js"></script>
 	</head>
 	<body>
 		<div class="H-process">
-			<form class="H-search" action="index.php?m=index&f=search&a=result" method="post">
+			<form class="H-search" action="index.php?m=index&f=search&a=finish" method="post">
 				<input type="text" name="search" class="search"/>
 				<img src="{IMG_PATH}H-s18.png" class="none"/>
 				<img src="{IMG_PATH}H-s3.png"/>
@@ -26,20 +25,8 @@
 				<img src="{IMG_PATH}H-s4.png" class="H-icon"/>
 			</form>
 			<ul class="H-list" >
-				<li>
-					<div class="H-list-left">
-						<img src="{IMG_PATH}H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>欧洲实木</span><span class="furniture">家具</span>
-						<img class="phone" src="{IMG_PATH}H-s20.png"/>
-						<img class="line" src="{IMG_PATH}H-s21.png"/>
-						<p>SOLID WOOD FURNITURE IN EUROPE</p>
-					</div>
-				</li>
 			</ul>
 		</div>
-
 		<script>
 			$('.search').focus(function () {
 				$('.none').css({
@@ -58,25 +45,27 @@
 					},
 					success: function(e){
 						e.forEach(function (val,index) {
-							console.log(val)
-							$('<li>').html(`<div class="H-list-left">
+							li=$('<li>');							
+							li.html(`<a href='index.php?m=index&f=goods&lid=${
+							val.lid
+						}'>
+								<div class="H-list-left">
 						<img src="{IMG_PATH}H-s19.png"/>
 					</div>
 					<div class="H-list-right">
 						<span>${
-							    val
-							}.cname</span><span class="furniture">家具</span>
+							val.cname
+						}</span><span class="furniture">家具</span>
 						<img class="phone" src="{IMG_PATH}H-s20.png"/>
 						<img class="line" src="{IMG_PATH}H-s21.png"/>
 						<p>${
-                                val
-                                }.ename</p>
-					</div>`)
-                        }).appendTo($('.H-list'));
-
-					}});
-            })
-
+                                val.ename
+						}</p>
+					</div></a>`).appendTo($('.H-list'));
+                     })			
+						}
+				});
+           })
 		</script>
 	</body>
 </html>
