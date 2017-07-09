@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 04:48:39
+/* Smarty version 3.1.30, created on 2017-07-09 16:58:58
   from "E:\wamp\www\git_item\fish\template\index\cy-info.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59619987abbcd6_16727242',
+  'unifunc' => 'content_596244b22d2db0_72666909',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '84a4f6b2f784957f59707d1422141f75f809d694' => 
     array (
       0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-info.html',
-      1 => 1499568518,
+      1 => 1499612211,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59619987abbcd6_16727242 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596244b22d2db0_72666909 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
