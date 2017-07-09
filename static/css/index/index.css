@@ -94,12 +94,13 @@ body{
     width: 3.1rem;
     display: block;
 }
-.H-sale .H-sale-bottom li{
+.H-sale .H-sale-bottom > li{
     background: #fff;
     width: 3.1rem !important;
     float: left;
     margin-right: 0.2rem;
 }
+
 .H-sale .H-sale-bottom .con p{
     width: auto;
     font-size: 0.24rem;

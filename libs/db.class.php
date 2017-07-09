@@ -34,6 +34,7 @@ class db{
      * */
     public function select(){
         $sql="select ".$this->opts['field']." from ".$this->table.$this->opts['where'].$this->opts['order'].$this->opts['limit'];
+//        echo $sql;
         $result=$this->db->query($sql);
         $arr=array();
         while ($row=$result->fetch_assoc()){

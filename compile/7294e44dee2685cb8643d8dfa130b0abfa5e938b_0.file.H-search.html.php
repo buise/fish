@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 06:09:27
+/* Smarty version 3.1.30, created on 2017-07-09 17:10:03
   from "D:\wamp\www\fish\template\index\H-search.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5961ac77dfd4e8_73750213',
+  'unifunc' => 'content_5962474b156c11_62700867',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7294e44dee2685cb8643d8dfa130b0abfa5e938b' => 
     array (
       0 => 'D:\\wamp\\www\\fish\\template\\index\\H-search.html',
-      1 => 1499573365,
+      1 => 1499613000,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5961ac77dfd4e8_73750213 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962474b156c11_62700867 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,8 +54,8 @@ iscroll.js"><?php echo '</script'; ?>
 angular.js"><?php echo '</script'; ?>
 >
 	</head>
-	<body ng-app="app">
-		<div class="H-process" ng-controller="ctrl">
+	<body>
+		<div class="H-process">
 			<form class="H-search" action="index.php?m=index&f=search&a=result" method="post">
 				<input type="text" name="search" class="search"/>
 				<img src="<?php echo IMG_PATH;?>
@@ -81,48 +81,6 @@ H-s21.png"/>
 						<p>SOLID WOOD FURNITURE IN EUROPE</p>
 					</div>
 				</li>
-				<li>
-					<div class="H-list-left">
-						<img src="<?php echo IMG_PATH;?>
-H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>新中式</span><span class="furniture">家具</span>
-						<img class="phone" src="<?php echo IMG_PATH;?>
-H-s20.png"/>
-						<img class="line" src="<?php echo IMG_PATH;?>
-H-s21.png"/>
-						<p>NEW CHINESE STYLE FURNITURE</p>
-					</div>
-				</li>
-				<li>
-					<div class="H-list-left">
-						<img src="<?php echo IMG_PATH;?>
-H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>大果紫檀</span><span class="furniture">家具</span>
-						<img class="phone" src="<?php echo IMG_PATH;?>
-H-s20.png"/>
-						<img class="line" src="<?php echo IMG_PATH;?>
-H-s21.png"/>
-						<p>FRUIT RED SANDALWOOD FURNITURE</p>
-					</div>
-				</li>
-				<li>
-					<div class="H-list-left">
-						<img src="<?php echo IMG_PATH;?>
-H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>美式</span><span class="furniture">家具</span>
-						<img class="phone" src="<?php echo IMG_PATH;?>
-H-s20.png"/>
-						<img class="line" src="<?php echo IMG_PATH;?>
-H-s21.png"/>
-						<p>AMERICAN FURNITURE TIDE</p>
-					</div>
-				</li>
 			</ul>
 		</div>
 
@@ -132,19 +90,41 @@ H-s21.png"/>
 				$('.none').css({
 					'display':'none'
 				});
+            });
+
+            $('.search').on('input',function (e){
+                var result=e.originalEvent.target.value;
+                $.ajax({
+                    type: "post",
+					dataType:"json",
+                    url: "index.php?m=index&f=search&a=result",
+					data:{
+                        res:result
+					},
+					success: function(e){
+						e.forEach(function (val,index) {
+							console.log(val)
+							$('<li>').html(`<div class="H-list-left">
+						<img src="<?php echo IMG_PATH;?>
+H-s19.png"/>
+					</div>
+					<div class="H-list-right">
+						<span>${
+							    val
+							}.cname</span><span class="furniture">家具</span>
+						<img class="phone" src="<?php echo IMG_PATH;?>
+H-s20.png"/>
+						<img class="line" src="<?php echo IMG_PATH;?>
+H-s21.png"/>
+						<p>${
+                                val
+                                }.ename</p>
+					</div>`)
+                        }).appendTo($('.H-list'));
+
+					}});
             })
 
-			angular.module('app',[]).controller('ctrl',function ($scope, $http) {
-                $http({
-                    method: 'GET',
-                    url: 'index.php?m=index&f=search&a=result'
-                }).then(function successCallback(response) {
-                    console.log(response.$result)
-//                    $scope.names = response.data;
-                }, function errorCallback(response) {
-                    console.log(123);
-                });
-            })
 		<?php echo '</script'; ?>
 >
 	</body>

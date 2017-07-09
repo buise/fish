@@ -52,7 +52,7 @@ body,html{
 }
 .H-list{
 	width: 6.78rem;
-	height: 4.4rem;
+	height: auto;
 	background: #fff;
 	margin: 1.5rem auto 0;
 	padding: 0 0.2rem;

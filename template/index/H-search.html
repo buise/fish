@@ -16,8 +16,8 @@
 		<script src="{JS_PATH}iscroll.js"></script>
 		<script src="{JS_PATH}angular.js"></script>
 	</head>
-	<body ng-app="app">
-		<div class="H-process" ng-controller="ctrl">
+	<body>
+		<div class="H-process">
 			<form class="H-search" action="index.php?m=index&f=search&a=result" method="post">
 				<input type="text" name="search" class="search"/>
 				<img src="{IMG_PATH}H-s18.png" class="none"/>
@@ -37,39 +37,6 @@
 						<p>SOLID WOOD FURNITURE IN EUROPE</p>
 					</div>
 				</li>
-				<li>
-					<div class="H-list-left">
-						<img src="{IMG_PATH}H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>新中式</span><span class="furniture">家具</span>
-						<img class="phone" src="{IMG_PATH}H-s20.png"/>
-						<img class="line" src="{IMG_PATH}H-s21.png"/>
-						<p>NEW CHINESE STYLE FURNITURE</p>
-					</div>
-				</li>
-				<li>
-					<div class="H-list-left">
-						<img src="{IMG_PATH}H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>大果紫檀</span><span class="furniture">家具</span>
-						<img class="phone" src="{IMG_PATH}H-s20.png"/>
-						<img class="line" src="{IMG_PATH}H-s21.png"/>
-						<p>FRUIT RED SANDALWOOD FURNITURE</p>
-					</div>
-				</li>
-				<li>
-					<div class="H-list-left">
-						<img src="{IMG_PATH}H-s19.png"/>
-					</div>
-					<div class="H-list-right">
-						<span>美式</span><span class="furniture">家具</span>
-						<img class="phone" src="{IMG_PATH}H-s20.png"/>
-						<img class="line" src="{IMG_PATH}H-s21.png"/>
-						<p>AMERICAN FURNITURE TIDE</p>
-					</div>
-				</li>
 			</ul>
 		</div>
 
@@ -78,19 +45,38 @@
 				$('.none').css({
 					'display':'none'
 				});
+            });
+
+            $('.search').on('input',function (e){
+                var result=e.originalEvent.target.value;
+                $.ajax({
+                    type: "post",
+					dataType:"json",
+                    url: "index.php?m=index&f=search&a=result",
+					data:{
+                        res:result
+					},
+					success: function(e){
+						e.forEach(function (val,index) {
+							console.log(val)
+							$('<li>').html(`<div class="H-list-left">
+						<img src="{IMG_PATH}H-s19.png"/>
+					</div>
+					<div class="H-list-right">
+						<span>${
+							    val
+							}.cname</span><span class="furniture">家具</span>
+						<img class="phone" src="{IMG_PATH}H-s20.png"/>
+						<img class="line" src="{IMG_PATH}H-s21.png"/>
+						<p>${
+                                val
+                                }.ename</p>
+					</div>`)
+                        }).appendTo($('.H-list'));
+
+					}});
             })
 
-			angular.module('app',[]).controller('ctrl',function ($scope, $http) {
-                $http({
-                    method: 'GET',
-                    url: 'index.php?m=index&f=search&a=result'
-                }).then(function successCallback(response) {
-                    console.log(response.$result)
-//                    $scope.names = response.data;
-                }, function errorCallback(response) {
-                    console.log(123);
-                });
-            })
 		</script>
 	</body>
 </html>
