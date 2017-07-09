@@ -90,7 +90,7 @@ body {
 .cll-section .cll-content a img{
     width: 1.8rem;
     margin-left: 0.26rem;
-    margin-top: 0.16rem;
+    margin-top: 0.24rem;
 }
 .cll-section .cll-content a p{
     text-align: center;
@@ -98,6 +98,7 @@ body {
 .cll-section .cll-content a p.ptitle{
     font-family: "苹方 粗体";
     font-size: 0.24rem;
+    margin-top: 0.24rem;
 }
 .cll-section .cll-content a p.penglish{
     font-family: "San Francisco Display";
@@ -113,11 +114,12 @@ body {
 .cll-section .home a p.htitle{
     font-family: "苹方 粗体";
     font-size: 0.24rem;
-    margin-top: -0.1rem;
+    margin-top: 0.1rem;
 }
 .cll-section .home a p.henglish{
     font-family: "San Francisco Display";
     font-size: 0.22rem;
+    margin-top: 0.08rem;
 }
 /*沙发*/
 .cll-section .sofa a{
@@ -127,7 +129,7 @@ body {
     margin-top: 0.3rem;
 }
 .cll-section .sofa a p.stitle{
-    margin-top: 0.2rem;
+    margin-top: 0.26rem;
 }
 /*床*/
 .cll-section .cll-bed{
@@ -140,7 +142,7 @@ body {
     width: 3.45rem;
     height: 100%;
     display: block;
-    background-image: url("../../img/cll_37.png");
+    background-image: url("../../img/newbg_03.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom left;
