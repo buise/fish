@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-06 10:25:00
+/* Smarty version 3.1.30, created on 2017-07-08 17:31:10
   from "E:\wamp\www\fish\template\admin\addContent.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_595df3dcb2cf84_63594768',
+  'unifunc' => 'content_5960fabef38870_83051736',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '309dbbc425a155ed67dcf39f96382dfd51e4be7a' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\admin\\addContent.html',
-      1 => 1499329499,
+      1 => 1499527272,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_595df3dcb2cf84_63594768 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5960fabef38870_83051736 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,10 +92,10 @@ upload.js"><?php echo '</script'; ?>
         <input type="text" class="form-control" name="amount">
     </div>
 
-    <div class="form-group">
-        <label>颜色</label>
-        <input type="text" class="form-control" name="color">
-    </div>
+    <!--<div class="form-group">-->
+        <!--<label>颜色</label>-->
+        <!--<input type="text" class="form-control" name="color">-->
+    <!--</div>-->
 
     <!--内容-->
     <div class="form-group">
@@ -105,7 +105,7 @@ upload.js"><?php echo '</script'; ?>
     </div>
 
 
-    <div class="form-group uploadbox">
+    <div class="form-group thumb">
 
         <label>上传图片</label>
 
@@ -135,15 +135,14 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 >
     var ue = UE.getEditor('editor');
 
-    var obj = new upload();
-    obj.size = 1024 * 1024 * 8.6;
-    obj.selectBtnStyle.background = "red";
+    var obj=new upload();
+    obj.uploadBtnStyle.text="上传文件"
     obj.createView({
-        parent: document.querySelector(".uploadbox")
-    });
-    obj.up("index.php?m=index&f=info&a=upload",function(data){
-        document.querySelector("input[name=simage]").value=data;
-    });
+        parent:document.querySelector(".thumb")
+    })
+    obj.uploadfile("index.php?m=admin&f=content&a=upload",function (data) {
+        document.querySelector("input[name=imgurl]").value=data;
+    })
 <?php echo '</script'; ?>
 >
 </body>

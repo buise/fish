@@ -72,7 +72,7 @@ body {
 .light .con a{
     width: 2.26rem;
     height: 100%;
-    background-image:url("../../img/class_15.png");
+    background-image:url("../../img/classnew_03.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom left;
@@ -99,19 +99,32 @@ body {
     font-family: "San Francisco Display";
     color: #ababab;
 }
+/*.light .con a span{*/
+    /*float: left;*/
+    /*font-size: 0.2rem;*/
+    /*color: #9a9a9a;*/
+/*}*/
+/*.light .con a .nub1{*/
+    /*margin-left: 0.3rem;*/
+    /*margin-top: 0.17rem;*/
+/*}*/
+/*.light .con a .nub2{*/
+    /*margin-left:0.33rem ;*/
+    /*margin-top: 0.17rem;*/
+/*}*/
 .light .con a span{
     float: left;
-    font-size: 0.2rem;
+    font-size: 0.22rem;
     color: #9a9a9a;
+    margin-right: 0.12rem;
+    margin-top: 0.08rem;
 }
-.light .con a .nub1{
-    margin-left: 0.3rem;
-    margin-top: 0.17rem;
+.light .con a span img{
+    float: left;
+    width: 0.24rem;
 }
-.light .con a .nub2{
-    margin-left:0.33rem ;
-    margin-top: 0.17rem;
-}
+
+
 
 /*家饰*/
 .home .con{

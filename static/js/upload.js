@@ -7,7 +7,7 @@ class upload{
         this.selectBtnStyle={width:150,height:40,background:"pink",borderRadius:6,text:'选择文件'};
         this.previewBoxStyle={width:450};
         this.listsStyle={width:200,height:200};
-        this.uploadBtnStyle={width:150,height:40,background:"red",borderRadius:6,text:'选择文件'};
+        this.uploadBtnStyle={width:150,height:40,background:"red",borderRadius:6,text:'上传文件'};
         this.file=0;
         this.size=1024*1024*7;
         this.listarr=[];
