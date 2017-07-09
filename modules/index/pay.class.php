@@ -19,4 +19,16 @@ class pay extends main{
     public function show(){
         $this->smarty->display("index/cy-pay.html");
     }
+    public function have(){
+        $this->smarty->display("index/cy-have.html");
+    }
+    public function pass(){
+        $this->smarty->display("index/cy-pass.html");
+    }
+    public function red(){
+        $this->smarty->display("index/cy-red.html");
+    }
+    public function add(){
+        $this->smarty->display("index/cy-add.html");
+    }
 }

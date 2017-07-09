@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 16:28:05
+  from "E:\wamp\www\git_item\fish\template\index\cy-add.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59623d759cc2c2_34144647',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '0d2202cb73469661d5b794c3dbc0cb465b105865' => 
+    array (
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-add.html',
+      1 => 1499610484,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59623d759cc2c2_34144647 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,33 +33,52 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>首页</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/index.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/cy-red.css">
-    <link rel="stylesheet" href="{CSS_PATH}swiper.css">
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}iscroll.js"></script>
-    <script src="{JS_PATH}swiper.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/index.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/cy-add.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+swiper.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+iscroll.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+swiper.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
-<!--遮罩-->
+
 <div class="mask">
     <div class="have">
-        <a href="index.php?m=index&f=pay&a=add">
-            <img class="kai" src="{IMG_PATH}cy-kai.png" alt="">
-        </a>
+        <div class="num">
+            +25
+        </div>
     </div>
 </div>
 
+
+
 <div id="header">
     <div class="H-header-top">
-        <img src="{IMG_PATH}H-local.png" alt="">
-        <img src="{IMG_PATH}H-logo.png" alt="">
-        <img src="{IMG_PATH}H-message.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+H-local.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+H-logo.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+H-message.png" alt="">
     </div>
     <a href="index.php?f=search" class="H-search">
         <input type="text" value="商品名/设计师/分类……">
-        <img src="{IMG_PATH}H-serach.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+H-serach.png" alt="">
     </a>
 </div>
 
@@ -44,11 +87,16 @@
         <!--banner-->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <img class="swiper-slide" src="{IMG_PATH}H-banner.png">
-                <img class="swiper-slide" src="{IMG_PATH}H-banner.png">
-                <img class="swiper-slide" src="{IMG_PATH}H-banner.png">
-                <img class="swiper-slide" src="{IMG_PATH}H-banner.png">
-                <img class="swiper-slide" src="{IMG_PATH}H-banner.png">
+                <img class="swiper-slide" src="<?php echo IMG_PATH;?>
+H-banner.png">
+                <img class="swiper-slide" src="<?php echo IMG_PATH;?>
+H-banner.png">
+                <img class="swiper-slide" src="<?php echo IMG_PATH;?>
+H-banner.png">
+                <img class="swiper-slide" src="<?php echo IMG_PATH;?>
+H-banner.png">
+                <img class="swiper-slide" src="<?php echo IMG_PATH;?>
+H-banner.png">
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -56,72 +104,85 @@
         <!--限时抢购开始-->
         <div class="H-sale">
             <div class="H-sale-top">
-                <img src="{IMG_PATH}H-title1.png"/>
+                <img src="<?php echo IMG_PATH;?>
+H-title1.png"/>
             </div>
             <div class="swiper-container1">
                 <ul class="swiper-wrapper H-sale-bottom">
                     <li class="swiper-slide">
                         <div class="con">
-                            <img src="{IMG_PATH}H-sale1.png">
+                            <img src="<?php echo IMG_PATH;?>
+H-sale1.png">
                             <p class="title">欧普照明灯</p>
                             <p>CLOTH ART SOFA</p>
                             <div class="H-pos"></div>
                         </div>
                         <ul class="list">
                             <li>
-                                <img src="{IMG_PATH}H-sale4.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale4.png" alt="">
                                 <span>1999</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-sale5.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale5.png" alt="">
                                 <span>2999</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-sale6.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale6.png" alt="">
                                 <span>29</span>
                             </li>
                         </ul>
                     </li>
                     <li class="swiper-slide">
                         <div class="con">
-                            <img src="{IMG_PATH}H-sale2.png">
+                            <img src="<?php echo IMG_PATH;?>
+H-sale2.png">
                             <p class="title">欧普照明灯</p>
                             <p>CLOTH ART SOFA</p>
                             <div class="H-pos"></div>
                         </div>
                         <ul class="list">
                             <li>
-                                <img src="{IMG_PATH}H-sale4.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale4.png" alt="">
                                 <span>1999</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-sale5.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale5.png" alt="">
                                 <span>2999</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-sale6.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale6.png" alt="">
                                 <span>29</span>
                             </li>
                         </ul>
                     </li>
                     <li class="swiper-slide">
                         <div class="con">
-                            <img src="{IMG_PATH}H-sale3.png">
+                            <img src="<?php echo IMG_PATH;?>
+H-sale3.png">
                             <p class="title">欧普照明灯</p>
                             <p>CLOTH ART SOFA</p>
                             <div class="H-pos"></div>
                         </div>
                         <ul class="list">
                             <li>
-                                <img src="{IMG_PATH}H-sale4.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale4.png" alt="">
                                 <span>1999</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-sale5.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale5.png" alt="">
                                 <span>2999</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-sale6.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+H-sale6.png" alt="">
                                 <span>29</span>
                             </li>
                         </ul>
@@ -133,19 +194,22 @@
         <!--免费设计开始-->
         <div class="H-design">
             <div class="H-design-top">
-                <img src="{IMG_PATH}H-title2.png"/>
+                <img src="<?php echo IMG_PATH;?>
+H-title2.png"/>
             </div>
             <div class="H-design-bottom">
                 <ul>
                     <li>
-                        <img src="{IMG_PATH}H-design1.png">
+                        <img src="<?php echo IMG_PATH;?>
+H-design1.png">
                         <p class="title">大师级作品上线</p>
                         <p>MASTER DESIGN ONLINE</p>
                         <div class="H-line"></div>
                         <p class="H-repeat">MASTER DESIGN ONLINE</p>
                     </li>
                     <li>
-                        <img src="{IMG_PATH}H-design1.png">
+                        <img src="<?php echo IMG_PATH;?>
+H-design1.png">
                         <p class="title">大师级作品上线</p>
                         <p>MASTER DESIGN ONLINE</p>
                         <div class="H-line"></div>
@@ -159,55 +223,66 @@
         <!--最近设计开始-->
         <div class="H-devise">
             <div class="H-devise-top">
-                <img src="{IMG_PATH}H-title3.png"/>
+                <img src="<?php echo IMG_PATH;?>
+H-title3.png"/>
             </div>
             <ul class="H-devise-bottom">
                 <li class="H-devise-con">
                     <div class="con-top">
-                        <img src="{IMG_PATH}H-devise1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+H-devise1.png" alt="">
                         <p class="title">波西米亚田园风格</p>
                         <p>用家具表现悠闲、舒畅、自然的生活情趣,你想要的舒适尽在这里淋漓尽致的展现……</p>
                     </div>
                     <ul class="con-bottom">
                         <li>
-                            <img src="{IMG_PATH}H-s12.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s12.png"/>
                             <span>3245</span>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}H-s13.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s13.png"/>
                             <span>2342</span>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}H-s14.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s14.png"/>
                             <span>4352</span>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}H-s15.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s15.png"/>
                             <span>89</span>
                         </li>
                     </ul>
                 </li>
                 <li class="H-devise-con">
                     <div class="con-top">
-                        <img src="{IMG_PATH}H-devise1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+H-devise1.png" alt="">
                         <p class="title">波西米亚田园风格</p>
                         <p>用家具表现悠闲、舒畅、自然的生活情趣,你想要的舒适尽在这里淋漓尽致的展现……</p>
                     </div>
                     <ul class="con-bottom">
                         <li>
-                            <img src="{IMG_PATH}H-s12.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s12.png"/>
                             <span>3245</span>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}H-s13.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s13.png"/>
                             <span>2342</span>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}H-s14.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s14.png"/>
                             <span>4352</span>
                         </li>
                         <li>
-                            <img src="{IMG_PATH}H-s15.png"/>
+                            <img src="<?php echo IMG_PATH;?>
+H-s15.png"/>
                             <span>89</span>
                         </li>
                     </ul>
@@ -218,31 +293,37 @@
         <!--猜你喜欢-->
         <div class="H-like">
             <div class="H-like-top">
-                <img src="{IMG_PATH}H-title4.png"/>
+                <img src="<?php echo IMG_PATH;?>
+H-title4.png"/>
             </div>
             <ul class="H-like-bottom">
                 <li>
                     <div class="left">
-                        <img src="{IMG_PATH}H-like1.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+H-like1.png" alt="">
                     </div>
                     <div class="right">
                         <div class="right-top">
                             <p class="title">北欧风格沙发</p>
                             <p>NORDIC STYLE SOFA</p>
-                            <img src="{IMG_PATH}H-like-line.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+H-like-line.png" alt="">
                             <p>具有着独特的美学特点呈现出的乡土格调……</p>
                         </div>
                         <ul class="con-bottom">
                             <li>
-                                <img src="{IMG_PATH}H-s12.png"/>
+                                <img src="<?php echo IMG_PATH;?>
+H-s12.png"/>
                                 <span>3245</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-s13.png"/>
+                                <img src="<?php echo IMG_PATH;?>
+H-s13.png"/>
                                 <span>2342</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-s14.png"/>
+                                <img src="<?php echo IMG_PATH;?>
+H-s14.png"/>
                                 <span>4352</span>
                             </li>
                         </ul>
@@ -250,26 +331,31 @@
                 </li>
                 <li>
                     <div class="left">
-                        <img src="{IMG_PATH}H-like2.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+H-like2.png" alt="">
                     </div>
                     <div class="right">
                         <div class="right-top">
                             <p class="title">北欧风格沙发</p>
                             <p>NORDIC STYLE SOFA</p>
-                            <img src="{IMG_PATH}H-like-line.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+H-like-line.png" alt="">
                             <p>具有着独特的美学特点呈现出的乡土格调……</p>
                         </div>
                         <ul class="con-bottom">
                             <li>
-                                <img src="{IMG_PATH}H-s12.png"/>
+                                <img src="<?php echo IMG_PATH;?>
+H-s12.png"/>
                                 <span>3245</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-s13.png"/>
+                                <img src="<?php echo IMG_PATH;?>
+H-s13.png"/>
                                 <span>2342</span>
                             </li>
                             <li>
-                                <img src="{IMG_PATH}H-s14.png"/>
+                                <img src="<?php echo IMG_PATH;?>
+H-s14.png"/>
                                 <span>4352</span>
                             </li>
                         </ul>
@@ -283,22 +369,27 @@
 <!--底部-->
 <div id="footer">
     <a href="index.php" class="cll-active">
-        <img src="{IMG_PATH}but_09.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+but_09.png" alt="">
         <span>首页</span>
     </a>
     <a href="index.php?m=index&f=classify">
-        <img src="{IMG_PATH}but_12.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+but_12.png" alt="">
     </a>
     <a href="index.php?m=index&f=custom">
-        <img src="{IMG_PATH}but_03.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+but_03.png" alt="">
 
     </a>
     <a href="index.php?m=index&f=personal">
-        <img src="{IMG_PATH}but_06.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+but_06.png" alt="">
     </a>
 </div>
 
-<script>
+<?php echo '<script'; ?>
+>
     window.onload=function () {
         var myScroll= new IScroll('#wrapper');
 
@@ -312,7 +403,14 @@
             slidesPerView: 2.3,
         });
 
+        setTimeout(function () {
+            window.location.href="index.php"
+        },2000)
+
     }
-</script>
+<?php echo '</script'; ?>
+>
 </body>
 </html>
+<?php }
+}
