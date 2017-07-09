@@ -17,6 +17,7 @@ class login extends main{
         $result=$db->where("name='{$name}'")->select();
         if($result){
             if($result[0]['pass']==$pass){
+                $this->session->setSession("login","yes");
                 echo 'ok';
             }else{
                 echo 'no';

@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 05:35:00
+  from "E:\wamp\www\git_item\fish\template\index\cy-sex.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5961a464d292e9_60361475',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '26cc636d30174bc6d5da2bbe6dc29c3e261cb1dc' => 
+    array (
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-sex.html',
+      1 => 1499571299,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5961a464d292e9_60361475 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,23 +35,37 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>性别</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/cy-sex.css">
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}jquery.js"></script>
-    <script src="{JS_PATH}cy-sex.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/cy-sex.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+cy-sex.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <header class="header">
     <a href="#">
-        <img src="{IMG_PATH}cy-return.png" alt="" class="return">
+        <img src="<?php echo IMG_PATH;?>
+cy-return.png" alt="" class="return">
     </a>
-    <img src="{IMG_PATH}cy-xingbie.png" alt="">
+    <img src="<?php echo IMG_PATH;?>
+cy-xingbie.png" alt="">
 </header>
 <!--个人资料-->
 <ul id="info" class="cy-info">
     <li class="info-list li-list">
-            <img src="{IMG_PATH}cy-boy.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+cy-boy.png" alt="">
             <div class="info-word">
                 <span class="info-ch">男</span>
                 <span class="info-en">male</span>
@@ -38,7 +76,8 @@
             </div>
     </li>
     <li class="info-list li-list">
-            <img src="{IMG_PATH}cy-girl.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+cy-girl.png" alt="">
             <div class="info-word">
                 <span class="info-ch">女</span>
                 <span class="info-en">female</span>
@@ -49,7 +88,8 @@
             </div>
     </li>
     <li class="info-list li-list">
-            <img src="{IMG_PATH}cy-baomi.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+cy-baomi.png" alt="">
             <div class="info-word">
                 <span class="info-ch">保密</span>
                 <span class="info-en">secret</span>
@@ -63,7 +103,8 @@
 </ul>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     $(function () {
         var sex=[];
         $("input[type=radio]").each(function (index,val) {
@@ -82,4 +123,7 @@
 
         })
     })
-</script>
+<?php echo '</script'; ?>
+>
+<?php }
+}
