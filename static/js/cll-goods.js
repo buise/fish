@@ -17,4 +17,45 @@ $(function () {
         $(".count .left span").html(parseInt($(".count .left span").html())-1>-1?parseInt($(".count .left span").html())-1:0)
         $(".count .right span").html(parseInt($(".count .right span").html())-parseInt(price))
     })
+
+
+    // 购买
+    $(".pay").click(function () {
+        $.ajax({
+            url:"index.php?m=index&f=pay",
+            data:{
+                url:location.href,
+            },
+            type:"POST",
+            success:function (e) {
+                if(e=='no'){
+                    location.href="index.php?m=index&f=login"
+                }else if(e=='yes'){
+                    location.href="index.php?m=index&f=pay&a=show"
+                }
+            }
+        })
+
+    })
+    // 加入购物车
+    $(".payment").click(function () {
+        $.ajax({
+            url:"index.php?m=index&f=payment",
+            data:{
+                url:location.href,
+            },
+            type:"POST",
+            success:function (e) {
+                if(e=='no'){
+                    location.href="index.php?m=index&f=login"
+                }else if(e=='yes'){
+                    location.href="index.php?m=index&f=payment&a=show"
+                }
+            }
+        })
+
+    })
+
+
+
 })

@@ -7,8 +7,8 @@
  */
 class login extends main{
     public function init(){
-        if(isset($_REQUEST['url'])){
-            $this->smarty->assign("url",$_REQUEST['url']);
+        if($this->session->getSession("url")){
+            $this->smarty->assign("url",$this->session->getSession("url"));
         }else{
             $this->smarty->assign("url","index.php");
         }

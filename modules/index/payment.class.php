@@ -3,9 +3,9 @@
  * Created by PhpStorm.
  * User: Administrator
  * Date: 2017/7/9
- * Time: 11:37
+ * Time: 21:41
  */
-class pay extends main{
+class payment extends main{
     public function init(){
         if(!$this->session->getSession("login")){
             $url=$_REQUEST['url'];
@@ -17,6 +17,6 @@ class pay extends main{
         }
     }
     public function show(){
-        $this->smarty->display("index/cy-pay.html");
+        $this->smarty->display("index/fh-payment.html");
     }
 }
