@@ -14,7 +14,7 @@ class session{
         $_SESSION[$key]=$val;
     }
     public function getSession($key){
-        return $_SESSION[$key]?$_SESSION[$key]:null;
+        return isset($_SESSION[$key])?$_SESSION[$key]:null;
     }
     public function isSeSet($key){
         if (!isset($_SESSION[$key])){

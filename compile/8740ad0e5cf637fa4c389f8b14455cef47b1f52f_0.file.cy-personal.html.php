@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 04:45:52
+  from "E:\wamp\www\git_item\fish\template\index\cy-personal.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_596198e0d133e0_19805208',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8740ad0e5cf637fa4c389f8b14455cef47b1f52f' => 
+    array (
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-personal.html',
+      1 => 1499568351,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_596198e0d133e0_19805208 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,12 +33,21 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>个人中心</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/cy-personal.css">
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}iscroll.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/cy-personal.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+iscroll.js"><?php echo '</script'; ?>
+>
 </head>
-<script>
+<?php echo '<script'; ?>
+>
     window.onload=function () {
         var myScroll;
         myScroll = new IScroll('#wrapper', {
@@ -22,7 +55,8 @@
             freeScroll: true
         });
     }
-</script>
+<?php echo '</script'; ?>
+>
 <body>
     <!--头部-->
     <header></header>
@@ -31,7 +65,8 @@
             <div id="header">
                     <div class="photo"><!--cy-info.html-->
                         <a href="index.php?m=index&f=personal&a=info">
-                            <img src="{IMG_PATH}cy-photo.jpg" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+cy-photo.jpg" alt="">
                         </a>
                     </div>
             </div>
@@ -42,18 +77,21 @@
                 <p class="sign">生活其实本就该这样平平淡淡…</p>
                 <p class="vel">
                     57.vel
-                    <img src="{IMG_PATH}cy-star7.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+cy-star7.png" alt="">
                 </p>
             </div>
 
             <!--myorder-->
             <ul id="myorder">
                 <li class="order">
-                    <img src="{IMG_PATH}cy-myorder.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+cy-myorder.png" alt="">
                 </li>
                 <li class="o-list o-list-left li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-fukuan.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-fukuan.png" alt="">
                         <div class="order-word">
                             <p class="order-ch">待付款</p>
                             <p class="order-en">the payment</p>
@@ -62,7 +100,8 @@
                 </li>
                 <li class="o-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-fahuo.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-fahuo.png" alt="">
                         <div class="order-word">
                             <p class="order-ch">待发货</p>
                             <p class="order-en">send the goods</p>
@@ -71,7 +110,8 @@
                 </li>
                 <li class="o-list o-list-left li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-shouhuo.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-shouhuo.png" alt="">
                         <div class="order-word">
                             <p class="order-ch">待收货</p>
                             <p class="order-en">For the goods</p>
@@ -80,7 +120,8 @@
                 </li>
                 <li class="o-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-pinglun.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-pinglun.png" alt="">
                         <div class="order-word">
                             <p class="order-ch">待评价</p>
                             <p class="order-en">To comment on</p>
@@ -92,52 +133,62 @@
             <ul id="info">
                 <li class="info-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-shoucang.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-shoucang.png" alt="">
                         <div class="info-word">
                             <span class="info-ch">收藏商品</span>
                             <span class="info-en">collection</span>
                         </div>
-                        <img src="{IMG_PATH}cy-arrow.png" alt="" class="right-arrow">
+                        <img src="<?php echo IMG_PATH;?>
+cy-arrow.png" alt="" class="right-arrow">
                     </a>
                 </li>
                 <li class="info-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-quan.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-quan.png" alt="">
                         <div class="info-word">
                             <span class="info-ch">我的礼券</span>
                             <span class="info-en">Gift certificates</span>
                         </div>
-                        <img src="{IMG_PATH}cy-arrow.png" alt="" class="right-arrow">
+                        <img src="<?php echo IMG_PATH;?>
+cy-arrow.png" alt="" class="right-arrow">
                     </a>
                 </li>
                 <li class="info-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-fenxiang.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-fenxiang.png" alt="">
                         <div class="info-word">
                             <span class="info-ch">我的分享</span>
                             <span class="info-en">share</span>
                         </div>
-                        <img src="{IMG_PATH}cy-arrow.png" alt="" class="right-arrow">
+                        <img src="<?php echo IMG_PATH;?>
+cy-arrow.png" alt="" class="right-arrow">
                     </a>
                 </li>
                 <li class="info-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-kefu.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-kefu.png" alt="">
                         <div class="info-word">
                             <span class="info-ch">客服中心</span>
                             <span class="info-en">customer service</span>
                         </div>
-                        <img src="{IMG_PATH}cy-arrow.png" alt="" class="right-arrow">
+                        <img src="<?php echo IMG_PATH;?>
+cy-arrow.png" alt="" class="right-arrow">
                     </a>
                 </li>
                 <li class="info-list li-list">
                     <a href="#">
-                        <img src="{IMG_PATH}cy-guanyu.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-guanyu.png" alt="">
                         <div class="info-word">
                             <span class="info-ch">关于我们</span>
                             <span class="info-en">about</span>
                         </div>
-                        <img src="{IMG_PATH}cy-arrow.png" alt="" class="right-arrow">
+                        <img src="<?php echo IMG_PATH;?>
+cy-arrow.png" alt="" class="right-arrow">
                     </a>
                 </li>
             </ul>
@@ -146,18 +197,23 @@
     <!--底部-->
     <div id="footer">
         <a href="index.php">
-            <img src="{IMG_PATH}but_09.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+but_09.png" alt="">
         </a>
         <a href="index.php?m=index&f=classify">
-            <img src="{IMG_PATH}but_12.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+but_12.png" alt="">
         </a>
         <a href="index.php?m=index&f=custom">
-            <img src="{IMG_PATH}but_03.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+but_03.png" alt="">
         </a>
         <a href="index.php?m=index&f=personal" class="cll-active">
-            <img src="{IMG_PATH}but_06.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+but_06.png" alt="">
             <span>个人中心</span>
         </a>
     </div>
 </body>
-</html>
+</html><?php }
+}

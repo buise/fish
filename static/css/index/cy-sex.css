@@ -130,11 +130,11 @@ body{
 }
 .slideThree input[type=radio] {
     visibility: hidden;
+    font-size: 0;
 }
 .slideThree input[type=radio]:checked + label {
     left: .53rem;
 }
 label.left{
     left: -0.1rem;
-
 }

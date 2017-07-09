@@ -9,10 +9,10 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>订制设计</title>
-    <link rel="stylesheet" href="../../static/css/common.css">
-    <link rel="stylesheet" href="../../static/css/index/cll-custom.css">
-    <script src="../../static/js/rem.js"></script>
-    <script src="../../static/js/iscroll.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}common.css">
+    <link rel="stylesheet" href="{CSS_PATH}index/cll-custom.css">
+    <script src="{JS_PATH}rem.js"></script>
+    <script src="{JS_PATH}iscroll.js"></script>
     <script>
         var myScroll;
         function loaded () {
@@ -22,7 +22,7 @@
 </head>
 <body onload="loaded()">
     <div id="header">
-        <img src="../../static/img/cll_03.png" alt="">
+        <img src="{IMG_PATH}cll_03.png" alt="">
     </div>
 
     <div id="wrapper">
@@ -31,12 +31,12 @@
             <ul class="cll-nav">
                <li>
                    <a href="" class="ar">
-                       <img src="../../static/img/cll_07.png" alt="">
+                       <img src="{IMG_PATH}cll_07.png" alt="">
                    </a>
                </li>
                 <li>
                     <a href="" class="dingzhi">
-                        <img src="../../static/img/cll_09.png" alt="">
+                        <img src="{IMG_PATH}cll_09.png" alt="">
                     </a>
                 </li>
             </ul>
@@ -44,28 +44,21 @@
             <div class="cll-section">
                 <!--标题-->
                 <div class="cll-title">
-                    <img src="../../static/img/cll_12.png" alt="">
+                    <img src="{IMG_PATH}cll_12.png" alt="">
                     <a href="">
-                        <img src="../../static/img/cll_14.png" alt="">
+                        <img src="{IMG_PATH}cll_14.png" alt="">
                     </a>
                 </div>
                 <!--内容-->
                 <div class="cll-content">
-                    <a href="cll-ar.html">
-                        <img src="../../static/img/jiaju_03.png" alt="">
-                        <p class="ptitle">欧美风灯饰</p>
-                        <p class="penglish">CUROC AND UNITCD STATESI AMP</p>
+                    {foreach $light as $v}
+                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                        <img src="{$v['imgurl']}" alt="">
+                        <p class="ptitle">{$v['cname']}</p>
+                        <p class="penglish">{$v['ename']}</p>
                     </a>
-                    <a href="cll-ar.html">
-                        <img src="../../static/img/jiaju_03.png" alt="">
-                        <p class="ptitle">欧美风灯饰</p>
-                        <p class="penglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
-                    <a href="cll-ar.html">
-                        <img src="../../static/img/jiaju_03.png" alt="">
-                        <p class="ptitle">欧美风灯饰</p>
-                        <p class="penglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
+                    {/foreach}
+
                 </div>
             </div>
 
@@ -73,28 +66,20 @@
             <div class="cll-section">
                 <!--标题-->
                 <div class="cll-title">
-                    <img src="../../static/img/cll_22.png" alt="">
+                    <img src="{IMG_PATH}cll_22.png" alt="">
                     <a href="">
-                        <img src="../../static/img/cll_14.png" alt="">
+                        <img src="{IMG_PATH}cll_14.png" alt="">
                     </a>
                 </div>
                 <!--内容-->
                 <div class="cll-content home">
-                    <a href="cll-ar.html">
-                        <img src="../../static/img/jiashi_03.png" alt="">
-                        <p class="htitle">蓝玉</p>
-                        <p class="henglish">CUROC AND UNITCD STATESI AMP</p>
+                    {foreach $home as $v}
+                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                        <img src="{$v['imgurl']}" alt="">
+                        <p class="htitle">{$v['cname']}</p>
+                        <p class="henglish">{$v['ename']}</p>
                     </a>
-                    <a href="cll-ar.html">
-                        <img src="../../static/img/jiashi_03.png" alt="">
-                        <p class="htitle">蓝玉</p>
-                        <p class="henglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
-                    <a href="cll-ar.html">
-                        <img src="../../static/img/jiashi_03.png" alt="">
-                        <p class="htitle">蓝玉</p>
-                        <p class="henglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
+                    {/foreach}
                 </div>
             </div>
 
@@ -102,28 +87,20 @@
             <div class="cll-section">
                 <!--标题-->
                 <div class="cll-title">
-                    <img src="../../static/img/cll_28.png" alt="">
+                    <img src="{IMG_PATH}cll_28.png" alt="">
                     <a href="">
-                        <img src="../../static/img/cll_14.png" alt="">
+                        <img src="{IMG_PATH}cll_14.png" alt="">
                     </a>
                 </div>
                 <!--内容-->
                 <div class="cll-content sofa">
-                    <a href="">
-                        <img src="../../static/img/sofa_03.png" alt="">
-                        <p class="ptitle stitle">欧美风灯饰</p>
-                        <p class="penglish">CUROC AND UNITCD STATESI AMP</p>
+                    {foreach $sofa as $v}
+                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                        <img src="{$v['imgurl']}" alt="">
+                        <p class="ptitle stitle">{$v['cname']}</p>
+                        <p class="penglish">{$v['ename']}</p>
                     </a>
-                    <a href="">
-                        <img src="../../static/img/sofa_03.png" alt="">
-                        <p class="ptitle stitle">欧美风灯饰</p>
-                        <p class="penglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
-                    <a href="">
-                        <img src="../../static/img/sofa_03.png" alt="">
-                        <p class="ptitle stitle">欧美风灯饰</p>
-                        <p class="penglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
+                    {/foreach}
 
                 </div>
             </div>
@@ -132,23 +109,20 @@
             <div class="cll-section">
                 <!--标题-->
                 <div class="cll-title">
-                    <img src="../../static/img/cll_34.png" alt="">
+                    <img src="{IMG_PATH}cll_34.png" alt="">
                     <a href="">
-                        <img src="../../static/img/cll_14.png" alt="">
+                        <img src="{IMG_PATH}cll_14.png" alt="">
                     </a>
                 </div>
                 <!--内容-->
                 <div class="cll-bed">
-                    <a href="">
-                        <img src="../../static/img/bed_03.png" alt="">
-                        <p class="btitle">欧美风灯饰</p>
-                        <p class="benglish">CUROC AND UNITCD</p>
+                    {foreach $bed as $v}
+                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                        <img src="{$v['imgurl']}" alt="">
+                        <p class="btitle">{$v['cname']}</p>
+                        <p class="benglish">{$v['ename']}</p>
                     </a>
-                    <a href="">
-                        <img src="../../static/img/bed_03.png" alt="">
-                        <p class="btitle">欧美风灯饰</p>
-                        <p class="benglish">CUROC AND UNITCD</p>
-                    </a>
+                    {/foreach}
                 </div>
             </div>
 
@@ -156,23 +130,20 @@
             <div class="cll-section">
                 <!--标题-->
                 <div class="cll-title">
-                    <img src="../../static/img/cll_40.png" alt="">
+                    <img src="{IMG_PATH}cll_40.png" alt="">
                     <a href="">
-                        <img src="../../static/img/cll_14.png" alt="">
+                        <img src="{IMG_PATH}cll_14.png" alt="">
                     </a>
                 </div>
                 <!--内容-->
                 <div class="cll-tea">
-                    <a href="">
-                        <img src="../../static/img/tea_03.png" alt="">
-                        <p class="btitle">简约风茶几</p>
-                        <p class="benglish">CUROC AND UNITCD STATESI AMP</p>
+                    {foreach $tea as $v}
+                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                        <img src="{$v['imgurl']}" alt="">
+                        <p class="btitle">{$v['cname']}</p>
+                        <p class="benglish">{$v['ename']}</p>
                     </a>
-                    <a href="">
-                        <img src="../../static/img/tea_03.png" alt="">
-                        <p class="btitle">简约风茶几</p>
-                        <p class="benglish">CUROC AND UNITCD STATESI AMP</p>
-                    </a>
+                    {/foreach}
                 </div>
             </div>
 
@@ -181,17 +152,17 @@
 
     <div id="footer">
         <a href="index.php">
-            <img src="../../static/img/but_09.png" alt="">
+            <img src="{IMG_PATH}but_09.png" alt="">
         </a>
         <a href="index.php?m=index&f=classify">
-            <img src="../../static/img/but_12.png" alt="">
+            <img src="{IMG_PATH}but_12.png" alt="">
         </a>
         <a href="index.php?m=index&f=custom" class="cll-active">
-            <img src="../../static/img/but_03.png" alt="">
+            <img src="{IMG_PATH}but_03.png" alt="">
             <span>定制设计</span>
         </a>
         <a href="index.php?m=index&f=personal">
-            <img src="../../static/img/but_06.png" alt="">
+            <img src="{IMG_PATH}but_06.png" alt="">
         </a>
     </div>
 </body>

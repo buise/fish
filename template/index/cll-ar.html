@@ -9,52 +9,52 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>AR</title>
-    <link rel="stylesheet" href="../../static/css/common.css">
-    <link rel="stylesheet" href="../../static/css/index/cll-ar.css">
-    <script src="../../static/js/rem.js"></script>
-    <script src="../../static/js/iscroll.js"></script>
-    <script src="../../static/js/jquery.js"></script>
-    <script src="../../static/js/hammer.js"></script>
-    <script src="../../static/js/cll-ar.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}common.css">
+    <link rel="stylesheet" href="{CSS_PATH}index/cll-ar.css">
+    <script src="{JS_PATH}rem.js"></script>
+    <script src="{JS_PATH}iscroll.js"></script>
+    <script src="{JS_PATH}jquery.js"></script>
+    <script src="{JS_PATH}hammer.js"></script>
+    <script src="{JS_PATH}cll-ar.js"></script>
 </head>
 <body>
     <div id="header">
         <a href="javascript:;">
-            <img src="../../static/img/H-back.png" alt="">
+            <img src="{IMG_PATH}H-back.png" alt="">
         </a>
     </div>
     <div class="content">
         <!--拖-->
-        <img src="../../static/img/ard_03.png" alt="" class="goods" id="move-box">
+        <img src="{$imgurl}" alt="" class="goods" id="move-box">
         <!--加-->
-        <img src="../../static/img/ar_05.png" alt="" class="jia">
+        <img src="{IMG_PATH}ar_05.png" alt="" class="jia">
         <!--减-->
-        <img src="../../static/img/ar_11.png" alt="" class="jie">
+        <img src="{IMG_PATH}ar_11.png" alt="" class="jie">
         <!--图列表-->
         <div class="tu">
             <div class="imgbox">
                 <span class="active">
-                    <img src="../../static/img/imgactive_03.png" alt="">
+                    <img src="{IMG_PATH}imgactive_03.png" alt="">
                 </span>
-                <img src="../../static/img/ard_03.png" alt="">
+                <img src="{IMG_PATH}class_17.png" alt="">
             </div>
             <div class="imgbox imgactive">
                 <span class="active">
-                    <img src="../../static/img/imgactive_03.png" alt="">
+                    <img src="{IMG_PATH}imgactive_03.png" alt="">
                 </span>
-                <img src="../../static/img/ard_03.png" alt="">
+                <img src="{$imgurl}" alt="">
             </div>
             <div class="imgbox">
                 <span class="active">
-                    <img src="../../static/img/imgactive_03.png" alt="">
+                    <img src="{IMG_PATH}imgactive_03.png" alt="">
                 </span>
-                <img src="../../static/img/ard_03.png" alt="">
+                <img src="{IMG_PATH}class_54.png" alt="">
             </div>
             <div class="imgbox">
                 <span class="active">
-                    <img src="../../static/img/imgactive_03.png" alt="">
+                    <img src="{IMG_PATH}imgactive_03.png" alt="">
                 </span>
-                <img src="../../static/img/ard_03.png" alt="">
+                <img src="{IMG_PATH}ard_03.png" alt="">
             </div>
         </div>
 
@@ -62,8 +62,8 @@
     <div id="footer">
         <div class="left">
         </div>
-        <a href="cll-goods.html">
-            <img src="../../static/img/ar_09.png" alt="">
+        <a href="index.php?m=index&f=goods&lid={$lid}">
+            <img src="{IMG_PATH}ar_09.png" alt="">
         </a>
     </div>
 </body>
