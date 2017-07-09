@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 16:34:48
+  from "E:\wamp\www\fish\template\index\fh-res.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59623f08f022f3_12258490',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '409975b0358fefc6e49f86aa8d5c3c1cc72179d4' => 
+    array (
+      0 => 'E:\\wamp\\www\\fish\\template\\index\\fh-res.html',
+      1 => 1499610887,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59623f08f022f3_12258490 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,41 +33,61 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>注册</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/fh-res.css">
-    <script src="{JS_PATH}jquery.js"></script>
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}fh-res.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/fh-res.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+fh-res.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <div class="fh-nav">
     <a href="index.php?f=login">
-        <img src="{IMG_PATH}fh-5.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+fh-5.png" alt="">
     </a>
 </div>
 <div class="fh-con">
-    <img src="{IMG_PATH}fh-6.png" alt="" class="fh-tx">
+    <img src="<?php echo IMG_PATH;?>
+fh-6.png" alt="" class="fh-tx">
     <form action="" class="fh-bd">
         <input type="text" name="name" placeholder="用户名，2~8个字符" autocomplete="off">
-        <img src="{IMG_PATH}fh-7.png" alt="" class="fh-xf">
+        <img src="<?php echo IMG_PATH;?>
+fh-7.png" alt="" class="fh-xf">
         <div class="fh-ts">
-            <img src="{IMG_PATH}fh-11.png" alt="" style="height:100%;display: none" class="fh-yse1">
+            <img src="<?php echo IMG_PATH;?>
+fh-11.png" alt="" style="height:100%;display: none" class="fh-yse1">
         </div>
         <!--<div class="fh-ts2">用户名格式错误</div>-->
 
         <input type="text" name="tel" placeholder="请输入您的手机号" autocomplete="off" class="tel">
-        <img src="{IMG_PATH}fh-16.png" alt="" class="fh-sj">
+        <img src="<?php echo IMG_PATH;?>
+fh-16.png" alt="" class="fh-sj">
         <div class="fh-ts3">
-            <img src="{IMG_PATH}fh-11.png" alt="" style="height:100%;display: none" class="fh-yse">
+            <img src="<?php echo IMG_PATH;?>
+fh-11.png" alt="" style="height:100%;display: none" class="fh-yse">
         </div>
 
         <input type="text" name="yzm" placeholder="请输入验证码" autocomplete="off">
-        <img src="{IMG_PATH}fh-17.png" alt="" class="fh-yz">
+        <img src="<?php echo IMG_PATH;?>
+fh-17.png" alt="" class="fh-yz">
         <div class="fh-yzm">发送验证码</div>
 
         <input type="password" name="pass" placeholder="请输入您的密码" autocomplete="off">
-        <img src="{IMG_PATH}fh-8.png" alt="" class="fh-s">
-        <img src=".{IMG_PATH}fh-9.png" alt="" class="fh-yj">
+        <img src="<?php echo IMG_PATH;?>
+fh-8.png" alt="" class="fh-s">
+        <img src=".<?php echo IMG_PATH;?>
+fh-9.png" alt="" class="fh-yj">
 
         <label>
             <input type="radio">我已阅读并接受<span>版权声明</span>条款
@@ -60,22 +104,26 @@
 <div class="fh-click">
     <!--加载中-->
     <div class="fh-loading">
-        <img src="{IMG_PATH}fh-14.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+fh-14.png" alt="">
     </div>
     <!--注册失败-->
     <div class="fh-fail">
-        <img src="{IMG_PATH}fh-12.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+fh-12.png" alt="">
         <a href="" class="fh-again"></a>
     </div>
     <!--注册成功-->
     <div class="fh-success">
-        <img src="{IMG_PATH}fh-13.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+fh-13.png" alt="">
         <a href="" class="fh-go"></a>
     </div>
 </div>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     $('.fh-yzm').click(function () {
         var tel=$('.tel').val();
         $.ajax({
@@ -86,4 +134,6 @@
             }
         })
     })
-</script>
+<?php echo '</script'; ?>
+><?php }
+}

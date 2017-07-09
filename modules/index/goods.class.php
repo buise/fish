@@ -6,6 +6,7 @@
  * Time: 11:13
  */
 class goods extends main {
+//    商品详情页
     public function init(){
         $lid=$_REQUEST['lid'];
         $db=new db("lists");
@@ -13,4 +14,10 @@ class goods extends main {
         $this->smarty->assign("mess",$mess);
         $this->smarty->display("index/cll-goods.html");
     }
+
+
+
+
+
+
 }

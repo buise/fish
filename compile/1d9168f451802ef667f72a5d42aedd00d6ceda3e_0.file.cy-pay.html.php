@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 15:38:43
+  from "E:\wamp\www\fish\template\index\cy-pay.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_596231e3a12927_62258717',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '1d9168f451802ef667f72a5d42aedd00d6ceda3e' => 
+    array (
+      0 => 'E:\\wamp\\www\\fish\\template\\index\\cy-pay.html',
+      1 => 1499490969,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_596231e3a12927_62258717 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,17 +33,21 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/cy-pay.css">
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}jquery.js"></script>
+    <link rel="stylesheet" href="../../static/css/common.css">
+    <link rel="stylesheet" href="../../static/css/index/cy-pay.css">
+    <?php echo '<script'; ?>
+ src="../../static/js/rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="../../static/js/jquery.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
     <header>
         <a href="#">
-            <img src="{IMG_PATH}cy-return.png" alt="" class="return">
+            <img src="../../static/img/cy-return.png" alt="" class="return">
         </a>
-        <img src="{IMG_PATH}cy-chose.png" alt="" class="word">
+        <img src="../../static/img/cy-chose.png" alt="" class="word">
     </header>
     <section>
         <div class="pay-bg">
@@ -29,10 +57,10 @@
             </div>
             <div class="pay-way">
                 <a href="">
-                    <img src="{IMG_PATH}cy-zhi.png" alt="" class="zhi">
+                    <img src="../../static/img/cy-zhi.png" alt="" class="zhi">
                 </a>
                 <a href="">
-                    <img src="{IMG_PATH}cy-weixin.png" alt="" class="wechat">
+                    <img src="../../static/img/cy-weixin.png" alt="" class="wechat">
                 </a>
             </div>
             <div class="three-pay">
@@ -42,7 +70,7 @@
             <ul class="other-pay">
                <li class="other-list">
                    <a href="">
-                       <img src="{IMG_PATH}cy-huodao.png" alt="">
+                       <img src="../../static/img/cy-huodao.png" alt="">
                        <div class="other-word">
                            <p class="other-ch">货到付款</p>
                            <p class="other-en">cash on delivery</p>
@@ -52,7 +80,7 @@
                </li>
                <li class="other-list">
                    <a href="">
-                       <img src="{IMG_PATH}cy-card.png" alt="">
+                       <img src="../../static/img/cy-card.png" alt="">
                        <div class="other-word">
                            <p class="other-ch">银行卡</p>
                            <p class="other-en">bank card</p>
@@ -64,7 +92,7 @@
                </li>
                <li class="other-list">
                    <a href="">
-                       <img src="{IMG_PATH}cy-wallet.png" alt="">
+                       <img src="../../static/img/cy-wallet.png" alt="">
                        <div class="other-word">
                            <p class="other-ch">本地钱包</p>
                            <p class="other-en">local wallet</p>
@@ -74,7 +102,7 @@
 
                </li>
                <li class="other-list next">
-                   <a href="index.php?m=index&f=pay&a=have">
+                   <a href="cy-have.html">
                        <div class="other-word">
                            <p class="other-ch">下一步</p>
                            <p class="other-en">next step</p>
@@ -87,10 +115,13 @@
     </section>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     $(function () {
         $(".return").click(function () {
             history.go(-1);
         })
     })
-</script>
+<?php echo '</script'; ?>
+><?php }
+}

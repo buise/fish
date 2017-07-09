@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 03:49:25
+/* Smarty version 3.1.30, created on 2017-07-09 06:11:15
   from "E:\wamp\www\fish\template\index\cll-classify.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59618ba5b8f543_20412292',
+  'unifunc' => 'content_5961ace39e86e1_05939111',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3a348f1bc7095a2a3cfa8f21d065c7193601af83' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\cll-classify.html',
-      1 => 1499564964,
+      1 => 1499573474,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59618ba5b8f543_20412292 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5961ace39e86e1_05939111 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -103,7 +103,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-                    <a href="">
+                    <a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
                         <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
 " alt="">
                         <p class="pc"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
@@ -139,7 +140,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-                    <a href="">
+                    <a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
                         <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
 " alt="">
                         <p class="pc"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
@@ -176,7 +178,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-                    <a href="">
+                    <a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
                         <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
 " alt="">
                         <p class="pc"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
@@ -219,7 +222,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-                    <a href="" class="pos<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+                    <a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+" class="pos<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
  pos">
                         <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
 " alt="">

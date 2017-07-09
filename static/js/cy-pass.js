@@ -21,7 +21,7 @@ $(function () {
             if (len == 6) {
                 //执行其他操作
                 var button=document.querySelector(".button")
-                button.href="cy-red.html"
+                button.href="index.php?m=index&f=pay&a=red"
 
             }
         }else{//清除val中的非数字，返回纯number的value

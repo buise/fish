@@ -6,9 +6,9 @@
  * Time: 9:22
  */
 class order extends main {
-    public function payment(){
-        $this->smarty->display('index/fh-payment.html');
-    }
+//    public function payment(){
+//        $this->smarty->display('index/fh-payment.html');
+//    }
 
     public function send(){
         $this->smarty->display('index/fh-send.html');

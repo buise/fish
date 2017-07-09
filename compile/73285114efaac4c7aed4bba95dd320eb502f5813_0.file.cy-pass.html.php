@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 16:19:17
+  from "E:\wamp\www\git_item\fish\template\index\cy-pass.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59623b654453f5_33051695',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '73285114efaac4c7aed4bba95dd320eb502f5813' => 
+    array (
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-pass.html',
+      1 => 1499609955,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59623b654453f5_33051695 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,11 +33,22 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>Document</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/cy-pay.css">
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}jquery.js"></script>
-    <script src="{JS_PATH}cy-pass.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/cy-pay.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+cy-pass.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
     <div class="mask">
@@ -38,7 +73,8 @@
                         </div>
                     </div>
                     <a class="button" href="javascript:;">
-                        <img src="{IMG_PATH}cy-yes.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-yes.png" alt="">
                     </a>
                 </div>
             </div>
@@ -47,9 +83,11 @@
 
     <header>
         <a href="#">
-            <img src="{IMG_PATH}cy-return.png" alt="" class="return">
+            <img src="<?php echo IMG_PATH;?>
+cy-return.png" alt="" class="return">
         </a>
-        <img src="{IMG_PATH}cy-chose.png" alt="" class="word">
+        <img src="<?php echo IMG_PATH;?>
+cy-chose.png" alt="" class="word">
     </header>
     <section>
         <div class="pay-bg">
@@ -59,10 +97,12 @@
             </div>
             <div class="pay-way">
                 <a href="">
-                    <img src="{IMG_PATH}cy-zhi.png" alt="" class="zhi">
+                    <img src="<?php echo IMG_PATH;?>
+cy-zhi.png" alt="" class="zhi">
                 </a>
                 <a href="">
-                    <img src="{IMG_PATH}cy-weixin.png" alt="" class="wechat">
+                    <img src="<?php echo IMG_PATH;?>
+cy-weixin.png" alt="" class="wechat">
                 </a>
             </div>
             <div class="three-pay">
@@ -72,7 +112,8 @@
             <ul class="other-pay">
                 <li class="other-list">
                     <a href="">
-                        <img src="{IMG_PATH}cy-huodao.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-huodao.png" alt="">
                         <div class="other-word">
                             <p class="other-ch">货到付款</p>
                             <p class="other-en">cash on delivery</p>
@@ -82,7 +123,8 @@
                 </li>
                 <li class="other-list">
                     <a href="">
-                        <img src="{IMG_PATH}cy-card.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-card.png" alt="">
                         <div class="other-word">
                             <p class="other-ch">银行卡</p>
                             <p class="other-en">bank card</p>
@@ -94,7 +136,8 @@
                 </li>
                 <li class="other-list">
                     <a href="">
-                        <img src="{IMG_PATH}cy-wallet.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+cy-wallet.png" alt="">
                         <div class="other-word">
                             <p class="other-ch">本地钱包</p>
                             <p class="other-en">local wallet</p>
@@ -117,3 +160,5 @@
     </section>
 </body>
 </html>
+<?php }
+}

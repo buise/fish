@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-09 16:31:17
+  from "E:\wamp\www\git_item\fish\template\index\fh-payment.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_59623e35bc4098_24699868',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'dfa9cd929dd6ccb71d30de17d7fd52b75a561111' => 
+    array (
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\fh-payment.html',
+      1 => 1499609555,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_59623e35bc4098_24699868 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,20 +33,36 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>待付款</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/fh-payment.css">
-    <script src="{JS_PATH}jquery.js"></script>
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}iscroll.js"></script>
-    <!--<script src="{JS_PATH}fh-res.js"></script>-->
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/fh-payment.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+iscroll.js"><?php echo '</script'; ?>
+>
+    <!--<?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+fh-res.js"><?php echo '</script'; ?>
+>-->
 </head>
 <body onload="loaded()">
 <div CLASS="fh-nav">
-    <img src="{IMG_PATH}fh-34.png" alt="">
+    <img src="<?php echo IMG_PATH;?>
+fh-34.png" alt="">
 </div>
 <ul class="fh-title">
     <li>
-        <img src="{IMG_PATH}fh-21.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+fh-21.png" alt="">
     </li>
     <li>
         <a href="">待发货</a>
@@ -42,7 +82,8 @@
             </div>
             <div class="fh-sh">
                 <div class="fh-img">
-                    <img src="{IMG_PATH}fh-22.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-22.png" alt="">
                 </div>
                 <div class="fh-js">
                     <h1>北欧创意现代吊灯</h1>
@@ -56,14 +97,16 @@
                         <h3>规格: <span>88*88</span></h3>
                     </div>
                     <div class="fh-price">
-                        <img src="{IMG_PATH}fh-24.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-24.png" alt="">
                         <h5>680.00</h5>
                     </div>
                 </div>
             </div>
             <div class="fh-sh">
                 <div class="fh-img">
-                    <img src="{IMG_PATH}fh-23.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-23.png" alt="">
                 </div>
                 <div class="fh-js">
                     <h1>北欧创意现代吊灯</h1>
@@ -77,7 +120,8 @@
                         <h3>规格: <span>88*88</span></h3>
                     </div>
                     <div class="fh-price">
-                        <img src="{IMG_PATH}fh-24.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-24.png" alt="">
                         <h5>680.00</h5>
                     </div>
                 </div>
@@ -85,7 +129,8 @@
             <div class="fh-all">
                 <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
-                    <img src="{IMG_PATH}fh-25.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-25.png" alt="">
                 </div>
             </div>
         </div>
@@ -95,7 +140,8 @@
             </div>
             <div class="fh-sh">
                 <div class="fh-img">
-                    <img src="{IMG_PATH}fh-26.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-26.png" alt="">
                 </div>
                 <div class="fh-js">
                     <h1>北欧创意现代吊灯</h1>
@@ -109,7 +155,8 @@
                         <h3>规格: <span>88*88</span></h3>
                     </div>
                     <div class="fh-price">
-                        <img src="{IMG_PATH}fh-24.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-24.png" alt="">
                         <h5>680.00</h5>
                     </div>
                 </div>
@@ -117,18 +164,21 @@
             <div class="fh-all">
                 <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
-                    <img src="{IMG_PATH}fh-25.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-25.png" alt="">
                 </div>
             </div>
         </div>
         <div class="fh-no">
-            <img src="{IMG_PATH}fh-27.png" alt="">
+            <img src="<?php echo IMG_PATH;?>
+fh-27.png" alt="">
         </div>
     </div>
 </div>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
 
     var myScroll;
 
@@ -136,4 +186,6 @@
         myScroll = new IScroll('#wrapper', { mouseWheel: true });
     }
 
-</script>
+<?php echo '</script'; ?>
+><?php }
+}

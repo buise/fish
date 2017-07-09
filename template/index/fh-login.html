@@ -9,31 +9,34 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>登录</title>
-    <link rel="stylesheet" href="{CSS_PATH}/common.css">
-    <link rel="stylesheet" href="{CSS_PATH}/index/fh-login.css">
-    <script src="{JS_PATH}/jquery.js"></script>
-    <script src="{JS_PATH}/rem.js"></script>
-    <script src="{JS_PATH}/fh-login.js"></script>
+    <link rel="stylesheet" href="{CSS_PATH}common.css">
+    <link rel="stylesheet" href="{CSS_PATH}index/fh-login.css">
+    <script src="{JS_PATH}jquery.js"></script>
+    <script src="{JS_PATH}rem.js"></script>
+    <script src="{JS_PATH}fh-login.js"></script>
 </head>
 <body>
 <div class="fh-nav">
-    <img src="{IMG_PATH}/fh-5.png" alt="">
+    <a href="{$url}">
+        <img src="{IMG_PATH}fh-5.png" alt="">
+    </a>
+
     <div class="fh-res">
         <a href="index.php?f=login&a=res">注册</a>
     </div>
 </div>
 <div class="fh-con">
-    <img src="{IMG_PATH}/fh-6.png" alt="" class="fh-tx">
+    <img src="{IMG_PATH}fh-6.png" alt="" class="fh-tx">
     <form action="" class="fh-bd">
         <input type="text" name="name" placeholder="请输入您的账号" autocomplete="off">
-        <img src="{IMG_PATH}/fh-7.png" alt="" class="fh-xf">
+        <img src="{IMG_PATH}fh-7.png" alt="" class="fh-xf">
         <div class="fh-ts">
-            <img src="{IMG_PATH}/fh-11.png" alt="" class="fh-yes">
+            <img src="{IMG_PATH}fh-11.png" alt="" class="fh-yes">
         </div>
         <!--<div class="fh-ts2">账号输入错误</div>-->
         <input type="password" name="pass" placeholder="请输入您的密码" autocomplete="off">
-        <img src="{IMG_PATH}/fh-8.png" alt="" class="fh-s">
-        <img src="{IMG_PATH}/fh-9.png" alt="" class="fh-yj">
+        <img src="{IMG_PATH}fh-8.png" alt="" class="fh-s">
+        <img src="{IMG_PATH}fh-9.png" alt="" class="fh-yj">
         <label>
             <input type="radio" name="dan">&nbsp;记住密码
         </label>
@@ -45,17 +48,17 @@
 <div class="fh-click">
     <!--加载中-->
     <div class="fh-loading">
-        <img src="{IMG_PATH}/fh-14.png" alt="">
+        <img src="{IMG_PATH}fh-14.png" alt="">
     </div>
     <!--登录失败-->
     <div class="fh-fail">
-        <img src="{IMG_PATH}/fh-12.png" alt="">
+        <img src="{IMG_PATH}fh-12.png" alt="">
         <a href="index.php?f=login" class="fh-again"></a>
     </div>
     <!--登录成功-->
     <div class="fh-success">
-        <img src="{IMG_PATH}/fh-13.png" alt="">
-        <a href="" class="fh-go"></a>
+        <img src="{IMG_PATH}fh-13.png" alt="">
+        <a href="{$url}" class="fh-go"></a>
     </div>
 </div>
 </body>
