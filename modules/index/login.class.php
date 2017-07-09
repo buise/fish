@@ -37,6 +37,24 @@ class login extends main{
         $this->smarty->display('index/fh-res.html');
     }
 
+    public function rescheck(){
+        $codesj=$this->session->getSession("code");
+        $name=$_REQUEST['name'];
+        $pass=$_REQUEST['pass'];
+        $code=$_REQUEST['code'];
+        if($codesj==$code){
+            $db=new db("person");
+            $result=$db->insert("name='{$name}',pass='{$pass}'");
+            if($result){
+                echo 2;
+            }else{
+                echo 1;
+            }
+        }else{
+            echo 0;
+        }
+    }
+
     public function tel(){
         require_once('Ucpaas.class.php');
 
@@ -56,6 +74,7 @@ class login extends main{
             $sj.=substr($str,$i,1);
         }
 
+        $this->session->setSession("code",$sj);
 
 //短信验证码（模板短信）,默认以65个汉字（同65个英文）为一条（可容纳字数受您应用名称占用字符影响），超过长度短信平台将会自动分割为多条发送。分割后的多条短信将按照具体占用条数计费。
         $appId = "4baf1c3e39874fc4b9485321c0a6f374";
