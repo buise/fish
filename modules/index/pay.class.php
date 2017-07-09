@@ -7,7 +7,6 @@
  */
 class pay extends main{
     public function init(){
-
         $this->smarty->display("index/cy-pay");
     }
 }

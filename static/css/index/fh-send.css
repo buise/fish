@@ -1,7 +1,7 @@
 .fh-nav{
     width:100%;
     height:1rem;
-    background:url("../../../img/fh-20.png");
+    background:url("../../img/fh-20.png");
     background-size:100% 100%;
     padding:0.2rem 0;
     box-sizing: border-box;
@@ -215,7 +215,7 @@
     height:100%;
 }
 .fh-one .fh-tit p{
-    widht:100%;
+    width:100%;
     height:0.78rem;
     color:#1FDF94;
     font-size: 0.32rem;
@@ -223,7 +223,7 @@
     font-weight: 700;
 }
 .fh-shangjia{
-    widht:100%;
+    width:100%;
     height:0.8rem;
     padding:0.15rem 0;
     box-sizing: border-box;

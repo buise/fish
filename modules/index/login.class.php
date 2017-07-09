@@ -1,6 +1,17 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2017/7/3
+ * Time: 15:54
+ */
 class login extends main{
     public function init(){
+        if(isset($_REQUEST['url'])){
+            $this->smarty->assign("url",$_REQUEST['url']);
+        }else{
+            $this->smarty->assign("url","index.php");
+        }
         $this->smarty->display('index/fh-login.html');
     }
 
@@ -12,6 +23,7 @@ class login extends main{
         if($result){
             if($result[0]['pass']==$pass){
                 $this->session->setSession("login","yes");
+                $this->session->setSession("name",$name);
                 echo 'ok';
             }else{
                 echo 'no';
@@ -24,6 +36,7 @@ class login extends main{
     public function res(){
         $this->smarty->display('index/fh-res.html');
     }
+
     public function tel(){
         require_once('Ucpaas.class.php');
 
@@ -52,14 +65,13 @@ class login extends main{
 
         $arr=$ucpass->templateSMS($appId,$to,$templateId,$param);
         if (substr($arr,21,6) == 000000) {
-//如果成功就，这里只是测试样式，可根据自己的需求进行调节
+            //如果成功就，这里只是测试样式，可根据自己的需求进行调节
             echo "短信验证码已发送成功，请注意查收短信";
 
         }else {
-//如果不成功
+            //如果不成功
             echo "短信验证码发送失败，请联系客服";
         }
 
     }
-
 }
