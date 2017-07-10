@@ -51,7 +51,7 @@
                 <!--内容-->
                 <div class="con">
                     {foreach $light as $v}
-                    <a href="index.php?m=index&f=goods&lid={$v['lid']}">
+                    <a href="javascript:;" lid={$v['lid']}>
                         <img src="{$v['imgurl']}" alt="">
                         <p class="pc">{$v['cname']}</p>
                         <p class="pe">{$v['ename']}</p>
@@ -59,6 +59,16 @@
                         <span><img src="{IMG_PATH}classnew_10.png" alt="">2999</span>
                     </a>
                     {/foreach}
+                	<script>
+                		var a=$(".light .con a");
+                		a.each(function(index,val){
+                			touch.on($(val),"tap",function(){
+	                			var lid=$(val).attr("lid")
+	                			$(val).attr("href","index.php?m=index&f=goods&lid="+lid)
+                			})
+                		})
+                		
+                	</script>
                 </div>
             </div>
 
