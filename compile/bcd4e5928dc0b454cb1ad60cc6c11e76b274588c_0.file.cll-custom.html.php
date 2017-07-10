@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 05:11:39
+/* Smarty version 3.1.30, created on 2017-07-10 02:50:26
   from "E:\wamp\www\fish\template\index\cll-custom.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59619eeb579768_24045988',
+  'unifunc' => 'content_5962cf52a02830_53487220',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bcd4e5928dc0b454cb1ad60cc6c11e76b274588c' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\cll-custom.html',
-      1 => 1499569898,
+      1 => 1499646926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59619eeb579768_24045988 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962cf52a02830_53487220 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

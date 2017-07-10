@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 06:11:15
+/* Smarty version 3.1.30, created on 2017-07-10 02:49:58
   from "E:\wamp\www\fish\template\index\cll-classify.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5961ace39e86e1_05939111',
+  'unifunc' => 'content_5962cf36549108_06945417',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3a348f1bc7095a2a3cfa8f21d065c7193601af83' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\cll-classify.html',
-      1 => 1499573474,
+      1 => 1499646926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5961ace39e86e1_05939111 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962cf36549108_06945417 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

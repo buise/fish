@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 16:35:58
+/* Smarty version 3.1.30, created on 2017-07-10 02:45:06
   from "E:\wamp\www\fish\template\index\fh-login.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59623f4e7beb81_71076950',
+  'unifunc' => 'content_5962ce12f29b73_90095364',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b84f65ae076ed0b7ac4c0a11609cbb85742a0520' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\fh-login.html',
-      1 => 1499610955,
+      1 => 1499646926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59623f4e7beb81_71076950 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962ce12f29b73_90095364 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

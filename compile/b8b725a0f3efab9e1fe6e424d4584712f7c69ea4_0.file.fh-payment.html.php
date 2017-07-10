@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 15:44:08
+/* Smarty version 3.1.30, created on 2017-07-10 02:50:08
   from "E:\wamp\www\fish\template\index\fh-payment.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596233289900d5_25188440',
+  'unifunc' => 'content_5962cf401c8cf7_43000421',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b8b725a0f3efab9e1fe6e424d4584712f7c69ea4' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\fh-payment.html',
-      1 => 1499561960,
+      1 => 1499646926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596233289900d5_25188440 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962cf401c8cf7_43000421 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">

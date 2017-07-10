@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 15:17:03
+/* Smarty version 3.1.30, created on 2017-07-10 02:51:01
   from "E:\wamp\www\fish\template\index\cy-info.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59622ccfe31406_03628031',
+  'unifunc' => 'content_5962cf7589b202_10822472',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'eb91bcb5f97a834de2c125e8ca5547a674f3f0e9' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\cy-info.html',
-      1 => 1499605506,
+      1 => 1499646926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59622ccfe31406_03628031 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962cf7589b202_10822472 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">

@@ -7,6 +7,10 @@
  */
 class login extends main{
     public function init(){
+        if($this->session->getSession("login")){
+            echo "<script>location.href='index.php'</script>";
+            exit();
+        }
         if($this->session->getSession("url")){
             $this->smarty->assign("url",$this->session->getSession("url"));
         }else{
