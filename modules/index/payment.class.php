@@ -13,6 +13,8 @@ class payment extends main{
     public function show(){
         $db=new db("lists");
         $lid=$_REQUEST['lid'];
+
+        $this->session->setSession("lid",$lid);
         $db=new db("lists");
         // 根据时间生成订单号
         date_default_timezone_set('Asia/Shanghai');

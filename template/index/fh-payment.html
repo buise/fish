@@ -27,10 +27,10 @@
         <a href="index.php?f=order&a=send&lid={$lid}">待发货</a>
     </li>
     <li>
-        <a href="">待收货</a>
+        <a href="#">待收货</a>
     </li>
     <li>
-        <a href="">待评价</a>
+        <a href="#">待评价</a>
     </li>
 </ul>
 <div id="wrapper">
@@ -62,9 +62,11 @@
                 </div>
             </div>
             <div class="fh-all">
-                <p>合计&nbsp;&nbsp;<span> {$v['price']}</span><span class="fh-rmb">RMB</span></p>
+                <p>合计&nbsp;&nbsp;<span>{$v['price']}</span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
-                    <img src="{IMG_PATH}fh-25.png" alt="">
+                    <a href="index.php?m=index&f=pay&a=show">
+                        <img src="{IMG_PATH}fh-25.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -82,6 +84,13 @@
 
     function loaded () {
         myScroll = new IScroll('#wrapper', { mouseWheel: true });
+
     }
+    $(function () {
+        $(".fh-nav>img").click(function () {
+            history.go(-1)
+        })
+
+    })
 
 </script>

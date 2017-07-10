@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 22:10:46
+/* Smarty version 3.1.30, created on 2017-07-10 22:22:01
   from "E:\wamp\www\a\fish\template\index\fh-payment.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59638ae6ac2964_98494379',
+  'unifunc' => 'content_59638d89bf1c27_27629860',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '372de87ba7d85f31f5590f5b9544b112ab5ffab2' => 
     array (
       0 => 'E:\\wamp\\www\\a\\fish\\template\\index\\fh-payment.html',
-      1 => 1499695845,
+      1 => 1499696520,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59638ae6ac2964_98494379 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59638d89bf1c27_27629860 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,10 +49,6 @@ rem.js"><?php echo '</script'; ?>
  src="<?php echo JS_PATH;?>
 iscroll.js"><?php echo '</script'; ?>
 >
-    <!--<?php echo '<script'; ?>
- src="<?php echo JS_PATH;?>
-fh-res.js"><?php echo '</script'; ?>
->-->
 </head>
 <body onload="loaded()">
 <div CLASS="fh-nav">
@@ -69,10 +65,10 @@ fh-21.png" alt="">
 ">待发货</a>
     </li>
     <li>
-        <a href="">待收货</a>
+        <a href="#">待收货</a>
     </li>
     <li>
-        <a href="">待评价</a>
+        <a href="#">待评价</a>
     </li>
 </ul>
 <div id="wrapper">
@@ -114,56 +110,22 @@ fh-24.png" alt="">
                 </div>
             </div>
             <div class="fh-all">
-                <p>合计&nbsp;&nbsp;<span> <?php echo $_smarty_tpl->tpl_vars['v']->value['price'];?>
+                <p>合计&nbsp;&nbsp;<span><?php echo $_smarty_tpl->tpl_vars['v']->value['price'];?>
 </span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
-                    <img src="<?php echo IMG_PATH;?>
+                    <a href="index.php?m=index&f=pay&a=show">
+                        <img src="<?php echo IMG_PATH;?>
 fh-25.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
-
         <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-        <!--<div class="fh-con">-->
-            <!--<div class="fh-nub">-->
-                <!--<p>订单编号:<span>NO.19239987236</span></p>-->
-            <!--</div>-->
-            <!--<div class="fh-sh">-->
-                <!--<div class="fh-img">-->
-                    <!--<img src="<?php echo IMG_PATH;?>
-fh-26.png" alt="">-->
-                <!--</div>-->
-                <!--<div class="fh-js">-->
-                    <!--<h1>北欧创意现代吊灯</h1>-->
-                    <!--<h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>-->
-                    <!--<div class="fh-color">-->
-                        <!--<div></div>-->
-                        <!--<h3>颜色:<span>单一色</span></h3>-->
-                    <!--</div>-->
-                    <!--<div class="fh-color fh-size">-->
-                        <!--<div></div>-->
-                        <!--<h3>规格: <span>88*88</span></h3>-->
-                    <!--</div>-->
-                    <!--<div class="fh-price">-->
-                        <!--<img src="<?php echo IMG_PATH;?>
-fh-24.png" alt="">-->
-                        <!--<h5>680.00</h5>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="fh-all">-->
-                <!--<p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>-->
-                <!--<div class="fh-tormb">-->
-                    <!--<img src="<?php echo IMG_PATH;?>
-fh-25.png" alt="">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
         <div class="fh-no">
             <img src="<?php echo IMG_PATH;?>
 fh-27.png" alt="">
@@ -179,7 +141,14 @@ fh-27.png" alt="">
 
     function loaded () {
         myScroll = new IScroll('#wrapper', { mouseWheel: true });
+
     }
+    $(function () {
+        $(".fh-nav>img").click(function () {
+            history.go(-1)
+        })
+
+    })
 
 <?php echo '</script'; ?>
 ><?php }

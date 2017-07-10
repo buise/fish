@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 04:01:45
-  from "E:\wamp\www\git_item\fish\template\index\cy-personal.html" */
+/* Smarty version 3.1.30, created on 2017-07-10 16:26:08
+  from "E:\wamp\www\a\fish\template\index\cy-personal.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962e009e8f770_80089143',
+  'unifunc' => 'content_59638e8039d522_23608831',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '8740ad0e5cf637fa4c389f8b14455cef47b1f52f' => 
+    '581969161cabbd69eb090137613c2aedce688e9d' => 
     array (
-      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-personal.html',
-      1 => 1499652103,
+      0 => 'E:\\wamp\\www\\a\\fish\\template\\index\\cy-personal.html',
+      1 => 1499696760,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962e009e8f770_80089143 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59638e8039d522_23608831 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -108,7 +108,8 @@ cy-star7.png" alt="">
 cy-myorder.png" alt="">
             </li>
             <li class="o-list o-list-left li-list">
-                <a href="index.php?m=index&f=payment&a=show">
+                <a href="index.php?m=index&f=payment&a=show&lid=<?php echo $_smarty_tpl->tpl_vars['lid']->value;?>
+">
                     <img src="<?php echo IMG_PATH;?>
 cy-fukuan.png" alt="">
                     <div class="order-word">
@@ -118,7 +119,8 @@ cy-fukuan.png" alt="">
                 </a>
             </li>
             <li class="o-list li-list">
-                <a href="index.php?m=index&f=order&a=send">
+                <a href="index.php?m=index&f=order&a=send&lid=<?php echo $_smarty_tpl->tpl_vars['lid']->value;?>
+">
                     <img src="<?php echo IMG_PATH;?>
 cy-fahuo.png" alt="">
                     <div class="order-word">

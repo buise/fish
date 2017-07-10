@@ -222,9 +222,19 @@ body{
     margin: 0 auto 0.2rem;
     padding: 0.2rem;
 }
+.H-devise .H-devise-con .con-top {
+	position: relative;
+}
 .H-devise .H-devise-con .con-top img{
     width: 6.64rem;
     display: block;
+}
+.H-devise .H-devise-con .con-top img.like{
+	width: 0.66rem;
+	float: right;
+	position: absolute;
+	right: 0.3rem;
+	bottom: 0.7rem;
 }
 .H-devise .H-devise-con .con-top p{
     font-size: 0.22rem;

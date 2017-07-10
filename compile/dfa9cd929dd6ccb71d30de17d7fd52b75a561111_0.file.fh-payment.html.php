@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 16:31:17
+/* Smarty version 3.1.30, created on 2017-07-10 04:50:57
   from "E:\wamp\www\git_item\fish\template\index\fh-payment.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59623e35bc4098_24699868',
+  'unifunc' => 'content_5962eb913e0542_41278471',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'dfa9cd929dd6ccb71d30de17d7fd52b75a561111' => 
     array (
       0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\fh-payment.html',
-      1 => 1499609555,
+      1 => 1499654816,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59623e35bc4098_24699868 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962eb913e0542_41278471 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,13 +65,13 @@ fh-34.png" alt="">
 fh-21.png" alt="">
     </li>
     <li>
-        <a href="">待发货</a>
+        <a href="index.php?f=order&a=send">待发货</a>
     </li>
     <li>
-        <a href="">待收货</a>
+        <a href="#">待收货</a>
     </li>
     <li>
-        <a href="">待评价</a>
+        <a href="#">待评价</a>
     </li>
 </ul>
 <div id="wrapper">
@@ -97,7 +97,7 @@ fh-22.png" alt="">
                         <h3>规格: <span>88*88</span></h3>
                     </div>
                     <div class="fh-price">
-                        <img src="<?php echo IMG_PATH;?>
+                            <img src="<?php echo IMG_PATH;?>
 fh-24.png" alt="">
                         <h5>680.00</h5>
                     </div>
@@ -129,8 +129,10 @@ fh-24.png" alt="">
             <div class="fh-all">
                 <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
-                    <img src="<?php echo IMG_PATH;?>
+                    <a href="index.php?m=index&f=pay&a=show">
+                        <img src="<?php echo IMG_PATH;?>
 fh-25.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -184,7 +186,14 @@ fh-27.png" alt="">
 
     function loaded () {
         myScroll = new IScroll('#wrapper', { mouseWheel: true });
+
     }
+    $(function () {
+        $(".fh-nav>img").click(function () {
+            history.go(-1)
+        })
+
+    })
 
 <?php echo '</script'; ?>
 ><?php }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 04:17:12
-  from "E:\wamp\www\git_item\fish\template\index\cy-pay.html" */
+/* Smarty version 3.1.30, created on 2017-07-10 07:17:30
+  from "D:\wamp\www\fish\template\index\cy-pay.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962e3a8b66e83_36017791',
+  'unifunc' => 'content_59630dea575281_50748463',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '1352b6c12b38de2c8bdc2a087b709b8060a82087' => 
+    '3d8c84642d53910a227071d0ff6faade59523c04' => 
     array (
-      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-pay.html',
-      1 => 1499612211,
+      0 => 'D:\\wamp\\www\\fish\\template\\index\\cy-pay.html',
+      1 => 1499613465,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962e3a8b66e83_36017791 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59630dea575281_50748463 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">

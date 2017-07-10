@@ -1,7 +1,9 @@
 <?php
 class personal extends main{
     public function init(){
+
         $this->smarty->assign("login",$this->session->getSession("login"));
+        $this->smarty->assign("lid",$this->session->getSession("lid"));
         $this->smarty->display("index/cy-personal.html");
     }
     public function info(){
