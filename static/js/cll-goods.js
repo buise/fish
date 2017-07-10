@@ -39,6 +39,7 @@ $(function () {
     })
     // 加入购物车
     $(".payment").click(function () {
+        var value=$("input[type=hidden]").val();
         $.ajax({
             url:"index.php?m=index&f=payment",
             data:{
@@ -49,11 +50,11 @@ $(function () {
                 if(e=='no'){
                     location.href="index.php?m=index&f=login"
                 }else if(e=='yes'){
-                    location.href="index.php?m=index&f=payment&a=show"
+                    location.href="index.php?m=index&f=payment&a=show&lid="+value
+
                 }
             }
         })
-
     })
 
 

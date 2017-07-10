@@ -14,7 +14,6 @@
     <script src="{JS_PATH}jquery.js"></script>
     <script src="{JS_PATH}rem.js"></script>
     <script src="{JS_PATH}iscroll.js"></script>
-    <!--<script src="{JS_PATH}fh-res.js"></script>-->
 </head>
 <body onload="loaded()">
 <div CLASS="fh-nav">
@@ -25,7 +24,7 @@
         <img src="{IMG_PATH}fh-21.png" alt="">
     </li>
     <li>
-        <a href="">待发货</a>
+        <a href="index.php?f=order&a=send&lid={$lid}">待发货</a>
     </li>
     <li>
         <a href="">待收货</a>
@@ -36,17 +35,18 @@
 </ul>
 <div id="wrapper">
     <div id="scroller">
+        {foreach $data as $v}
         <div class="fh-con">
             <div class="fh-nub">
-                <p>订单编号:<span>NO.19239987236</span></p>
+                <p>订单编号:<span>NO.{$v['ordernumber']}</span></p>
             </div>
             <div class="fh-sh">
                 <div class="fh-img">
-                    <img src="{IMG_PATH}fh-22.png" alt="">
+                    <img src="{$v['imgurl']}" alt="">
                 </div>
                 <div class="fh-js">
-                    <h1>北欧创意现代吊灯</h1>
-                    <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
+                    <h1>{$v['cname']}</h1>
+                    <h2>{$v['ename']}</h2>
                     <div class="fh-color">
                         <div></div>
                         <h3>颜色:<span>单一色</span></h3>
@@ -57,70 +57,18 @@
                     </div>
                     <div class="fh-price">
                         <img src="{IMG_PATH}fh-24.png" alt="">
-                        <h5>680.00</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="fh-sh">
-                <div class="fh-img">
-                    <img src="{IMG_PATH}fh-23.png" alt="">
-                </div>
-                <div class="fh-js">
-                    <h1>北欧创意现代吊灯</h1>
-                    <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
-                    <div class="fh-color">
-                        <div></div>
-                        <h3>颜色:<span>单一色</span></h3>
-                    </div>
-                    <div class="fh-color fh-size">
-                        <div></div>
-                        <h3>规格: <span>88*88</span></h3>
-                    </div>
-                    <div class="fh-price">
-                        <img src="{IMG_PATH}fh-24.png" alt="">
-                        <h5>680.00</h5>
+                        <h5>{$v['price']}</h5>
                     </div>
                 </div>
             </div>
             <div class="fh-all">
-                <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
+                <p>合计&nbsp;&nbsp;<span> {$v['price']}</span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
                     <img src="{IMG_PATH}fh-25.png" alt="">
                 </div>
             </div>
         </div>
-        <div class="fh-con">
-            <div class="fh-nub">
-                <p>订单编号:<span>NO.19239987236</span></p>
-            </div>
-            <div class="fh-sh">
-                <div class="fh-img">
-                    <img src="{IMG_PATH}fh-26.png" alt="">
-                </div>
-                <div class="fh-js">
-                    <h1>北欧创意现代吊灯</h1>
-                    <h2>NORDIC IDEA OF MODERN DROPLIGHT</h2>
-                    <div class="fh-color">
-                        <div></div>
-                        <h3>颜色:<span>单一色</span></h3>
-                    </div>
-                    <div class="fh-color fh-size">
-                        <div></div>
-                        <h3>规格: <span>88*88</span></h3>
-                    </div>
-                    <div class="fh-price">
-                        <img src="{IMG_PATH}fh-24.png" alt="">
-                        <h5>680.00</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="fh-all">
-                <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
-                <div class="fh-tormb">
-                    <img src="{IMG_PATH}fh-25.png" alt="">
-                </div>
-            </div>
-        </div>
+        {/foreach}
         <div class="fh-no">
             <img src="{IMG_PATH}fh-27.png" alt="">
         </div>
