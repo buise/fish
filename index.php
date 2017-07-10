@@ -1,5 +1,6 @@
 <?php
 header("content-type:text/html;charset=utf8");
+
 //定义目录
 define("MVC","ok");
 //echo "<pre>";
