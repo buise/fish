@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 15:16:36
+/* Smarty version 3.1.30, created on 2017-07-10 02:39:09
   from "E:\wamp\www\fish\template\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59622cb49f8f00_31413678',
+  'unifunc' => 'content_5962ccad3066f0_15234927',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7c4fdda4b42de8c28ddefc4755275adfbffc313f' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\index.html',
-      1 => 1499605506,
+      1 => 1499646926,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59622cb49f8f00_31413678 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962ccad3066f0_15234927 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,7 +62,7 @@ H-logo.png" alt="">
             <img src="<?php echo IMG_PATH;?>
 H-message.png" alt="">
         </div>
-        <a href="index.php?f=search" class="H-search">
+        <a href="index.php?m=index&f=search" class="H-search">
             <input type="text" value="商品名/设计师/分类……">
             <img src="<?php echo IMG_PATH;?>
 H-serach.png" alt="">

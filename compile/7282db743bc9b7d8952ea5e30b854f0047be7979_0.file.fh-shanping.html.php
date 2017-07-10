@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-10 03:39:11
+  from "E:\wamp\www\fish\template\index\fh-shanping.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5962dabf0c45d6_94076322',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7282db743bc9b7d8952ea5e30b854f0047be7979' => 
+    array (
+      0 => 'E:\\wamp\\www\\fish\\template\\index\\fh-shanping.html',
+      1 => 1499650747,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5962dabf0c45d6_94076322 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +33,18 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>闪屏</title>
-    <link rel="stylesheet" href="{CSS_PATH}swiper.css">
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <script src="{JS_PATH}jquery.js"></script>
-    <script src="{JS_PATH}swiper.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+swiper.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+swiper.js"><?php echo '</script'; ?>
+>
 </head>
 <style>
     .swiper-container {
@@ -44,12 +76,16 @@
 <body>
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <img src="{IMG_PATH}fh-1.png" alt="" class="swiper-slide">
-        <img src="{IMG_PATH}fh-2.png" alt="" class="swiper-slide">
-        <img src="{IMG_PATH}fh-3.png" alt="" class="swiper-slide">
+        <img src="<?php echo IMG_PATH;?>
+fh-1.png" alt="" class="swiper-slide">
+        <img src="<?php echo IMG_PATH;?>
+fh-2.png" alt="" class="swiper-slide">
+        <img src="<?php echo IMG_PATH;?>
+fh-3.png" alt="" class="swiper-slide">
     </div>
 </div>
-<script>
+<?php echo '<script'; ?>
+>
     $(document).ready(function () {
         var swiper = new Swiper('.swiper-container',{
             resistanceRatio : 0,
@@ -60,6 +96,8 @@
             }
         });
     })
-</script>
+<?php echo '</script'; ?>
+>
 </body>
-</html>
+</html><?php }
+}

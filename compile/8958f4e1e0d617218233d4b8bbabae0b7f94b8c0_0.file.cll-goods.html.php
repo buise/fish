@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 02:45:02
-  from "E:\wamp\www\fish\template\index\cll-goods.html" */
+/* Smarty version 3.1.30, created on 2017-07-10 04:42:11
+  from "E:\wamp\www\git_item\fish\template\index\cll-goods.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962ce0e866411_32094661',
+  'unifunc' => 'content_5962e983b8cf39_33863374',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '988bc7b5915dbfa34acb426bc98be9ff01fd8687' => 
+    '8958f4e1e0d617218233d4b8bbabae0b7f94b8c0' => 
     array (
-      0 => 'E:\\wamp\\www\\fish\\template\\index\\cll-goods.html',
-      1 => 1499646926,
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cll-goods.html',
+      1 => 1499654523,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962ce0e866411_32094661 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962e983b8cf39_33863374 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -90,6 +90,8 @@ H-back.png" alt="">
 </span>
                 <p><?php echo $_smarty_tpl->tpl_vars['mess']->value[0]['intro'];?>
 </p>
+                <input type="hidden" value="<?php echo $_smarty_tpl->tpl_vars['mess']->value[0]['lid'];?>
+" class="lid">
             </div>
             <!--商品详情-->
             <div class="com detail">

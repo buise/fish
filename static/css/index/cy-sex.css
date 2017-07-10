@@ -18,6 +18,14 @@ body{
     margin-top: .2rem;
     position: absolute;
 }
+header>span{
+    position: absolute;
+    right: .24rem;
+    font-size: .3rem;
+    top: .24rem;
+    color: #fff;
+    font-family: "苹方 粗体";
+}
 
 /*选择*/
 #info{
@@ -136,5 +144,5 @@ body{
     left: .53rem;
 }
 label.left{
-    left: -0.1rem;
+    left: .53rem;
 }

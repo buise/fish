@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 16:59:00
+/* Smarty version 3.1.30, created on 2017-07-10 04:01:45
   from "E:\wamp\www\git_item\fish\template\index\cy-personal.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_596244b419ac91_35779160',
+  'unifunc' => 'content_5962e009e8f770_80089143',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8740ad0e5cf637fa4c389f8b14455cef47b1f52f' => 
     array (
       0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-personal.html',
-      1 => 1499612336,
+      1 => 1499652103,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_596244b419ac91_35779160 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5962e009e8f770_80089143 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -118,7 +118,7 @@ cy-fukuan.png" alt="">
                 </a>
             </li>
             <li class="o-list li-list">
-                <a href="index.php?m=index&f=payment&a=show">
+                <a href="index.php?m=index&f=order&a=send">
                     <img src="<?php echo IMG_PATH;?>
 cy-fahuo.png" alt="">
                     <div class="order-word">

@@ -1,3 +1,27 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-07-10 04:01:47
+  from "E:\wamp\www\git_item\fish\template\index\fh-send.html" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_5962e00b358a73_24840582',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '4eb78965d6691d3251080194d5ffea0c4aca7666' => 
+    array (
+      0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\fh-send.html',
+      1 => 1499612211,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5962e00b358a73_24840582 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +33,35 @@
     <meta name="full-screen" content="yes">
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>待发货</title>
-    <link rel="stylesheet" href="{CSS_PATH}common.css">
-    <link rel="stylesheet" href="{CSS_PATH}index/fh-send.css">
-    <script src="{JS_PATH}jquery.js"></script>
-    <script src="{JS_PATH}rem.js"></script>
-    <script src="{JS_PATH}iscroll.js"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+common.css">
+    <link rel="stylesheet" href="<?php echo CSS_PATH;?>
+index/fh-send.css">
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+jquery.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+rem.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="<?php echo JS_PATH;?>
+iscroll.js"><?php echo '</script'; ?>
+>
 </head>
 <body>
 <div CLASS="fh-nav">
-    <img src="{IMG_PATH}fh-34.png" alt="">
+    <img src="<?php echo IMG_PATH;?>
+fh-34.png" alt="">
 </div>
 <ul class="fh-title">
     <li>
         <a href="">待付款</a>
     </li>
     <li>
-        <img src="{IMG_PATH}fh-28.png" alt="">
+        <img src="<?php echo IMG_PATH;?>
+fh-28.png" alt="">
     </li>
     <li>
         <a href="">待收货</a>
@@ -40,7 +77,8 @@
             </div>
             <div class="fh-sh">
                 <div class="fh-img">
-                    <img src="{IMG_PATH}fh-22.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-22.png" alt="">
                 </div>
                 <div class="fh-js">
                     <h1>北欧创意现代吊灯</h1>
@@ -54,7 +92,8 @@
                         <h3>规格: <span>88*88</span></h3>
                     </div>
                     <div class="fh-price">
-                        <img src="{IMG_PATH}fh-24.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-24.png" alt="">
                         <h5>680.00</h5>
                     </div>
                 </div>
@@ -62,35 +101,42 @@
             <div class="fh-all">
                 <p>合计&nbsp;&nbsp;<span>760.00</span><span class="fh-rmb">RMB</span></p>
                 <div class="fh-tormb">
-                    <img src="{IMG_PATH}fh-35.png" alt="">
+                    <img src="<?php echo IMG_PATH;?>
+fh-35.png" alt="">
                 </div>
             </div>
 
             <ul class="fh-dd">
                 <li class="fh-one">
                     <div class="fh-quan">
-                        <img src="{IMG_PATH}fh-29.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-29.png" alt="">
                     </div>
                     <div class="fh-tit">
                         <div class="fh-titimg">
-                            <img src="{IMG_PATH}fh-36.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+fh-36.png" alt="">
                         </div>
                         <p>2346 89753 8965432</p>
                     </div>
                 </li>
                 <li class="fh-one">
                     <div class="fh-quan">
-                        <img src="{IMG_PATH}fh-29.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-29.png" alt="">
                     </div>
                     <div class="fh-tit">
                         <div class="fh-titimg">
-                            <img src="{IMG_PATH}fh-37.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+fh-37.png" alt="">
                         </div>
                         <div class="fh-shangjia">
-                            <img class="fh-sjimg" src="{IMG_PATH}fh-30.png" alt="">
+                            <img class="fh-sjimg" src="<?php echo IMG_PATH;?>
+fh-30.png" alt="">
                             <div>
                                 <span>鱼设计定制中心&nbsp;</span>
-                                <img src="{IMG_PATH}fh-33.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+fh-33.png" alt="">
                             </div>
                             <h2>THE FISH DESIGN</h2>
                         </div>
@@ -98,30 +144,37 @@
                 </li>
                 <li class="fh-one">
                     <div class="fh-quan">
-                        <img src="{IMG_PATH}fh-29.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-29.png" alt="">
                     </div>
                     <div class="fh-tit">
                         <div class="fh-titimg">
-                            <img src="{IMG_PATH}fh-39.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+fh-39.png" alt="">
                         </div>
                         <div class="fh-shangjia">
-                            <img class="fh-sjimg" src="{IMG_PATH}fh-31.png" alt="">
+                            <img class="fh-sjimg" src="<?php echo IMG_PATH;?>
+fh-31.png" alt="">
                             <div>
                                 <span>十四哥&nbsp;</span>
-                                <img src="{IMG_PATH}fh-33.png" alt="">
+                                <img src="<?php echo IMG_PATH;?>
+fh-33.png" alt="">
                             </div>
                             <h2>THE FISH DESIGN</h2>
                         </div>
-                        <img src="{IMG_PATH}fh-32.png" alt="" class="fh-dw">
+                        <img src="<?php echo IMG_PATH;?>
+fh-32.png" alt="" class="fh-dw">
                     </div>
                 </li>
                 <li class="fh-one">
                     <div class="fh-quan">
-                        <img src="{IMG_PATH}fh-29.png" alt="">
+                        <img src="<?php echo IMG_PATH;?>
+fh-29.png" alt="">
                     </div>
                     <div class="fh-tit">
                         <div class="fh-titimg">
-                            <img src="{IMG_PATH}fh-38.png" alt="">
+                            <img src="<?php echo IMG_PATH;?>
+fh-38.png" alt="">
                         </div>
                         <p id="fh-src">山西省临汾市解放东路山西师范大学现代文理学院</p>
                     </div>
@@ -131,12 +184,12 @@
 </div>
 </body>
 </html>
-<script>
+<?php echo '<script'; ?>
+>
     var myScroll;
     myScroll = new IScroll('#wrapper', {
         mouseWheel: true,
     });
-    $(".fh-nav img").click(function () {
-        history.go(-1);
-    })
-</script>
+<?php echo '</script'; ?>
+><?php }
+}

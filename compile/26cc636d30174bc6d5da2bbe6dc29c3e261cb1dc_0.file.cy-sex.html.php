@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 05:35:00
+/* Smarty version 3.1.30, created on 2017-07-09 18:39:41
   from "E:\wamp\www\git_item\fish\template\index\cy-sex.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5961a464d292e9_60361475',
+  'unifunc' => 'content_59625c4d3a07e1_32581410',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '26cc636d30174bc6d5da2bbe6dc29c3e261cb1dc' => 
     array (
       0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\cy-sex.html',
-      1 => 1499571299,
+      1 => 1499618380,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5961a464d292e9_60361475 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59625c4d3a07e1_32581410 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!doctype html>
 <html lang="en">
@@ -60,9 +60,11 @@ cy-return.png" alt="" class="return">
     </a>
     <img src="<?php echo IMG_PATH;?>
 cy-xingbie.png" alt="">
+    <span class="complete">完成</span>
 </header>
 <!--个人资料-->
-<ul id="info" class="cy-info">
+<ul id="info" class="cy-info" sex="<?php echo $_smarty_tpl->tpl_vars['sex']->value;?>
+">
     <li class="info-list li-list">
             <img src="<?php echo IMG_PATH;?>
 cy-boy.png" alt="">
@@ -71,7 +73,7 @@ cy-boy.png" alt="">
                 <span class="info-en">male</span>
             </div>
             <div class="slideThree">
-                <input type="radio" value="男" id="slideOne" name="sex[]" checked />
+                <input type="radio" value="1" id="slideOne" name="sex"  />
                 <label for="slideOne"></label>
             </div>
     </li>
@@ -83,7 +85,7 @@ cy-girl.png" alt="">
                 <span class="info-en">female</span>
             </div>
             <div class="slideThree">
-                <input type="radio" value="女" id="slideTwo" name="sex[]"  checked/>
+                <input type="radio" value="2" id="slideTwo" name="sex"  />
                 <label for="slideTwo"></label>
             </div>
     </li>
@@ -96,7 +98,7 @@ cy-baomi.png" alt="">
             </div>
             <div class="slideThree">
 
-                <input type="radio" value="保密" id="slideThree" name="sex[]"  checked/>
+                <input type="radio" value="3" id="slideThree" name="sex" />
                 <label for="slideThree"></label>
             </div>
     </li>
@@ -106,20 +108,34 @@ cy-baomi.png" alt="">
 <?php echo '<script'; ?>
 >
     $(function () {
-        var sex=[];
-        $("input[type=radio]").each(function (index,val) {
-            sex=$(val).val()
-            console.log(sex)
-
+        var input=3;
+        $(".slideThree >label").each(function (index,val) {
+            $(val).click(function () {
+                input=$(this).prev().val()
+//                console.log()
+            })
         })
-        console.log(sex)
-        $.ajax({
-            url:"index.php?m=index&f=personal&a=sex",
-            type: "POST",
-            data: "sex=sex",
-            success: function(msg){
-//                alert( "Data Saved: " + msg );
-            }
+
+
+
+        $(".complete").click(function () {
+//            console.log(input);
+            $.ajax({
+                url:"index.php?f=personal&a=sexcheck",
+                type:"post",
+                data:{
+                    value:input
+                },
+                success:function (e) {
+                    if(e=="ok"){
+                        $("input[type=radio]").each(function (index,val) {
+                            if($(val).val()==input){
+                                $(val).attr("checked","checked")
+                            }
+                        })
+                    }
+                }
+            })
 
         })
     })

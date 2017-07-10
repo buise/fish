@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 04:13:39
+/* Smarty version 3.1.30, created on 2017-07-09 17:24:57
   from "E:\wamp\www\git_item\fish\template\index\fh-login.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5961915335c894_44173835',
+  'unifunc' => 'content_59624ac92529b9_56619655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '06bac07553cd28d1bc40b19e33ce69b85f76598c' => 
     array (
       0 => 'E:\\wamp\\www\\git_item\\fish\\template\\index\\fh-login.html',
-      1 => 1499311404,
+      1 => 1499612211,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5961915335c894_44173835 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59624ac92529b9_56619655 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,47 +34,51 @@ function content_5961915335c894_44173835 (Smarty_Internal_Template $_smarty_tpl)
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>登录</title>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/common.css">
+common.css">
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>
-/index/fh-login.css">
+index/fh-login.css">
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
-/jquery.js"><?php echo '</script'; ?>
+jquery.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
-/rem.js"><?php echo '</script'; ?>
+rem.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="<?php echo JS_PATH;?>
-/fh-login.js"><?php echo '</script'; ?>
+fh-login.js"><?php echo '</script'; ?>
 >
 </head>
 <body>
 <div class="fh-nav">
-    <img src="<?php echo IMG_PATH;?>
-/fh-5.png" alt="">
+    <a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+">
+        <img src="<?php echo IMG_PATH;?>
+fh-5.png" alt="">
+    </a>
+
     <div class="fh-res">
         <a href="index.php?f=login&a=res">注册</a>
     </div>
 </div>
 <div class="fh-con">
     <img src="<?php echo IMG_PATH;?>
-/fh-6.png" alt="" class="fh-tx">
+fh-6.png" alt="" class="fh-tx">
     <form action="" class="fh-bd">
         <input type="text" name="name" placeholder="请输入您的账号" autocomplete="off">
         <img src="<?php echo IMG_PATH;?>
-/fh-7.png" alt="" class="fh-xf">
+fh-7.png" alt="" class="fh-xf">
         <div class="fh-ts">
             <img src="<?php echo IMG_PATH;?>
-/fh-11.png" alt="" class="fh-yes">
+fh-11.png" alt="" class="fh-yes">
         </div>
         <!--<div class="fh-ts2">账号输入错误</div>-->
         <input type="password" name="pass" placeholder="请输入您的密码" autocomplete="off">
         <img src="<?php echo IMG_PATH;?>
-/fh-8.png" alt="" class="fh-s">
+fh-8.png" alt="" class="fh-s">
         <img src="<?php echo IMG_PATH;?>
-/fh-9.png" alt="" class="fh-yj">
+fh-9.png" alt="" class="fh-yj">
         <label>
             <input type="radio" name="dan">&nbsp;记住密码
         </label>
@@ -87,19 +91,20 @@ function content_5961915335c894_44173835 (Smarty_Internal_Template $_smarty_tpl)
     <!--加载中-->
     <div class="fh-loading">
         <img src="<?php echo IMG_PATH;?>
-/fh-14.png" alt="">
+fh-14.png" alt="">
     </div>
     <!--登录失败-->
     <div class="fh-fail">
         <img src="<?php echo IMG_PATH;?>
-/fh-12.png" alt="">
+fh-12.png" alt="">
         <a href="index.php?f=login" class="fh-again"></a>
     </div>
     <!--登录成功-->
     <div class="fh-success">
         <img src="<?php echo IMG_PATH;?>
-/fh-13.png" alt="">
-        <a href="" class="fh-go"></a>
+fh-13.png" alt="">
+        <a href="<?php echo $_smarty_tpl->tpl_vars['url']->value;?>
+" class="fh-go"></a>
     </div>
 </div>
 </body>
