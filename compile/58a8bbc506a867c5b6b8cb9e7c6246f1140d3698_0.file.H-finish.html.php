@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 05:09:45
+/* Smarty version 3.1.30, created on 2017-07-10 09:07:03
   from "D:\wamp\www\fish\template\index\H-finish.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59619e79b9c5e6_60120638',
+  'unifunc' => 'content_59632797c79f46_87825089',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '58a8bbc506a867c5b6b8cb9e7c6246f1140d3698' => 
     array (
       0 => 'D:\\wamp\\www\\fish\\template\\index\\H-finish.html',
-      1 => 1499567000,
+      1 => 1499670421,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_59619e79b9c5e6_60120638 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59632797c79f46_87825089 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,7 +49,7 @@ iscroll.js"><?php echo '</script'; ?>
 	<body>
 		<header>
 			<div class="H-htop">
-				<a href="javascript:;">
+				<a href="javascript:window.history.go(-1);">
 					<img src="<?php echo IMG_PATH;?>
 H-back.png" class="back"/>
 				</a>			
@@ -164,8 +164,8 @@ H-s15.png"/>
 H-s16.png"/>
 								</div>
 								<div class="right">
-									<h3>MINIMALIST</h3>
-									<h4>北欧极简风</h4>
+									<h3>CLASSICAL</h3>
+									<h4>新古典风</h4>
 									<img src="<?php echo IMG_PATH;?>
 H-s17.png"/>
 									<p>以简单到极致为追求感官上简约整洁品味更为优雅……</p>
@@ -201,8 +201,8 @@ H-s15.png"/>
 H-s16.png"/>
 								</div>
 								<div class="right">
-									<h3>MINIMALIST</h3>
-									<h4>北欧极简风</h4>
+									<h3>CONTRACTED</h3>
+									<h4>欧式简约风</h4>
 									<img src="<?php echo IMG_PATH;?>
 H-s17.png"/>
 									<p>以简单到极致为追求感官上简约整洁品味更为优雅……</p>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 17:06:54
+/* Smarty version 3.1.30, created on 2017-07-10 06:57:42
   from "D:\wamp\www\fish\template\index\index.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5962468ee96506_14282532',
+  'unifunc' => 'content_596309461b3285_02321882',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '21ec5d0d0d25d1df62f050355aa8e8cc02c13c8d' => 
     array (
       0 => 'D:\\wamp\\www\\fish\\template\\index\\index.html',
-      1 => 1499612804,
+      1 => 1499662222,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5962468ee96506_14282532 (Smarty_Internal_Template $_smarty_tpl) {
+function content_596309461b3285_02321882 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -96,84 +96,49 @@ H-title1.png"/>
           		</div>
                 <div class="swiper-container1">
                     <ul class="swiper-wrapper H-sale-bottom">
-                        <li class="swiper-slide">
-                            <div class="con">
-                                <img src="<?php echo IMG_PATH;?>
-H-sale1.png">
-                                <p class="title">欧普照明灯</p>
-                                <p>CLOTH ART SOFA</p>
-                                <div class="H-pos"></div>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
+                    	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['sale']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>                    	
+                		<li class="swiper-slide">
+                			<a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
+	                            <div class="con">
+	                                <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
+">
+	                                <p class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
+</p>
+	                                <p><?php echo $_smarty_tpl->tpl_vars['v']->value['ename'];?>
+</p>
+	                                <div class="H-pos"></div>
+	                            </div>
+	                            <ul class="list">
+	                                <li>
+	                                    <img src="<?php echo IMG_PATH;?>
 H-sale4.png" alt="">
-                                    <span>1999</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
+	                                    <span>1999</span>
+	                                </li>
+	                                <li>
+	                                    <img src="<?php echo IMG_PATH;?>
 H-sale5.png" alt="">
-                                    <span>2999</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
+	                                    <span>2999</span>
+	                                </li>
+	                                <li>
+	                                    <img src="<?php echo IMG_PATH;?>
 H-sale6.png" alt="">
-                                    <span>29</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper-slide">
-                            <div class="con">
-                                <img src="<?php echo IMG_PATH;?>
-H-sale2.png">
-                                <p class="title">欧普照明灯</p>
-                                <p>CLOTH ART SOFA</p>
-                                <div class="H-pos"></div>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-sale4.png" alt="">
-                                    <span>1999</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-sale5.png" alt="">
-                                    <span>2999</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-sale6.png" alt="">
-                                    <span>29</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper-slide">
-                            <div class="con">
-                                <img src="<?php echo IMG_PATH;?>
-H-sale3.png">
-                                <p class="title">欧普照明灯</p>
-                                <p>CLOTH ART SOFA</p>
-                                <div class="H-pos"></div>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-sale4.png" alt="">
-                                    <span>1999</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-sale5.png" alt="">
-                                    <span>2999</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-sale6.png" alt="">
-                                    <span>29</span>
-                                </li>
-                            </ul>
-                        </li>
+	                                    <span>29</span>
+	                                </li>
+	                            </ul>
+	                        </a>
+                		</li>
+                    	
+                        <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+               
                     </ul>
                 </div>
           	</div>
@@ -186,22 +151,31 @@ H-title2.png"/>
                 </div>
                 <div class="H-design-bottom">
                    <ul>
+                   	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['design']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
                        <li>
-                           <img src="<?php echo IMG_PATH;?>
-H-design1.png">
-                           <p class="title">大师级作品上线</p>
-                           <p>MASTER DESIGN ONLINE</p>
-                           <div class="H-line"></div>
-                           <p class="H-repeat">MASTER DESIGN ONLINE</p>
+	                       	<a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
+	                       		<img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
+">
+	                           <p class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
+</p>
+	                           <p><?php echo $_smarty_tpl->tpl_vars['v']->value['ename'];?>
+</p>
+	                           <div class="H-line"></div>
+	                           <p class="H-repeat"><?php echo $_smarty_tpl->tpl_vars['v']->value['ename'];?>
+</p>
+	                       	</a>                     
                        </li>
-                       <li>
-                           <img src="<?php echo IMG_PATH;?>
-H-design1.png">
-                           <p class="title">大师级作品上线</p>
-                           <p>MASTER DESIGN ONLINE</p>
-                           <div class="H-line"></div>
-                           <p class="H-repeat">MASTER DESIGN ONLINE</p>
-                       </li>
+                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
                    </ul>
                     <div class="H-design-bg"></div>
                 </div>
@@ -214,66 +188,55 @@ H-design1.png">
 H-title3.png"/>
                 </div>
                 <ul class="H-devise-bottom">
-                    <li class="H-devise-con">
-                        <div class="con-top">
-                            <img src="<?php echo IMG_PATH;?>
-H-devise1.png" alt="">
-                            <p class="title">波西米亚田园风格</p>
-                            <p>用家具表现悠闲、舒畅、自然的生活情趣,你想要的舒适尽在这里淋漓尽致的展现……</p>
-                        </div>
-                        <ul class="con-bottom">
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
+                	<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['devise']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
+                	<li class="H-devise-con">
+                		<a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
+                		
+	                        <div class="con-top">
+	                            <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
+">                          
+	                            <p class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
+</p>
+	                            <p><?php echo $_smarty_tpl->tpl_vars['v']->value['intro'];?>
+</p>
+	                            <img src="<?php echo IMG_PATH;?>
+H-index-like.png" class="like"/>
+	                        </div>
+	                        <ul class="con-bottom">
+	                            <li>
+	                                <img src="<?php echo IMG_PATH;?>
 H-s12.png"/>
-                                <span>3245</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
+	                                <span>3245</span>
+	                            </li>
+	                            <li>
+	                                <img src="<?php echo IMG_PATH;?>
 H-s13.png"/>
-                                <span>2342</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
+	                                <span>2342</span>
+	                            </li>
+	                            <li>
+	                                <img src="<?php echo IMG_PATH;?>
 H-s14.png"/>
-                                <span>4352</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
+	                                <span>4352</span>
+	                            </li>
+	                            <li>
+	                                <img src="<?php echo IMG_PATH;?>
 H-s15.png"/>
-                                <span>89</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="H-devise-con">
-                        <div class="con-top">
-                            <img src="<?php echo IMG_PATH;?>
-H-devise1.png" alt="">
-                            <p class="title">波西米亚田园风格</p>
-                            <p>用家具表现悠闲、舒畅、自然的生活情趣,你想要的舒适尽在这里淋漓尽致的展现……</p>
-                        </div>
-                        <ul class="con-bottom">
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
-H-s12.png"/>
-                                <span>3245</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
-H-s13.png"/>
-                                <span>2342</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
-H-s14.png"/>
-                                <span>4352</span>
-                            </li>
-                            <li>
-                                <img src="<?php echo IMG_PATH;?>
-H-s15.png"/>
-                                <span>89</span>
-                            </li>
-                        </ul>
-                    </li>
+	                                <span>89</span>
+	                            </li>
+	                        </ul>
+	                    </a>    
+	                </li>
+                	<?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
                 </ul>
             </div>
 
@@ -283,71 +246,56 @@ H-s15.png"/>
                     <img src="<?php echo IMG_PATH;?>
 H-title4.png"/>
                 </div>
-                <ul class="H-like-bottom">
+                <ul class="H-like-bottom">                 
+                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['like']->value, 'v');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
+?>
                     <li>
-                        <div class="left">
-                            <img src="<?php echo IMG_PATH;?>
-H-like1.png" alt="">
-                        </div>
-                        <div class="right">
-                            <div class="right-top">
-                                <p class="title">北欧风格沙发</p>
-                                <p>NORDIC STYLE SOFA</p>
-                                <img src="<?php echo IMG_PATH;?>
+                    	<a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+">
+                    		<div class="left">
+	                            <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
+" alt="">
+	                        </div>
+	                        <div class="right">
+	                            <div class="right-top">
+	                                <p class="title"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
+</p>
+	                                <p><?php echo $_smarty_tpl->tpl_vars['v']->value['ename'];?>
+</p>
+	                                <img src="<?php echo IMG_PATH;?>
 H-like-line.png" alt="">
-                                <p>具有着独特的美学特点呈现出的乡土格调……</p>
-                            </div>
-                            <ul class="con-bottom">
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
+	                                <p><?php echo $_smarty_tpl->tpl_vars['v']->value['intro'];?>
+</p>
+	                            </div>
+	                            <ul class="con-bottom">
+	                                <li>
+	                                    <img src="<?php echo IMG_PATH;?>
 H-s12.png"/>
-                                    <span>3245</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
+	                                    <span>3245</span>
+	                                </li>
+	                                <li>
+	                                    <img src="<?php echo IMG_PATH;?>
 H-s13.png"/>
-                                    <span>2342</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
+	                                    <span>2342</span>
+	                                </li>
+	                                <li>
+	                                    <img src="<?php echo IMG_PATH;?>
 H-s14.png"/>
-                                    <span>4352</span>
-                                </li>
-                            </ul>
-                        </div>
+	                                    <span>4352</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+                    	</a>                        
                     </li>
-                    <li>
-                        <div class="left">
-                            <img src="<?php echo IMG_PATH;?>
-H-like2.png" alt="">
-                        </div>
-                        <div class="right">
-                            <div class="right-top">
-                                <p class="title">北欧风格沙发</p>
-                                <p>NORDIC STYLE SOFA</p>
-                                <img src="<?php echo IMG_PATH;?>
-H-like-line.png" alt="">
-                                <p>具有着独特的美学特点呈现出的乡土格调……</p>
-                            </div>
-                            <ul class="con-bottom">
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-s12.png"/>
-                                    <span>3245</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-s13.png"/>
-                                    <span>2342</span>
-                                </li>
-                                <li>
-                                    <img src="<?php echo IMG_PATH;?>
-H-s14.png"/>
-                                    <span>4352</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
+?>
+
                 </ul>
             </div>
         </div>

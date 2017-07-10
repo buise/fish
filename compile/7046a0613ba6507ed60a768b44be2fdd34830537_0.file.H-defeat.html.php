@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-09 05:27:24
+/* Smarty version 3.1.30, created on 2017-07-10 07:13:32
   from "D:\wamp\www\fish\template\index\H-defeat.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5961a29c001c60_05498952',
+  'unifunc' => 'content_59630cfc972420_60306043',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7046a0613ba6507ed60a768b44be2fdd34830537' => 
     array (
       0 => 'D:\\wamp\\www\\fish\\template\\index\\H-defeat.html',
-      1 => 1499570842,
+      1 => 1499663045,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5961a29c001c60_05498952 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59630cfc972420_60306043 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html>
@@ -151,8 +151,8 @@ H-s15.png"/>
 H-s16.png"/>
 								</div>
 								<div class="right">
-									<h3>MINIMALIST</h3>
-									<h4>北欧极简风</h4>
+									<h3>CLASSICAL</h3>
+									<h4>新古典风</h4>
 									<img src="<?php echo IMG_PATH;?>
 H-s17.png"/>
 									<p>以简单到极致为追求感官上简约整洁品味更为优雅……</p>
@@ -188,8 +188,8 @@ H-s15.png"/>
 H-s16.png"/>
 								</div>
 								<div class="right">
-									<h3>MINIMALIST</h3>
-									<h4>北欧极简风</h4>
+									<h3>CONTRANTED</h3>
+									<h4>欧式简约风</h4>
 									<img src="<?php echo IMG_PATH;?>
 H-s17.png"/>
 									<p>以简单到极致为追求感官上简约整洁品味更为优雅……</p>

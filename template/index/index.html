@@ -50,72 +50,33 @@
           		</div>
                 <div class="swiper-container1">
                     <ul class="swiper-wrapper H-sale-bottom">
-                        <li class="swiper-slide">
-                            <div class="con">
-                                <img src="{IMG_PATH}H-sale1.png">
-                                <p class="title">欧普照明灯</p>
-                                <p>CLOTH ART SOFA</p>
-                                <div class="H-pos"></div>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <img src="{IMG_PATH}H-sale4.png" alt="">
-                                    <span>1999</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-sale5.png" alt="">
-                                    <span>2999</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-sale6.png" alt="">
-                                    <span>29</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper-slide">
-                            <div class="con">
-                                <img src="{IMG_PATH}H-sale2.png">
-                                <p class="title">欧普照明灯</p>
-                                <p>CLOTH ART SOFA</p>
-                                <div class="H-pos"></div>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <img src="{IMG_PATH}H-sale4.png" alt="">
-                                    <span>1999</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-sale5.png" alt="">
-                                    <span>2999</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-sale6.png" alt="">
-                                    <span>29</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="swiper-slide">
-                            <div class="con">
-                                <img src="{IMG_PATH}H-sale3.png">
-                                <p class="title">欧普照明灯</p>
-                                <p>CLOTH ART SOFA</p>
-                                <div class="H-pos"></div>
-                            </div>
-                            <ul class="list">
-                                <li>
-                                    <img src="{IMG_PATH}H-sale4.png" alt="">
-                                    <span>1999</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-sale5.png" alt="">
-                                    <span>2999</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-sale6.png" alt="">
-                                    <span>29</span>
-                                </li>
-                            </ul>
-                        </li>
+                    	{foreach $sale as $v}                    	
+                		<li class="swiper-slide">
+                			<a href="index.php?m=index&f=goods&lid={$v['lid']}">
+	                            <div class="con">
+	                                <img src="{$v['imgurl']}">
+	                                <p class="title">{$v['cname']}</p>
+	                                <p>{$v['ename']}</p>
+	                                <div class="H-pos"></div>
+	                            </div>
+	                            <ul class="list">
+	                                <li>
+	                                    <img src="{IMG_PATH}H-sale4.png" alt="">
+	                                    <span>1999</span>
+	                                </li>
+	                                <li>
+	                                    <img src="{IMG_PATH}H-sale5.png" alt="">
+	                                    <span>2999</span>
+	                                </li>
+	                                <li>
+	                                    <img src="{IMG_PATH}H-sale6.png" alt="">
+	                                    <span>29</span>
+	                                </li>
+	                            </ul>
+	                        </a>
+                		</li>
+                    	
+                        {/foreach}               
                     </ul>
                 </div>
           	</div>
@@ -127,20 +88,17 @@
                 </div>
                 <div class="H-design-bottom">
                    <ul>
+                   	{foreach $design as $v}
                        <li>
-                           <img src="{IMG_PATH}H-design1.png">
-                           <p class="title">大师级作品上线</p>
-                           <p>MASTER DESIGN ONLINE</p>
-                           <div class="H-line"></div>
-                           <p class="H-repeat">MASTER DESIGN ONLINE</p>
+	                       	<a href="index.php?m=index&f=goods&lid={$v['lid']}">
+	                       		<img src="{$v['imgurl']}">
+	                           <p class="title">{$v['cname']}</p>
+	                           <p>{$v['ename']}</p>
+	                           <div class="H-line"></div>
+	                           <p class="H-repeat">{$v['ename']}</p>
+	                       	</a>                     
                        </li>
-                       <li>
-                           <img src="{IMG_PATH}H-design1.png">
-                           <p class="title">大师级作品上线</p>
-                           <p>MASTER DESIGN ONLINE</p>
-                           <div class="H-line"></div>
-                           <p class="H-repeat">MASTER DESIGN ONLINE</p>
-                       </li>
+                    {/foreach}
                    </ul>
                     <div class="H-design-bg"></div>
                 </div>
@@ -152,56 +110,37 @@
                     <img src="{IMG_PATH}H-title3.png"/>
                 </div>
                 <ul class="H-devise-bottom">
-                    <li class="H-devise-con">
-                        <div class="con-top">
-                            <img src="{IMG_PATH}H-devise1.png" alt="">
-                            <p class="title">波西米亚田园风格</p>
-                            <p>用家具表现悠闲、舒畅、自然的生活情趣,你想要的舒适尽在这里淋漓尽致的展现……</p>
-                        </div>
-                        <ul class="con-bottom">
-                            <li>
-                                <img src="{IMG_PATH}H-s12.png"/>
-                                <span>3245</span>
-                            </li>
-                            <li>
-                                <img src="{IMG_PATH}H-s13.png"/>
-                                <span>2342</span>
-                            </li>
-                            <li>
-                                <img src="{IMG_PATH}H-s14.png"/>
-                                <span>4352</span>
-                            </li>
-                            <li>
-                                <img src="{IMG_PATH}H-s15.png"/>
-                                <span>89</span>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="H-devise-con">
-                        <div class="con-top">
-                            <img src="{IMG_PATH}H-devise1.png" alt="">
-                            <p class="title">波西米亚田园风格</p>
-                            <p>用家具表现悠闲、舒畅、自然的生活情趣,你想要的舒适尽在这里淋漓尽致的展现……</p>
-                        </div>
-                        <ul class="con-bottom">
-                            <li>
-                                <img src="{IMG_PATH}H-s12.png"/>
-                                <span>3245</span>
-                            </li>
-                            <li>
-                                <img src="{IMG_PATH}H-s13.png"/>
-                                <span>2342</span>
-                            </li>
-                            <li>
-                                <img src="{IMG_PATH}H-s14.png"/>
-                                <span>4352</span>
-                            </li>
-                            <li>
-                                <img src="{IMG_PATH}H-s15.png"/>
-                                <span>89</span>
-                            </li>
-                        </ul>
-                    </li>
+                	{foreach $devise as $v}
+                	<li class="H-devise-con">
+                		<a href="index.php?m=index&f=goods&lid={$v['lid']}">
+                		
+	                        <div class="con-top">
+	                            <img src="{$v['imgurl']}">                          
+	                            <p class="title">{$v['cname']}</p>
+	                            <p>{$v['intro']}</p>
+	                            <img src="{IMG_PATH}H-index-like.png" class="like"/>
+	                        </div>
+	                        <ul class="con-bottom">
+	                            <li>
+	                                <img src="{IMG_PATH}H-s12.png"/>
+	                                <span>3245</span>
+	                            </li>
+	                            <li>
+	                                <img src="{IMG_PATH}H-s13.png"/>
+	                                <span>2342</span>
+	                            </li>
+	                            <li>
+	                                <img src="{IMG_PATH}H-s14.png"/>
+	                                <span>4352</span>
+	                            </li>
+	                            <li>
+	                                <img src="{IMG_PATH}H-s15.png"/>
+	                                <span>89</span>
+	                            </li>
+	                        </ul>
+	                    </a>    
+	                </li>
+                	{/foreach}
                 </ul>
             </div>
 
@@ -210,61 +149,38 @@
                 <div class="H-like-top">
                     <img src="{IMG_PATH}H-title4.png"/>
                 </div>
-                <ul class="H-like-bottom">
+                <ul class="H-like-bottom">                 
+                    {foreach $like as $v}
                     <li>
-                        <div class="left">
-                            <img src="{IMG_PATH}H-like1.png" alt="">
-                        </div>
-                        <div class="right">
-                            <div class="right-top">
-                                <p class="title">北欧风格沙发</p>
-                                <p>NORDIC STYLE SOFA</p>
-                                <img src="{IMG_PATH}H-like-line.png" alt="">
-                                <p>具有着独特的美学特点呈现出的乡土格调……</p>
-                            </div>
-                            <ul class="con-bottom">
-                                <li>
-                                    <img src="{IMG_PATH}H-s12.png"/>
-                                    <span>3245</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-s13.png"/>
-                                    <span>2342</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-s14.png"/>
-                                    <span>4352</span>
-                                </li>
-                            </ul>
-                        </div>
+                    	<a href="index.php?m=index&f=goods&lid={$v['lid']}">
+                    		<div class="left">
+	                            <img src="{$v['imgurl']}" alt="">
+	                        </div>
+	                        <div class="right">
+	                            <div class="right-top">
+	                                <p class="title">{$v['cname']}</p>
+	                                <p>{$v['ename']}</p>
+	                                <img src="{IMG_PATH}H-like-line.png" alt="">
+	                                <p>{$v['intro']}</p>
+	                            </div>
+	                            <ul class="con-bottom">
+	                                <li>
+	                                    <img src="{IMG_PATH}H-s12.png"/>
+	                                    <span>3245</span>
+	                                </li>
+	                                <li>
+	                                    <img src="{IMG_PATH}H-s13.png"/>
+	                                    <span>2342</span>
+	                                </li>
+	                                <li>
+	                                    <img src="{IMG_PATH}H-s14.png"/>
+	                                    <span>4352</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+                    	</a>                        
                     </li>
-                    <li>
-                        <div class="left">
-                            <img src="{IMG_PATH}H-like2.png" alt="">
-                        </div>
-                        <div class="right">
-                            <div class="right-top">
-                                <p class="title">北欧风格沙发</p>
-                                <p>NORDIC STYLE SOFA</p>
-                                <img src="{IMG_PATH}H-like-line.png" alt="">
-                                <p>具有着独特的美学特点呈现出的乡土格调……</p>
-                            </div>
-                            <ul class="con-bottom">
-                                <li>
-                                    <img src="{IMG_PATH}H-s12.png"/>
-                                    <span>3245</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-s13.png"/>
-                                    <span>2342</span>
-                                </li>
-                                <li>
-                                    <img src="{IMG_PATH}H-s14.png"/>
-                                    <span>4352</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                    {/foreach}
                 </ul>
             </div>
         </div>

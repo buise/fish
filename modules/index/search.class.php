@@ -2,10 +2,7 @@
 	class search extends main{
 		public function init(){
 	        $this->smarty->display('index/H-search.html');
-	    }
-        public function loading(){
-            $this->smarty->display('index/H-loading.html');
-        }
+	   }
         public function result(){
             $res=$_POST['res'];
             $db=new db('lists');
