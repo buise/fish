@@ -28,38 +28,38 @@
 <!--个人资料-->
 <ul id="info" class="cy-info" sex="{$sex}">
     <li class="info-list li-list">
-            <img src="{IMG_PATH}cy-boy.png" alt="">
-            <div class="info-word">
-                <span class="info-ch">男</span>
-                <span class="info-en">male</span>
-            </div>
-            <div class="slideThree">
-                <input type="radio" value="1" id="slideOne" name="sex"  />
-                <label for="slideOne"></label>
-            </div>
+        <img src="{IMG_PATH}cy-boy.png" alt="">
+        <div class="info-word">
+            <span class="info-ch">男</span>
+            <span class="info-en">male</span>
+        </div>
+        <div class="slideThree">
+            <input type="radio" value="1" id="slideOne" name="sex"  />
+            <label for="slideOne"></label>
+        </div>
     </li>
     <li class="info-list li-list">
-            <img src="{IMG_PATH}cy-girl.png" alt="">
-            <div class="info-word">
-                <span class="info-ch">女</span>
-                <span class="info-en">female</span>
-            </div>
-            <div class="slideThree">
-                <input type="radio" value="2" id="slideTwo" name="sex"  />
-                <label for="slideTwo"></label>
-            </div>
+        <img src="{IMG_PATH}cy-girl.png" alt="">
+        <div class="info-word">
+            <span class="info-ch">女</span>
+            <span class="info-en">female</span>
+        </div>
+        <div class="slideThree">
+            <input type="radio" value="2" id="slideTwo" name="sex"  />
+            <label for="slideTwo"></label>
+        </div>
     </li>
     <li class="info-list li-list">
-            <img src="{IMG_PATH}cy-baomi.png" alt="">
-            <div class="info-word">
-                <span class="info-ch">保密</span>
-                <span class="info-en">secret</span>
-            </div>
-            <div class="slideThree">
+        <img src="{IMG_PATH}cy-baomi.png" alt="">
+        <div class="info-word">
+            <span class="info-ch">保密</span>
+            <span class="info-en">secret</span>
+        </div>
+        <div class="slideThree">
 
-                <input type="radio" value="3" id="slideThree" name="sex" />
-                <label for="slideThree"></label>
-            </div>
+            <input type="radio" value="3" id="slideThree" name="sex" />
+            <label for="slideThree"></label>
+        </div>
     </li>
 </ul>
 </body>
@@ -70,14 +70,10 @@
         $(".slideThree >label").each(function (index,val) {
             $(val).click(function () {
                 input=$(this).prev().val()
-//                console.log()
             })
         })
 
-
-
         $(".complete").click(function () {
-//            console.log(input);
             $.ajax({
                 url:"index.php?f=personal&a=sexcheck",
                 type:"post",

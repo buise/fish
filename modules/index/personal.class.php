@@ -14,7 +14,6 @@ class personal extends main{
         $name=$this->session->getSession("name");
 
         $result=$db->setField("sex")->where("name='{$name}'")->select();
-//        var_dump($result);
         $this->smarty->assign("sex",$result[0]['sex']);
 
         $this->smarty->display("index/cy-sex.html");
