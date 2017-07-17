@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-07-10 18:55:17
+/* Smarty version 3.1.30, created on 2017-07-11 03:46:54
   from "E:\wamp\www\fish\template\index\cll-classify.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5963b17533b244_19909620',
+  'unifunc' => 'content_59642e0ed890d9_61231887',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3a348f1bc7095a2a3cfa8f21d065c7193601af83' => 
     array (
       0 => 'E:\\wamp\\www\\fish\\template\\index\\cll-classify.html',
-      1 => 1499705714,
+      1 => 1499737404,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5963b17533b244_19909620 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59642e0ed890d9_61231887 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -103,9 +103,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['v']->value) {
 ?>
-                    <a href="javascript:;" lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
->
-                        <img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
+                    <div class="conbox">
+                    	<img src="<?php echo $_smarty_tpl->tpl_vars['v']->value['imgurl'];?>
 " alt="">
                         <p class="pc"><?php echo $_smarty_tpl->tpl_vars['v']->value['cname'];?>
 </p>
@@ -116,25 +115,17 @@ classnew_06.png" alt=""><?php echo $_smarty_tpl->tpl_vars['v']->value['price'];?
 </span>
                         <span><img src="<?php echo IMG_PATH;?>
 classnew_10.png" alt="">2999</span>
-                    </a>
+                        <a href="index.php?m=index&f=goods&lid=<?php echo $_smarty_tpl->tpl_vars['v']->value['lid'];?>
+" class="abox"></a>
+                    </div>
+                        
+                    
                     <?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-                	<?php echo '<script'; ?>
->
-                		var a=$(".light .con a");
-                		a.each(function(index,val){
-                			touch.on($(val),"tap",function(){
-	                			var lid=$(val).attr("lid")
-	                			$(val).attr("href","index.php?m=index&f=goods&lid="+lid)
-                			})
-                		})
-                		
-                	<?php echo '</script'; ?>
->
                 </div>
             </div>
 

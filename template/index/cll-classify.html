@@ -19,7 +19,9 @@
     <script>
         var myScroll;
         function loaded () {
-            myScroll = new IScroll('#wrapper');
+            myScroll = new IScroll('#wrapper',{
+            	preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ }
+            });
         }
     </script>
 </head>
@@ -51,24 +53,15 @@
                 <!--内容-->
                 <div class="con">
                     {foreach $light as $v}
-                    <a href="javascript:;" lid={$v['lid']}>
-                        <img src="{$v['imgurl']}" alt="">
+                    <div class="conbox">
+                    	<img src="{$v['imgurl']}" alt="">
                         <p class="pc">{$v['cname']}</p>
                         <p class="pe">{$v['ename']}</p>
                         <span><img src="{IMG_PATH}classnew_06.png" alt="">{$v['price']}</span>
                         <span><img src="{IMG_PATH}classnew_10.png" alt="">2999</span>
-                    </a>
+                        <a href="index.php?m=index&f=goods&lid={$v['lid']}" class="abox"></a>
+                    </div>
                     {/foreach}
-                	<script>
-                		var a=$(".light .con a");
-                		a.each(function(index,val){
-                			touch.on($(val),"tap",function(){
-	                			var lid=$(val).attr("lid")
-	                			$(val).attr("href","index.php?m=index&f=goods&lid="+lid)
-                			})
-                		})
-                		
-                	</script>
                 </div>
             </div>
 
@@ -81,14 +74,15 @@
                 <!--内容-->
                 <div class="con">
                     {foreach $home as $v}
-                    <a href="index.php?m=index&f=goods&lid={$v['lid']}">
-                        <img src="{$v['imgurl']}" alt="">
+                    <div class="conbox">
+                    	<img src="{$v['imgurl']}" alt="">
                         <p class="pc">{$v['cname']}</p>
                         <p class="pe">{$v['ename']}</p>
                         <span><img src="{IMG_PATH}H-s12.png" alt="">1990</span>
                         <span><img src="{IMG_PATH}H-s13.png" alt="">2999</span>
                         <span><img src="{IMG_PATH}H-s14.png" alt="">3999</span>
-                    </a>
+                    	<a href="index.php?m=index&f=goods&lid={$v['lid']}" class="abox"></a>
+                    </div>
                     {/foreach}
                 </div>
             </div>
@@ -102,7 +96,7 @@
                 <!--内容-->
                 <div class="con">
                     {foreach $accept as $v}
-                    <a href="index.php?m=index&f=goods&lid={$v['lid']}">
+                    <div class="conbox">
                         <img src="{$v['imgurl']}" alt="">
                         <p class="pc">{$v['cname']}</p>
                         <p class="pe">{$v['ename']}</p>
@@ -113,7 +107,9 @@
                         <img src="{IMG_PATH}classnew_27.png" alt="" class="xin">
                         <img src="{IMG_PATH}class_40.png" alt="" class="ren">
                         <span class="num">{$v['amount']}</span>
-                    </a>
+                    	<a href="index.php?m=index&f=goods&lid={$v['lid']}" class="abox"></a>
+                    </div>
+                    
                     {/foreach}
                 </div>
             </div>
@@ -126,13 +122,15 @@
                 <!--内容-->
                 <div class="con">
                     {foreach $fashion as $v}
-                    <a href="index.php?m=index&f=goods&lid={$v['lid']}" class="pos{$i} pos">
+                    <div class="conbox pos{$i} pos">
                         <img src="{$v['imgurl']}" alt="">
                         <p class="pc">{$v['cname']}</p>
                         <p class="pe">{$v['ename']}</p>
                         <span><img src="{IMG_PATH}H-s12.png" alt="">2435</span>
                         <span><img src="{IMG_PATH}H-s14.png" alt="">2435</span>
-                    </a>
+                    	<a href="index.php?m=index&f=goods&lid={$v['lid']}" class="abox"></a>
+                    </div>
+                    
                     {$i++}
                     {/foreach}
                 </div>

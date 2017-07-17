@@ -16,7 +16,9 @@
     <script>
         var myScroll;
         function loaded () {
-            myScroll = new IScroll('#wrapper');
+            myScroll = new IScroll('#wrapper',{
+            	preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ }
+            });
         }
     </script>
 </head>
@@ -52,11 +54,12 @@
                 <!--内容-->
                 <div class="cll-content">
                     {foreach $light as $v}
-                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                    <div class="conbox">
                         <img src="{$v['imgurl']}" alt="">
                         <p class="ptitle">{$v['cname']}</p>
                         <p class="penglish">{$v['ename']}</p>
-                    </a>
+                    	<a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}" class="abox"></a>
+                    </div>
                     {/foreach}
 
                 </div>
@@ -74,11 +77,13 @@
                 <!--内容-->
                 <div class="cll-content home">
                     {foreach $home as $v}
-                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                    <div class="conbox">
                         <img src="{$v['imgurl']}" alt="">
                         <p class="htitle">{$v['cname']}</p>
                         <p class="henglish">{$v['ename']}</p>
-                    </a>
+                    	<a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}" class="abox"></a>
+                    </div>
+                    
                     {/foreach}
                 </div>
             </div>
@@ -95,11 +100,13 @@
                 <!--内容-->
                 <div class="cll-content sofa">
                     {foreach $sofa as $v}
-                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                    <div class="conbox">
                         <img src="{$v['imgurl']}" alt="">
                         <p class="ptitle stitle">{$v['cname']}</p>
                         <p class="penglish">{$v['ename']}</p>
-                    </a>
+                    	<a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}" class="abox"></a>
+                    </div>
+                    
                     {/foreach}
 
                 </div>
@@ -117,11 +124,13 @@
                 <!--内容-->
                 <div class="cll-bed">
                     {foreach $bed as $v}
-                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                    <div class="conbox">                 
                         <img src="{$v['imgurl']}" alt="">
                         <p class="btitle">{$v['cname']}</p>
                         <p class="benglish">{$v['ename']}</p>
-                    </a>
+                        <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}" class="abox"></a>
+                    </div>
+
                     {/foreach}
                 </div>
             </div>
@@ -138,11 +147,12 @@
                 <!--内容-->
                 <div class="cll-tea">
                     {foreach $tea as $v}
-                    <a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}">
+                    <div class="conbox">
                         <img src="{$v['imgurl']}" alt="">
                         <p class="btitle">{$v['cname']}</p>
-                        <p class="benglish">{$v['ename']}</p>
-                    </a>
+                        <p class="benglish">{$v['ename']}</p> 
+                    	<a href="index.php?m=index&f=ar&imgurl={$v['imgurl']}&lid={$v['lid']}" class="abox"></a>
+                    </div>
                     {/foreach}
                 </div>
             </div>

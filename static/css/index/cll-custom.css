@@ -72,13 +72,14 @@ body {
     width: 0.4rem;
     height: 0.4rem;
 }
+
 .cll-section .cll-content{
     width: 100%;
     height: 3.6rem;
     display: flex;
     justify-content: space-between;
 }
-.cll-section .cll-content a{
+.cll-section .cll-content .conbox{
     display: block;
     width: 2.3rem;
     height: 100%;
@@ -86,50 +87,60 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom left;
+    position: relative;
 }
-.cll-section .cll-content a img{
+.cll-section .cll-content .conbox img{
     width: 1.8rem;
     margin-left: 0.26rem;
     margin-top: 0.24rem;
 }
-.cll-section .cll-content a p{
+.cll-section .cll-content .conbox p{
     text-align: center;
 }
-.cll-section .cll-content a p.ptitle{
+.cll-section .cll-content .conbox p.ptitle{
     font-family: "苹方 粗体";
     font-size: 0.24rem;
-    margin-top: 0.24rem;
+    margin-top: 0.34rem;
 }
-.cll-section .cll-content a p.penglish{
+.cll-section .cll-content .conbox p.penglish{
     font-family: "San Francisco Display";
     font-size: 0.22rem;
 }
+.cll-section .cll-content .conbox a.abox{
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	z-index: 3;
+}
 /*家饰*/
-.cll-section .home a{
+.cll-section .home .conbox{
     background-image: url("../../img/cll_25.png");
 }
-.cll-section .home a p{
+.cll-section .home .conbox p{
     text-align: center;
 }
-.cll-section .home a p.htitle{
+.cll-section .home .conbox p.htitle{
     font-family: "苹方 粗体";
     font-size: 0.24rem;
     margin-top: 0.1rem;
 }
-.cll-section .home a p.henglish{
+.cll-section .home .conbox p.henglish{
     font-family: "San Francisco Display";
     font-size: 0.22rem;
-    margin-top: 0.08rem;
+    margin-top: 0.18rem;
 }
 /*沙发*/
-.cll-section .sofa a{
+.cll-section .sofa .conbox{
     background-image: url("../../img/cll_31.png");
 }
-.cll-section .sofa a img{
+.cll-section .sofa .conbox img{
     margin-top: 0.3rem;
 }
-.cll-section .sofa a p.stitle{
-    margin-top: 0.26rem;
+.cll-section .sofa .conbox p.stitle{
+    margin-top: 0.32rem;
 }
 /*床*/
 .cll-section .cll-bed{
@@ -138,7 +149,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.cll-section .cll-bed a{
+.cll-section .cll-bed .conbox{
     width: 3.45rem;
     height: 100%;
     display: block;
@@ -146,23 +157,33 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom left;
+   	position: relative;
 }
-.cll-section .cll-bed a img{
+.cll-section .cll-bed .conbox img{
     width: 3.12rem;
     margin-left: 0.16rem;
     margin-top: 0.1rem;
 }
-.cll-section .cll-bed a p{
+.cll-section .cll-bed .conbox p{
     margin-left: 0.1rem;
 }
-.cll-section .cll-bed a p.btitle{
+.cll-section .cll-bed .conbox p.btitle{
     font-family: "苹方 粗体";
     font-size: 0.24rem;
     margin-top: -0.06rem;
 }
-.cll-section .cll-bed a p.benglish{
+.cll-section .cll-bed .conbox p.benglish{
     font-family: "San Francisco Display";
     font-size: 0.22rem;
+}
+.cll-section .cll-bed .conbox a.abox{
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	z-index: 3;
 }
 /*茶几*/
 .cll-section .cll-tea{
@@ -171,7 +192,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.cll-section .cll-tea a{
+.cll-section .cll-tea .conbox{
     width: 100%;
     height: 3.67rem;
     display: block;
@@ -180,26 +201,35 @@ body {
     background-repeat: no-repeat;
     background-position: bottom left;
     margin-bottom: 0.12rem;
+    position: relative;
 }
-.cll-section .cll-tea a img{
+.cll-section .cll-tea .conbox img{
     width: 6.82rem;
     margin-left: 0.16rem;
     margin-top: 0.1rem;
 }
-.cll-section .cll-tea a p{
+.cll-section .cll-tea .conbox p{
     margin-left: 0.1rem;
     text-align: center;
 }
-.cll-section .cll-tea a p.btitle{
+.cll-section .cll-tea .conbox p.btitle{
     font-family: "苹方 粗体";
     font-size: 0.24rem;
     margin-top: -0.06rem;
 }
-.cll-section .cll-tea a p.benglish{
+.cll-section .cll-tea .conbox p.benglish{
     font-family: "San Francisco Display";
     font-size: 0.22rem;
 }
-
+.cll-section .cll-tea .conbox a.abox{
+	position: absolute;
+	left:0;
+	top: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	z-index: 3;
+}
 
 
 

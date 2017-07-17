@@ -22,7 +22,7 @@ $(function () {
     // 购买
     $(".pay").click(function () {
         $.ajax({
-            url:"index.php?m=index&f=pay",
+            url:"index.php?m=index.class&f=pay",
             data:{
                 url:location.href,
             },
@@ -39,9 +39,8 @@ $(function () {
     })
     // 加入购物车
     $(".payment").click(function () {
-        var value=$("input[type=hidden]").val();
         $.ajax({
-            url:"index.php?m=index&f=payment",
+            url:"index.php?m=index.class&f=payment",
             data:{
                 url:location.href,
             },
@@ -50,11 +49,11 @@ $(function () {
                 if(e=='no'){
                     location.href="index.php?m=index&f=login"
                 }else if(e=='yes'){
-                    location.href="index.php?m=index&f=payment&a=show&lid="+value
-
+                    location.href="index.php?m=index&f=payment&a=show"
                 }
             }
         })
+
     })
 
 

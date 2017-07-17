@@ -6,7 +6,7 @@ $(function () {
     var con=$(".fashion .con");
     var i=0;
     var k;
-    var cona=$(".fashion .con a");
+    var cona=$(".fashion .con .pos");
 
     touch.on(fashion,"dragstart",con,function (e) {
         if(e.direction=="left"){
